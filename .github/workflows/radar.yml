@@ -1,6 +1,14 @@
 name: Radar SAP - aggiornamento giornaliero
 
 on:
+  # Una modifica alla configurazione deve riflettersi subito, senza aspettare
+  # il giro della mattina dopo.
+  push:
+    branches: ["**"]
+    paths:
+      - "config/**"
+      - "sapnews/**"
+      - ".github/workflows/radar.yml"
   schedule:
     # 05:10 UTC = 07:10 in Italia con l'ora legale, 06:10 con l'ora solare.
     - cron: "10 5 * * *"
