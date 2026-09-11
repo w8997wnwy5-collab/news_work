@@ -1,0 +1,122 @@
+name: Radar SAP - aggiornamento giornaliero
+
+on:
+  schedule:
+    # 05:10 UTC = 07:10 in Italia con l'ora legale, 06:10 con l'ora solare.
+    - cron: "10 5 * * *"
+  workflow_dispatch:
+    inputs:
+      controlla_link:
+        description: "Verifica anche i link del catalogo vendor"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write      # per committare i dati aggiornati
+  pages: write         # per pubblicare la dashboard
+  id-token: write
+
+# Un solo aggiornamento alla volta: due run in parallelo si darebbero fastidio
+# sul push dei dati.
+concurrency:
+  group: radar-sap
+  cancel-in-progress: false
+
+jobs:
+  aggiorna:
+    name: Leggi le fonti e pubblica
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pubblica.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Installa le dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Controlla la configurazione
+        run: python -m sapnews validate
+
+      - name: Decidi se controllare anche i link vendor
+        id: opzioni
+        # Il controllo dei link e' lento e non serve ogni giorno: lunedi'
+        # oppure su richiesta esplicita.
+        run: |
+          if [ "${{ github.event.inputs.controlla_link }}" = "true" ] || [ "$(date -u +%u)" = "1" ]; then
+            echo "flag=--check-links" >> "$GITHUB_OUTPUT"
+          else
+            echo "flag=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Aggiorna il radar
+        run: python -m sapnews update -v ${{ steps.opzioni.outputs.flag }}
+
+      - name: Riepilogo del run
+        if: always()
+        run: |
+          {
+            echo "## Radar SAP"
+            echo ""
+            python -m sapnews stats 2>/dev/null | sed 's/^/    /' || echo "nessuna statistica disponibile"
+            echo ""
+            echo "### Fonti non raggiungibili"
+            python - <<'PY'
+          import json, pathlib
+          p = pathlib.Path("docs/data/news.json")
+          if p.exists():
+              d = json.loads(p.read_text(encoding="utf-8"))
+              rotte = [f for f in d.get("fonti", []) if not f.get("ok")]
+              if rotte:
+                  for f in rotte:
+                      print(f"- **{f['nome']}** - {f['stato']} - `{f.get('url_usato') or f['url']}`")
+              else:
+                  print("Nessuna: tutte le fonti hanno risposto.")
+          PY
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Committa i dati aggiornati
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "Nessuna novita' da committare."
+          else
+            git commit -m "Radar SAP: aggiornamento del $(date -u +'%d/%m/%Y')"
+            for tentativo in 1 2 3 4; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break
+              echo "push fallito, nuovo tentativo fra $((2 ** tentativo))s"
+              sleep $((2 ** tentativo))
+            done
+          fi
+
+      # --- pubblicazione su GitHub Pages (solo dal branch principale) -------
+      - name: Prepara Pages
+        if: github.ref_name == github.event.repository.default_branch
+        id: prepara
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+
+      - name: Carica la dashboard
+        if: steps.prepara.outcome == 'success'
+        continue-on-error: true
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Pubblica
+        if: steps.prepara.outcome == 'success'
+        id: pubblica
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Nota su Pages
+        if: steps.prepara.outcome != 'success' || steps.pubblica.outcome != 'success'
+        run: |
+          echo "::notice::La dashboard non e' stata pubblicata su GitHub Pages. Abilitala in Settings > Pages scegliendo 'GitHub Actions' come sorgente. I dati sono comunque aggiornati nel repository."
