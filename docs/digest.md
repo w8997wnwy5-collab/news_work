@@ -1,6 +1,40 @@
 # Radar SAP - 11/09/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 0 notizie (0 da leggere) da 0/0 fonti attive.
+Ultime 24h: 46 notizie (21 da leggere) da 19/29 fonti attive.
 
-_Nessuna notizia nelle ultime ore._
+## BTP & Integrazione
+
+- **[Da leggere]** [SAP BTP 온보딩 가이드: 7가지 핵심 영역 완벽 정리](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-%EC%98%A8%EB%B3%B4%EB%94%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-7%EA%B0%80%EC%A7%80-%ED%95%B5%EC%8B%AC-%EC%98%81%EC%97%AD-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC/ba-p/14483083) - _SAP Community - Technology blogs_ (rilevanza 96) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+BTP+%EC%98%A8%EB%B3%B4%EB%94%A9+%EA%B0%80%EC%9D%B4%EB%93%9C+7%EA%B0%80%EC%A7%80&sortBy=%22date_posted%22)
+- **[Da leggere]** [Part 1: Enabling Advanced Event Mesh for API Management](https://community.sap.com/t5/technology-blog-posts-by-sap/part-1-enabling-advanced-event-mesh-for-api-management/ba-p/14482494) - _SAP Community - Technology blogs_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Part+Enabling+Advanced+Event+Mesh+for+API+Management&sortBy=%22date_posted%22)
+- **[Da leggere]** [Deploying a Python MCP Server to SAP BTP Kyma](https://community.sap.com/t5/technology-blog-posts-by-members/deploying-a-python-mcp-server-to-sap-btp-kyma/ba-p/14482823) - _SAP Community - blog dei membri_ (rilevanza 72) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Deploying+Python+MCP+Server+SAP+BTP+Kyma&sortBy=%22date_posted%22)
+- **[Da leggere]** [ABAP Sessions at Devtoberfest 2026](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-sessions-at-devtoberfest-2026/ba-p/14481756) - _SAP Community - Technology blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=ABAP+Sessions+Devtoberfest+2026&sortBy=%22date_posted%22)
+- [Da monitorare] [SAP CPI Connectivity - Proxy vs Cloud Connector vs IP Whitelisting](https://community.sap.com/t5/technology-blog-posts-by-members/sap-cpi-connectivity-proxy-vs-cloud-connector-vs-ip-whitelisting/ba-p/14473374) - _SAP Community - blog dei membri_ (rilevanza 66) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+CPI+Connectivity+Proxy+Cloud+Connector+Whitelisting&sortBy=%22date_posted%22)
+- [Da monitorare] [SSL in JAVA NetWeaver.](https://community.sap.com/t5/technology-blog-posts-by-members/ssl-in-java-netweaver/ba-p/14473375) - _SAP Community - blog dei membri_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SSL+JAVA+NetWeaver.&sortBy=%22date_posted%22)
+- [Da monitorare] [SAP CPI: retry mechanism using AMQP vs/and JMS](https://www.reddit.com/r/SAP/comments/1wchxs7/sap_cpi_retry_mechanism_using_amqp_vsand_jms) - _Reddit r/SAP_ (rilevanza 58) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+CPI+retry+mechanism+using+AMQP+vs%2Fand+JMS&sortBy=%22date_posted%22)
+- [Da monitorare] [Part 3: Publishing Event APIs in Developer Hub and Managing API Products](https://community.sap.com/t5/technology-blog-posts-by-sap/part-3-publishing-event-apis-in-developer-hub-and-managing-api-products/ba-p/14482678) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Part+Publishing+Event+APIs+Developer+Hub+and+Managing+API&sortBy=%22date_posted%22)
+- [Da monitorare] [Part 2: Connecting Advanced Event Mesh and Developer Hub](https://community.sap.com/t5/technology-blog-posts-by-sap/part-2-connecting-advanced-event-mesh-and-developer-hub/ba-p/14482570) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Part+Connecting+Advanced+Event+Mesh+and+Developer+Hub&sortBy=%22date_posted%22)
+
+## S/4HANA & Clean Core
+
+- **[Da leggere]** [Cognitus Frames SAP Transformation Work Around the Autonomous Enterprise Shift](https://sapinsider.org/blogs/cognitus-frames-sap-transformation-work-around-the-autonomous-enterprise-shift) - _SAPinsider_ (rilevanza 94) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Cognitus+Frames+SAP+Transformation+Work+Around+the+Autonomous+Enterprise&sortBy=%22date_posted%22)
+- **[Da leggere]** [Joule in Practice: AI-assisted Allocation Run Results in SAP S/4HANA Cloud ERP](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/joule-in-practice-ai-assisted-allocation-run-results-in-sap-s-4hana-cloud/ba-p/14482954) - _SAP Community - ERP blogs_ (rilevanza 94) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Joule+Practice+AI-assisted+Allocation+Run+Results+SAP+S%2F4HANA+Cloud&sortBy=%22date_posted%22)
+- **[Da leggere]** [cobicon Adds Specialized Practice for SAP IS-U to S/4HANA Utilities Migration](https://sapinsider.org/blogs/cobicon-adds-specialized-practice-for-sap-is-u-to-s-4hana-utilities-migration) - _SAPinsider_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=cobicon+Adds+Specialized+Practice+for+SAP+IS-U+S%2F4HANA+Utilities&sortBy=%22date_posted%22)
+- **[Da leggere]** [Event-Based Revenue Recognition for Multistage Intercompany Sales in SAP S/4HANA](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/event-based-revenue-recognition-for-multistage-intercompany-sales-in-sap-s/ba-p/14480229) - _SAP Community - ERP blogs_ (rilevanza 76) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Event-Based+Revenue+Recognition+for+Multistage+Intercompany+Sales+SAP+S%2F4HANA&sortBy=%22date_posted%22)
+- **[Da leggere]** [SAP S/4HANA Cloud Public Edition 2608.1: Final What's New & Product Assistance available](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-s-4hana-cloud-public-edition-2608-1-final-what-s-new-amp-product/ba-p/14480668) - _SAP Community - ERP blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+S%2F4HANA+Cloud+Public+Edition+2608.1+Final+What+New&sortBy=%22date_posted%22)
+- [Da monitorare] [SAP Clean Core mit Open Source: Kernseife](https://e3mag.com/de/sap-clean-core-mit-open-source-kernseife) - _E-3 Magazine (EN)_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Clean+Core+mit+Open+Source+Kernseife&sortBy=%22date_posted%22)
+
+## AI, Dati & Analytics
+
+- **[Da leggere]** [Step-by-Step Guide - SAP Managed Joule Setup](https://community.sap.com/t5/technology-blog-posts-by-sap/step-by-step-guide-sap-managed-joule-setup/ba-p/14482348) - _SAP Community - Technology blogs_ (rilevanza 92) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Step-by-Step+Guide+SAP+Managed+Joule+Setup&sortBy=%22date_posted%22)
+- **[Da leggere]** [SAP Hands-on Serie der Firma celver](https://www.reddit.com/r/SAP/comments/1wclsw9/sap_handson_serie_der_firma_celver) - _Reddit r/SAP_ (rilevanza 74) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Hands-on+Serie+der+Firma+celver&sortBy=%22date_posted%22)
+- [Da monitorare] [Is it realistic to learn Datasphere and SAC and find employment in SAP EPM consulting side ?](https://www.reddit.com/r/SAP/comments/1wcon1e/is_it_realistic_to_learn_datasphere_and_sac_and) - _Reddit r/SAP_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=realistic+learn+Datasphere+and+SAC+and+find+employment+SAP&sortBy=%22date_posted%22)
+
+## HR, Procurement & Travel
+
+- [Da monitorare] [SAP Autonomous HCM Explained: What It Is, How It Works, and Where AI Fits in HR](https://erp.today/sap-autonomous-hcm-explained) - _ERP Today_ (rilevanza 66) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Autonomous+HCM+Explained+What+How+Works+and+Where&sortBy=%22date_posted%22)
+
+## Basis, HANA & Operations
+
+- [Da monitorare] [Best Practises: Be Prepared - Remote System Connections](https://community.sap.com/t5/technology-blog-posts-by-sap/best-practises-be-prepared-remote-system-connections/ba-p/14482925) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Best+Practises+Prepared+Remote+System+Connections&sortBy=%22date_posted%22)
+
