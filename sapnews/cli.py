@@ -63,6 +63,9 @@ def cmd_update(args: argparse.Namespace) -> int:
     store = Store(_store_path(cfg.root)).load()
     nuove, aggiornate = store.merge(classificati)
     store.update_health(salute)
+    dimenticate = store.prune_health({s["id"] for s in cfg.source_list})
+    if dimenticate:
+        log.info("fonti non più configurate, rimosse dallo stato: %s", ", ".join(dimenticate))
     log.info("storico: %d nuove, %d già note, %d totali",
              nuove, aggiornate, len(store.dati["items"]))
 
@@ -160,15 +163,23 @@ def cmd_serve(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    # Opzioni valide sia prima sia dopo il sottocomando: `sapnews -v update` e
+    # `sapnews update -v` devono funzionare entrambi. SUPPRESS evita che il
+    # sottoparser azzeri il valore gia' impostato dal parser principale.
+    comuni = argparse.ArgumentParser(add_help=False)
+    comuni.add_argument("-v", "--verbose", action="store_true",
+                        default=argparse.SUPPRESS, help="log di dettaglio")
+    comuni.add_argument("--root", default=argparse.SUPPRESS,
+                        help="radice del progetto (default: .)")
+
     p = argparse.ArgumentParser(
-        prog="sapnews",
+        prog="sapnews", parents=[comuni],
         description="Radar giornaliero di notizie SAP e tool di ecosistema.")
     p.add_argument("--version", action="version", version=f"sapnews {__version__}")
-    p.add_argument("--root", default=".", help="radice del progetto (default: .)")
-    p.add_argument("-v", "--verbose", action="store_true", help="log di dettaglio")
     sub = p.add_subparsers(dest="comando", required=True)
 
-    u = sub.add_parser("update", help="legge le fonti, classifica e rigenera la dashboard")
+    u = sub.add_parser("update", parents=[comuni],
+                       help="legge le fonti, classifica e rigenera la dashboard")
     u.add_argument("--dry-run", action="store_true", help="non scrive nulla su disco")
     u.add_argument("--only", nargs="+", metavar="ID", help="limita a queste fonti")
     u.add_argument("--fixtures", metavar="DIR",
@@ -177,19 +188,19 @@ def build_parser() -> argparse.ArgumentParser:
                    help="verifica anche i link del catalogo vendor")
     u.set_defaults(func=cmd_update)
 
-    r = sub.add_parser("render", help="rigenera dashboard e digest dallo storico")
+    r = sub.add_parser("render", parents=[comuni], help="rigenera dashboard e digest dallo storico")
     r.set_defaults(func=cmd_render)
 
-    c = sub.add_parser("check-links", help="verifica i link del catalogo vendor")
+    c = sub.add_parser("check-links", parents=[comuni], help="verifica i link del catalogo vendor")
     c.set_defaults(func=cmd_check_links)
 
-    v = sub.add_parser("validate", help="controlla la coerenza dei file in config/")
+    v = sub.add_parser("validate", parents=[comuni], help="controlla la coerenza dei file in config/")
     v.set_defaults(func=cmd_validate)
 
-    s = sub.add_parser("stats", help="stampa le statistiche correnti in JSON")
+    s = sub.add_parser("stats", parents=[comuni], help="stampa le statistiche correnti in JSON")
     s.set_defaults(func=cmd_stats)
 
-    w = sub.add_parser("serve", help="apre la dashboard in locale")
+    w = sub.add_parser("serve", parents=[comuni], help="apre la dashboard in locale")
     w.add_argument("--port", type=int, default=8000)
     w.set_defaults(func=cmd_serve)
     return p
@@ -197,7 +208,9 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
-    _setup_log(args.verbose)
+    _setup_log(getattr(args, "verbose", False))
+    if not hasattr(args, "root"):
+        args.root = "."
     try:
         return args.func(args)
     except FileNotFoundError as exc:

@@ -90,5 +90,14 @@ class Store:
                 s.ultimo_ok = precedente.get("ultimo_ok")
             registro[s.id] = asdict(s)
 
+    def prune_health(self, id_configurati: set[str]) -> list[str]:
+        """Dimentica le fonti tolte dalla configurazione: il pannello Controllo
+        deve mostrare il panorama attuale, non quello di sei mesi fa."""
+        registro = self.dati.setdefault("fonti", {})
+        rimosse = [k for k in registro if k not in id_configurati]
+        for k in rimosse:
+            del registro[k]
+        return rimosse
+
     def set_link_health(self, risultati: dict[str, Any]) -> None:
         self.dati["link_health"] = {"controllato_il": iso(now_utc()), "link": risultati}

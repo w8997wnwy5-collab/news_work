@@ -131,3 +131,32 @@ def test_uno_storico_corrotto_non_blocca_il_giro(tmp_path: Path):
     percorso.write_text("{non json", encoding="utf-8")
     store = Store(percorso).load()
     assert store.dati["items"] == []
+
+
+def test_le_fonti_tolte_dalla_config_spariscono_dal_pannello(progetto, fixtures):
+    _scrivi_feed(fixtures)
+    main(["--root", str(progetto), "update", "--fixtures", str(fixtures)])
+
+    percorso = progetto / "config" / "sources.yaml"
+    testo = percorso.read_text(encoding="utf-8")
+    inizio = testo.index("  - id: onapsis_blog")
+    fine = testo.index("  - id: securitybridge_blog")
+    percorso.write_text(testo[:inizio] + testo[fine:], encoding="utf-8")
+
+    main(["--root", str(progetto), "update", "--fixtures", str(fixtures)])
+    payload = json.loads((progetto / "docs" / "data" / "news.json").read_text(encoding="utf-8"))
+    assert "onapsis_blog" not in {f["id"] for f in payload["fonti"]}
+
+
+def test_le_opzioni_valgono_prima_e_dopo_il_sottocomando(progetto, fixtures, capsys):
+    """Il workflow usa `update -v`, la documentazione anche `-v update`."""
+    from sapnews.cli import build_parser
+
+    for argv in (["-v", "--root", "x", "update"], ["update", "-v", "--root", "x"]):
+        args = build_parser().parse_args(argv)
+        assert getattr(args, "verbose", False) is True
+        assert args.root == "x"
+
+    _scrivi_feed(fixtures)
+    assert main(["--root", str(progetto), "update", "-v", "--fixtures", str(fixtures)]) == 0
+    assert main(["-v", "--root", str(progetto), "update", "--fixtures", str(fixtures)]) == 0
