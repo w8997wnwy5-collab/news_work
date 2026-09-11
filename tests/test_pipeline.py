@@ -194,3 +194,30 @@ def test_le_pagine_sondate_per_ritrovare_un_feed():
     assert pagine_da_sondare("https://x.test/en/blog/rss.xml") == [
         "https://x.test/", "https://x.test/en/", "https://x.test/en/blog/"]
     assert pagine_da_sondare("https://x.test/feed") == ["https://x.test/"]
+
+
+def test_cambiare_la_configurazione_ripulisce_anche_l_archivio(progetto, fixtures):
+    """Alzare una soglia o accendere un filtro deve valere anche per il passato."""
+    (fixtures / "sap_news_center.xml").write_text(rss([
+        {"titolo": "SAP S/4HANA: nuovo feature pack per il private cloud",
+         "url": "https://news.sap.com/ok", "sommario": "Clean core e ABAP Cloud.", "ore_fa": 2},
+        {"titolo": "SAP BTP 온보딩 가이드: 핵심 영역 정리",
+         "url": "https://news.sap.com/ko", "sommario": "BTP onboarding guide.", "ore_fa": 3},
+    ]), encoding="utf-8")
+
+    percorso = progetto / "config" / "taxonomy.yaml"
+    senza_filtro = percorso.read_text(encoding="utf-8").replace(
+        "solo_alfabeto_latino: true", "solo_alfabeto_latino: false")
+    percorso.write_text(senza_filtro, encoding="utf-8")
+    main(["--root", str(progetto), "update", "--fixtures", str(fixtures)])
+    titoli = [i["titolo"] for i in json.loads(
+        (progetto / "docs" / "data" / "news.json").read_text(encoding="utf-8"))["items"]]
+    assert any("온보딩" in t for t in titoli)
+
+    percorso.write_text(senza_filtro.replace(
+        "solo_alfabeto_latino: false", "solo_alfabeto_latino: true"), encoding="utf-8")
+    main(["--root", str(progetto), "update", "--fixtures", str(fixtures)])
+    titoli = [i["titolo"] for i in json.loads(
+        (progetto / "docs" / "data" / "news.json").read_text(encoding="utf-8"))["items"]]
+    assert not any("온보딩" in t for t in titoli)
+    assert any("feature pack" in t for t in titoli)

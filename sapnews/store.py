@@ -81,6 +81,24 @@ class Store:
         self.dati["aggiornato_il"] = adesso
         return n_nuove, n_agg
 
+    def reclassify(self, sources: list[dict[str, Any]],
+                   taxonomy: dict[str, Any]) -> int:
+        """Riallinea tutto l'archivio alla configurazione corrente.
+
+        Senza questo passo una modifica alla tassonomia varrebbe solo per le
+        notizie nuove: alzare una soglia o attivare un filtro non toccherebbe
+        quello che e' gia' dentro. Ritorna quante notizie sono uscite.
+        """
+        from .classify import classify_all
+
+        prima = self.items
+        dopo = classify_all(prima, sources, taxonomy)
+        vivi = {i.id for i in dopo}
+        ordine = {raw["id"]: n for n, raw in enumerate(self.dati["items"])}
+        self.dati["items"] = sorted((i.to_dict() for i in dopo),
+                                    key=lambda raw: ordine.get(raw["id"], 0))
+        return len(prima) - len(vivi)
+
     def update_health(self, salute: list[SourceHealth]) -> None:
         """Conserva l'ultimo successo noto anche quando il giro corrente fallisce."""
         registro = self.dati.setdefault("fonti", {})

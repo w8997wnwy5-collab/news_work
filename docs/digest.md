@@ -1,11 +1,10 @@
 # Radar SAP - 11/09/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 47 notizie (21 da leggere) da 21/21 fonti attive.
+Ultime 24h: 46 notizie (19 da leggere) da 21/21 fonti attive.
 
 ## BTP & Integrazione
 
-- **[Da leggere]** [SAP BTP 온보딩 가이드: 7가지 핵심 영역 완벽 정리](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-%EC%98%A8%EB%B3%B4%EB%94%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-7%EA%B0%80%EC%A7%80-%ED%95%B5%EC%8B%AC-%EC%98%81%EC%97%AD-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC/ba-p/14483083) - _SAP Community - Technology blogs_ (rilevanza 96) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+BTP+%EC%98%A8%EB%B3%B4%EB%94%A9+%EA%B0%80%EC%9D%B4%EB%93%9C+7%EA%B0%80%EC%A7%80&sortBy=%22date_posted%22)
 - **[Da leggere]** [Part 1: Enabling Advanced Event Mesh for API Management](https://community.sap.com/t5/technology-blog-posts-by-sap/part-1-enabling-advanced-event-mesh-for-api-management/ba-p/14482494) - _SAP Community - Technology blogs_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Part+Enabling+Advanced+Event+Mesh+for+API+Management&sortBy=%22date_posted%22)
 - **[Da leggere]** [Deploying a Python MCP Server to SAP BTP Kyma](https://community.sap.com/t5/technology-blog-posts-by-members/deploying-a-python-mcp-server-to-sap-btp-kyma/ba-p/14482823) - _SAP Community - blog dei membri_ (rilevanza 72) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Deploying+Python+MCP+Server+SAP+BTP+Kyma&sortBy=%22date_posted%22)
 - **[Da leggere]** [ABAP Sessions at Devtoberfest 2026](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-sessions-at-devtoberfest-2026/ba-p/14481756) - _SAP Community - Technology blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=ABAP+Sessions+Devtoberfest+2026&sortBy=%22date_posted%22)
@@ -29,6 +28,7 @@ Ultime 24h: 47 notizie (21 da leggere) da 21/21 fonti attive.
 - **[Da leggere]** [Step-by-Step Guide - SAP Managed Joule Setup](https://community.sap.com/t5/technology-blog-posts-by-sap/step-by-step-guide-sap-managed-joule-setup/ba-p/14482348) - _SAP Community - Technology blogs_ (rilevanza 92) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Step-by-Step+Guide+SAP+Managed+Joule+Setup&sortBy=%22date_posted%22)
 - **[Da leggere]** [SAP Hands-on Serie der Firma celver](https://www.reddit.com/r/SAP/comments/1wclsw9/sap_handson_serie_der_firma_celver) - _Reddit r/SAP_ (rilevanza 74) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Hands-on+Serie+der+Firma+celver&sortBy=%22date_posted%22)
 - [Da monitorare] [Is it realistic to learn Datasphere and SAC and find employment in SAP EPM consulting side ?](https://www.reddit.com/r/SAP/comments/1wcon1e/is_it_realistic_to_learn_datasphere_and_sac_and) - _Reddit r/SAP_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=realistic+learn+Datasphere+and+SAC+and+find+employment+SAP&sortBy=%22date_posted%22)
+- [Da monitorare] [Dynamic Hierarchy Path Generation for Flexible Restricted Measures in SAP Datasphere](https://community.sap.com/t5/technology-blog-posts-by-members/dynamic-hierarchy-path-generation-for-flexible-restricted-measures-in-sap/ba-p/14480112) - _SAP Community - blog dei membri_ (rilevanza 54) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Dynamic+Hierarchy+Path+Generation+for+Flexible+Restricted+Measures+SAP&sortBy=%22date_posted%22)
 
 ## HR, Procurement & Travel
 

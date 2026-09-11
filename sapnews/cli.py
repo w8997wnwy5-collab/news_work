@@ -62,6 +62,9 @@ def cmd_update(args: argparse.Namespace) -> int:
 
     store = Store(_store_path(cfg.root)).load()
     nuove, aggiornate = store.merge(classificati)
+    uscite = store.reclassify(cfg.source_list, cfg.taxonomy)
+    if uscite:
+        log.info("riallineamento alla configurazione: %d notizie uscite dall'archivio", uscite)
     store.update_health(salute)
     dimenticate = store.prune_health({s["id"] for s in cfg.source_list})
     if dimenticate:
