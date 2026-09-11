@@ -1,7 +1,7 @@
 # Radar SAP - 11/09/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 47 notizie (21 da leggere) da 21/29 fonti attive.
+Ultime 24h: 47 notizie (21 da leggere) da 21/27 fonti attive.
 
 ## BTP & Integrazione
 
