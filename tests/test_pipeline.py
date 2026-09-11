@@ -221,3 +221,22 @@ def test_cambiare_la_configurazione_ripulisce_anche_l_archivio(progetto, fixture
         (progetto / "docs" / "data" / "news.json").read_text(encoding="utf-8"))["items"]]
     assert not any("온보딩" in t for t in titoli)
     assert any("feature pack" in t for t in titoli)
+
+
+def test_i_link_tolti_dal_catalogo_non_restano_contati_come_rotti(progetto, fixtures):
+    from sapnews.store import Store
+
+    _scrivi_feed(fixtures)
+    main(["--root", str(progetto), "update", "--fixtures", str(fixtures)])
+
+    store = Store(progetto / "data" / "news.json").load()
+    store.set_link_health({
+        "https://onapsis.com": {"stato": 200, "esito": "ok", "ok": True},
+        "https://sparito.test/demo": {"stato": 404, "esito": "rotto", "ok": False},
+    })
+    store.save()
+
+    main(["--root", str(progetto), "update", "--fixtures", str(fixtures)])
+    payload = json.loads((progetto / "docs" / "data" / "news.json").read_text(encoding="utf-8"))
+    assert "https://sparito.test/demo" not in payload["link_health"]["link"]
+    assert payload["stats"]["link_rotti"] == 0

@@ -119,3 +119,14 @@ class Store:
 
     def set_link_health(self, risultati: dict[str, Any]) -> None:
         self.dati["link_health"] = {"controllato_il": iso(now_utc()), "link": risultati}
+
+    def prune_link_health(self, url_in_catalogo: set[str]) -> list[str]:
+        """Dimentica i link tolti dal catalogo, che altrimenti resterebbero
+        conteggiati come rotti anche dopo essere stati rimossi."""
+        salute = self.dati.get("link_health", {}).get("link")
+        if not salute:
+            return []
+        spariti = [u for u in salute if u not in url_in_catalogo]
+        for u in spariti:
+            del salute[u]
+        return spariti

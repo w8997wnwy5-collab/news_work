@@ -72,10 +72,14 @@ def cmd_update(args: argparse.Namespace) -> int:
     log.info("storico: %d nuove, %d già note, %d totali",
              nuove, aggiornate, len(store.dati["items"]))
 
+    urls = raccogli_link(cfg.vendor_list)
     if args.check_links:
-        urls = raccogli_link(cfg.vendor_list)
         log.info("controllo di %d link vendor", len(urls))
         store.set_link_health(check_links(urls))
+    else:
+        dimenticati = store.prune_link_health(set(urls))
+        if dimenticati:
+            log.info("link non più in catalogo, rimossi dallo stato: %d", len(dimenticati))
 
     if args.dry_run:
         log.info("dry-run: nessun file scritto")
