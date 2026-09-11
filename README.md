@@ -204,15 +204,17 @@ tests/              test della pipeline, completamente offline
 
 ## Prima attivazione
 
-1. **Primo run**: *Actions → Radar SAP → Run workflow*, per non aspettare la mattina dopo.
-   Il workflow abilita GitHub Pages da solo e pubblica su
+1. **Abilita GitHub Pages**: *Settings → Pages → Source: «GitHub Actions»*. Si fa una
+   volta sola. Il workflow prova ad abilitarlo da solo, ma su questo repository il token
+   di Actions non ha il permesso di creare il sito (verificato: *Create Pages site failed
+   - Resource not accessible by integration*), quindi il passo manuale serve davvero.
+   Finché non lo fai, il run resta verde, i dati nel repository si aggiornano lo stesso e
+   il riepilogo mostra una nota che ricorda il passaggio.
+2. **Primo run**: *Actions → Radar SAP - aggiornamento giornaliero → Run workflow*, per
+   non aspettare la mattina dopo. Da lì in poi la dashboard vive su
    https://w8997wnwy5-collab.github.io/news_work/.
-2. Se l'abilitazione automatica non va a buon fine (capita quando l'organizzazione la
-   limita), il run lo segnala con una nota e basta farlo a mano:
-   *Settings → Pages → Source: GitHub Actions*. Nel frattempo i dati nel repository
-   restano comunque aggiornati.
-3. Dopo il primo run, il riepilogo del workflow elenca le fonti che non hanno risposto:
-   sistema il loro `url` in `config/sources.yaml` oppure rimuovile.
+3. Il riepilogo di ogni run elenca le fonti che non hanno risposto: sistema il loro `url`
+   in `config/sources.yaml` oppure rimuovile.
 
 ---
 
