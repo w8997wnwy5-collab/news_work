@@ -117,29 +117,51 @@ FEED_LINK = re.compile(
     re.I | re.S)
 
 
-def scopri_feed(session: requests.Session, url: str, timeout: int) -> str | None:
-    """Ultima spiaggia: chiede alla home del sito dov'e' il suo feed.
+def pagine_da_sondare(url: str) -> list[str]:
+    """Pagine in cui cercare la dichiarazione del feed: la home e la sezione.
 
-    I siti riorganizzano i path RSS senza avvisare. Invece di lasciar morire la
-    fonte, leggiamo il <link rel="alternate"> della home, che e' il modo standard
-    con cui un sito dichiara il proprio feed.
+    Molti vendor dichiarano il <link rel="alternate"> solo sulla pagina del blog
+    (`/blog/`), non sulla home: sondare entrambe raddoppia le probabilita' di
+    ritrovare un feed spostato.
     """
-    from urllib.parse import urljoin, urlsplit
+    from urllib.parse import urlsplit
 
     parti = urlsplit(url)
-    home = f"{parti.scheme}://{parti.netloc}/"
-    try:
-        r = session.get(home, timeout=timeout, headers={"Accept": "text/html,*/*"})
-        if r.status_code >= 400:
-            return None
-        trovato = FEED_LINK.search(r.text[:200_000])
-        if not trovato:
-            return None
-        href = trovato.group(1) or trovato.group(2)
-        candidato = urljoin(home, href.strip())
-        return candidato if candidato != url else None
-    except requests.RequestException:
-        return None
+    radice = f"{parti.scheme}://{parti.netloc}"
+    pagine = [radice + "/"]
+    segmenti = [s for s in parti.path.split("/") if s and s not in ("feed", "rss")]
+    for quanti in (1, 2):
+        if len(segmenti) >= quanti:
+            pagina = radice + "/" + "/".join(segmenti[:quanti]) + "/"
+            if pagina not in pagine:
+                pagine.append(pagina)
+    return pagine
+
+
+def scopri_feed(session: requests.Session, url: str, timeout: int) -> str | None:
+    """Ultima spiaggia: chiede al sito dov'e' il suo feed.
+
+    I siti riorganizzano i path RSS senza avvisare. Invece di lasciar morire la
+    fonte, leggiamo il <link rel="alternate"> delle loro pagine, che e' il modo
+    standard con cui un sito dichiara il proprio feed.
+    """
+    from urllib.parse import urljoin
+
+    for pagina in pagine_da_sondare(url):
+        try:
+            r = session.get(pagina, timeout=timeout, headers={"Accept": "text/html,*/*"})
+            if r.status_code >= 400:
+                continue
+            trovato = FEED_LINK.search(r.text[:300_000])
+            if not trovato:
+                continue
+            href = (trovato.group(1) or trovato.group(2)).strip()
+            candidato = urljoin(pagina, href)
+            if candidato != url:
+                return candidato
+        except requests.RequestException:
+            continue
+    return None
 
 
 def fetch_source(source: dict[str, Any], session: requests.Session,

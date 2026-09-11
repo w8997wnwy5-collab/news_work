@@ -72,6 +72,12 @@ profile:
   # viene considerata rumore e scartata.
   min_score: 15
 
+  # SAP Community pubblica gli stessi contenuti anche in coreano, giapponese e
+  # cinese: notizie pertinenti ma illeggibili per il team. Con questa opzione
+  # restano fuori i titoli scritti in un alfabeto non latino.
+  # Metterla a false per ricevere anche quelli.
+  solo_alfabeto_latino: true
+
 # ---------------------------------------------------------------------------
 # Categorie. `color_slot` punta alla palette categoriale validata della
 # dashboard (slot 1-8, ordine fisso: non riordinare senza rivalidare i colori).

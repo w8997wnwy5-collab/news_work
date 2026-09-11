@@ -184,3 +184,13 @@ def test_le_opzioni_valgono_prima_e_dopo_il_sottocomando(progetto, fixtures, cap
     _scrivi_feed(fixtures)
     assert main(["--root", str(progetto), "update", "-v", "--fixtures", str(fixtures)]) == 0
     assert main(["-v", "--root", str(progetto), "update", "--fixtures", str(fixtures)]) == 0
+
+
+def test_le_pagine_sondate_per_ritrovare_un_feed():
+    from sapnews.fetch import pagine_da_sondare
+
+    assert pagine_da_sondare("https://x.test/blog/feed/") == [
+        "https://x.test/", "https://x.test/blog/"]
+    assert pagine_da_sondare("https://x.test/en/blog/rss.xml") == [
+        "https://x.test/", "https://x.test/en/", "https://x.test/en/blog/"]
+    assert pagine_da_sondare("https://x.test/feed") == ["https://x.test/"]

@@ -14,6 +14,7 @@ Il risultato viene tagliato a 0-100 e tradotto in un livello leggibile
 from __future__ import annotations
 
 import re
+import unicodedata
 from datetime import timedelta
 from functools import lru_cache
 from typing import Any, Iterable
@@ -128,12 +129,27 @@ def classify(item: Item, source_weight: int, taxonomy: dict[str, Any]) -> Item:
     return item
 
 
+def in_alfabeto_latino(testo: str, soglia: float = 0.7) -> bool:
+    """True se il titolo e' leggibile da chi legge alfabeto latino."""
+    lettere = [c for c in testo if c.isalpha()]
+    if not lettere:
+        return True
+    latine = sum(1 for c in lettere
+                 if c.isascii() or unicodedata.name(c, "").startswith("LATIN"))
+    return latine / len(lettere) >= soglia
+
+
 def classify_all(items: list[Item], sources: list[dict[str, Any]],
                  taxonomy: dict[str, Any]) -> list[Item]:
+    profilo = taxonomy.get("profile", {}) or {}
     pesi = {s["id"]: int(s.get("peso", 10)) for s in sources}
-    min_score = int((taxonomy.get("profile", {}) or {}).get("min_score", 0))
+    min_score = int(profilo.get("min_score", 0))
+    solo_latino = bool(profilo.get("solo_alfabeto_latino", False))
+
     fuori: list[Item] = []
     for item in items:
+        if solo_latino and not in_alfabeto_latino(item.titolo):
+            continue
         classify(item, pesi.get(item.fonte_id, 10), taxonomy)
         if item.score >= min_score:
             fuori.append(item)

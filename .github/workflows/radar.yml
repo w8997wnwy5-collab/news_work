@@ -110,6 +110,9 @@ jobs:
         id: prepara
         continue-on-error: true
         uses: actions/configure-pages@v5
+        with:
+          # Abilita Pages al primo giro, senza passare da Settings.
+          enablement: true
 
       - name: Carica la dashboard
         if: steps.prepara.outcome == 'success'

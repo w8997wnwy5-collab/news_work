@@ -78,7 +78,7 @@ finita li'.
 
 ### Le fonti
 
-29 feed divisi in quattro tipi: SAP ufficiale (News Center, SAP Community), community,
+27 feed divisi in quattro tipi: SAP ufficiale (News Center, SAP Community), community,
 stampa e analisti (ERP Today, SAPinsider, E-3, diginomica, The Register), vendor e
 partner dell'ecosistema.
 
