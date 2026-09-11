@@ -1,7 +1,7 @@
 # Radar SAP - 11/09/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 46 notizie (19 da leggere) da 21/21 fonti attive.
+Ultime 24h: 45 notizie (19 da leggere) da 21/21 fonti attive.
 
 ## BTP & Integrazione
 
@@ -21,7 +21,7 @@ Ultime 24h: 46 notizie (19 da leggere) da 21/21 fonti attive.
 - **[Da leggere]** [cobicon Adds Specialized Practice for SAP IS-U to S/4HANA Utilities Migration](https://sapinsider.org/blogs/cobicon-adds-specialized-practice-for-sap-is-u-to-s-4hana-utilities-migration) - _SAPinsider_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=cobicon+Adds+Specialized+Practice+for+SAP+IS-U+S%2F4HANA+Utilities&sortBy=%22date_posted%22)
 - **[Da leggere]** [Event-Based Revenue Recognition for Multistage Intercompany Sales in SAP S/4HANA](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/event-based-revenue-recognition-for-multistage-intercompany-sales-in-sap-s/ba-p/14480229) - _SAP Community - ERP blogs_ (rilevanza 76) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Event-Based+Revenue+Recognition+for+Multistage+Intercompany+Sales+SAP+S%2F4HANA&sortBy=%22date_posted%22)
 - **[Da leggere]** [SAP S/4HANA Cloud Public Edition 2608.1: Final What's New & Product Assistance available](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-s-4hana-cloud-public-edition-2608-1-final-what-s-new-amp-product/ba-p/14480668) - _SAP Community - ERP blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+S%2F4HANA+Cloud+Public+Edition+2608.1+Final+What+New&sortBy=%22date_posted%22)
-- [Da monitorare] [SAP Clean Core mit Open Source: Kernseife](https://e3mag.com/de/sap-clean-core-mit-open-source-kernseife) - _E-3 Magazine (EN)_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Clean+Core+mit+Open+Source+Kernseife&sortBy=%22date_posted%22)
+- [Da monitorare] [RISE with SAP: Successfully Managing SAP Operations During the Transition](https://www.avantra.com/blog/rise-with-sap-successfully-managing-sap-operations-during-the-transition) - _Avantra Blog_ (rilevanza 54) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=RISE+with+SAP+Successfully+Managing+SAP+Operations+During+the&sortBy=%22date_posted%22)
 
 ## AI, Dati & Analytics
 
