@@ -19,10 +19,14 @@ defaults:
   max_items: 25          # elementi letti per fonte ad ogni giro
   timeout: 20            # secondi
 
-# Vendor senza un feed pubblico utilizzabile: restano nel catalogo di
-# config/vendors.yaml (con demo e contatti), ma non alimentano le notizie.
-#   - Basis Technologies, Enterprise Times: il loro sito risponde 403 alle
-#     richieste automatiche, e non aggiriamo un blocco esplicito.
+# Vendor senza un feed pubblico utilizzabile. Restano nel catalogo di
+# config/vendors.yaml (con documentazione, demo e contatti), ma non alimentano
+# le notizie. Verificato sul campo, non per supposizione:
+#   - Basis Technologies, Enterprise Times: rispondono 403 alle richieste
+#     automatiche, e non aggiriamo un blocco esplicito.
+#   - Tricentis, SNP, Celonis, Theobald, Neptune, BlackLine: nessun feed
+#     raggiungibile e nessun <link rel="alternate"> dichiarato dal sito.
+# Se in futuro ne pubblicano uno, basta riaggiungere qui la voce.
 
 sources:
   # ----------------------------- SAP ufficiale -----------------------------
@@ -135,36 +139,6 @@ sources:
     vendor: pathlock
     url: "https://pathlock.com/feed/"
 
-  - id: tricentis_blog
-    nome: "Tricentis Blog"
-    tipo: vendor
-    peso: 10
-    vendor: tricentis
-    url: "https://www.tricentis.com/blog/feed/"
-    fallback:
-      - "https://www.tricentis.com/blog/rss.xml"
-      - "https://www.tricentis.com/feed/"
-    solo_se: ["sap", "s/4hana", "s4hana", "erp"]
-
-  - id: snp_blog
-    nome: "SNP Group Blog"
-    tipo: vendor
-    peso: 10
-    vendor: snp
-    url: "https://www.snpgroup.com/en/feed/"
-    fallback:
-      - "https://www.snpgroup.com/feed/"
-
-  - id: celonis_blog
-    nome: "Celonis Blog"
-    tipo: vendor
-    peso: 10
-    vendor: celonis
-    url: "https://www.celonis.com/blog/feed/"
-    fallback:
-      - "https://www.celonis.com/blog/rss.xml"
-      - "https://www.celonis.com/feed/"
-
   - id: figaf_blog
     nome: "Figaf Blog"
     tipo: vendor
@@ -195,35 +169,6 @@ sources:
     vendor: redwood
     url: "https://www.redwood.com/feed/"
     solo_se: ["sap", "s/4hana", "s4hana", "erp", "job", "automation"]
-
-  - id: theobald_blog
-    nome: "Theobald Software Blog"
-    tipo: vendor
-    peso: 8
-    vendor: theobald
-    url: "https://theobald-software.com/en/blog/feed/"
-    fallback:
-      - "https://theobald-software.com/en/feed/"
-      - "https://theobald-software.com/feed/"
-
-  - id: neptune_blog
-    nome: "Neptune Software Blog"
-    tipo: vendor
-    peso: 8
-    vendor: neptune
-    url: "https://www.neptune-software.com/blog/feed/"
-    fallback:
-      - "https://www.neptune-software.com/feed/"
-
-  - id: blackline_blog
-    nome: "BlackLine Blog"
-    tipo: vendor
-    peso: 8
-    vendor: blackline
-    url: "https://www.blackline.com/blog/feed/"
-    fallback:
-      - "https://www.blackline.com/feed/"
-    solo_se: ["sap", "erp", "close", "accounting", "reconcil"]
 
   - id: serrala_blog
     nome: "Serrala Blog"

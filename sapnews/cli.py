@@ -165,7 +165,7 @@ def cmd_serve(args: argparse.Namespace) -> int:
 def build_parser() -> argparse.ArgumentParser:
     # Opzioni valide sia prima sia dopo il sottocomando: `sapnews -v update` e
     # `sapnews update -v` devono funzionare entrambi. SUPPRESS evita che il
-    # sottoparser azzeri il valore gia' impostato dal parser principale.
+    # sottoparser azzeri il valore già impostato dal parser principale.
     comuni = argparse.ArgumentParser(add_help=False)
     comuni.add_argument("-v", "--verbose", action="store_true",
                         default=argparse.SUPPRESS, help="log di dettaglio")

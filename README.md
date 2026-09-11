@@ -72,24 +72,41 @@ Il risultato diventa un livello leggibile: **Da leggere** da 70 punti, **Da moni
 da 40, sotto resta come informazione. Sotto 15 punti la notizia è considerata rumore e
 non entra nemmeno nello storico.
 
+SAP Community pubblica gli stessi contenuti anche in coreano, giapponese e cinese:
+pertinenti ma illeggibili per il team, quindi i titoli in alfabeto non latino restano
+fuori. Per riceverli, `profile.solo_alfabeto_latino: false`.
+
 La riga "Agganciata su:" di ogni scheda mostra i termini che hanno fatto scattare il
 punteggio: se una notizia ti sembra fuori posto, quella riga dice esattamente perché è
-finita li'.
+finita lì.
 
 ### Le fonti
 
-27 feed divisi in quattro tipi: SAP ufficiale (News Center, SAP Community), community,
+21 feed divisi in quattro tipi: SAP ufficiale (News Center, SAP Community), community,
 stampa e analisti (ERP Today, SAPinsider, E-3, diginomica, The Register), vendor e
 partner dell'ecosistema.
 
-Due accorgimenti rendono il radar resistente al tempo:
+Tre accorgimenti rendono il radar resistente al tempo:
 
 - **`fallback`** — ogni fonte può dichiarare url alternativi, provati in ordine se il
   principale non risponde. I path RSS di SAP cambiano spesso.
 - **`solo_se`** — sulle fonti generaliste tiene solo le voci che contengono certi termini,
   così diginomica non ci porta dentro le notizie su Salesforce.
+- **Ritrovamento automatico** — se tutti gli url falliscono, il radar chiede al sito dove
+  tiene il proprio feed (il `<link rel="alternate">` di home e pagina blog) e usa quello
+  per il giro corrente. La scheda Controllo segnala l'url trovato, da ricopiare in
+  `config/sources.yaml` per rendere la cosa definitiva.
 
 Una fonte rotta non blocca le altre: viene segnata in rosso nella scheda Controllo.
+Un feed sano in cui oggi nessuna voce parlava di SAP resta verde: "niente di rilevante
+oggi" non è "fonte morta".
+
+Otto vendor del catalogo non hanno un feed utilizzabile: Basis Technologies ed
+Enterprise Times rispondono `403` alle richieste automatiche (non aggiriamo un blocco
+esplicito), mentre Tricentis, SNP, Celonis, Theobald, Neptune e BlackLine non pubblicano
+alcun feed raggiungibile. Restano nella scheda Vendor & Tool con documentazione, demo e
+contatti: semplicemente non alimentano il flusso di notizie. L'elenco è nel commento in
+testa a `config/sources.yaml`, con il motivo di ciascuno.
 
 ---
 
@@ -187,11 +204,13 @@ tests/              test della pipeline, completamente offline
 
 ## Prima attivazione
 
-1. **GitHub Pages**: *Settings → Pages → Source: GitHub Actions*. Da quel momento la
-   dashboard vive su https://w8997wnwy5-collab.github.io/news_work/. Senza questo passo il
-   workflow continua a funzionare e ad aggiornare i dati nel repository, ma la dashboard
-   non viene pubblicata (il run lo segnala con una nota).
-2. **Primo run**: *Actions → Radar SAP → Run workflow*, per non aspettare la mattina dopo.
+1. **Primo run**: *Actions → Radar SAP → Run workflow*, per non aspettare la mattina dopo.
+   Il workflow abilita GitHub Pages da solo e pubblica su
+   https://w8997wnwy5-collab.github.io/news_work/.
+2. Se l'abilitazione automatica non va a buon fine (capita quando l'organizzazione la
+   limita), il run lo segnala con una nota e basta farlo a mano:
+   *Settings → Pages → Source: GitHub Actions*. Nel frattempo i dati nel repository
+   restano comunque aggiornati.
 3. Dopo il primo run, il riepilogo del workflow elenca le fonti che non hanno risposto:
    sistema il loro `url` in `config/sources.yaml` oppure rimuovile.
 

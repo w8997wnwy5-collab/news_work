@@ -121,7 +121,7 @@ def pagine_da_sondare(url: str) -> list[str]:
     """Pagine in cui cercare la dichiarazione del feed: la home e la sezione.
 
     Molti vendor dichiarano il <link rel="alternate"> solo sulla pagina del blog
-    (`/blog/`), non sulla home: sondare entrambe raddoppia le probabilita' di
+    (`/blog/`), non sulla home: sondare entrambe raddoppia le probabilità di
     ritrovare un feed spostato.
     """
     from urllib.parse import urlsplit
