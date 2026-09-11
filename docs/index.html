@@ -388,12 +388,16 @@ function coloreCat(id){
   return temaScuro() ? c.colore_dark : c.colore;
 }
 
-/* Un link vendor va usato solo se il controllo settimanale non lo ha bocciato. */
+/* Un link vendor va usato solo se il controllo settimanale non lo ha bocciato.
+   Un link "bloccato" (LinkedIn risponde 999 ai non-browser, alcuni siti 403)
+   resta valido: lo vede bene chi ci clicca, siamo noi a non poterlo sondare. */
 function linkSano(url, fallback){
   if (!url) return fallback;
   var salute = (DATI && DATI.link_health && DATI.link_health.link) || {};
-  var esito = salute[url];
-  if (esito && esito.ok === false) return fallback || url;
+  var v = salute[url];
+  if (v && (v.esito === "rotto" || (v.esito === undefined && v.ok === false))) {
+    return fallback || url;
+  }
   return url;
 }
 
@@ -776,7 +780,8 @@ function costruisciControllo(){
   var lh = DATI.link_health || {};
   var link = lh.link || {};
   var chiavi = Object.keys(link);
-  var rotti = chiavi.filter(function(k){ return !link[k].ok; });
+  var rotti = chiavi.filter(function(k){ return link[k].esito === "rotto"; });
+  var bloccati = chiavi.filter(function(k){ return link[k].esito === "bloccato"; });
   var box = document.getElementById("link-health");
   if (!chiavi.length){
     box.innerHTML = '<p class="hint" style="margin:0">Nessun controllo ancora eseguito. Lancia <code>python -m sapnews check-links</code> ' +
@@ -784,7 +789,9 @@ function costruisciControllo(){
   } else {
     box.innerHTML = '<p class="hint" style="margin:0 0 10px">' + chiavi.length + ' link controllati il ' +
       esc(new Date(lh.controllato_il).toLocaleDateString("it-IT")) + ' &mdash; ' +
-      (rotti.length ? '<b>' + rotti.length + ' da rivedere</b>' : "nessun problema") + '.</p>' +
+      (rotti.length ? '<b>' + rotti.length + ' da rivedere</b>' : "nessun problema") + '.' +
+      (bloccati.length ? ' ' + bloccati.length + ' non sono verificabili da uno script ' +
+        '(LinkedIn e alcuni siti rispondono solo ai browser): restano invariati.' : "") + '</p>' +
       (rotti.length ? '<div class="scroll-x"><table><thead><tr><th>Esito</th><th>Link</th></tr></thead><tbody>' +
         rotti.map(function(k){
           return '<tr><td><span class="status"><span class="dot" style="background:var(--critical)"></span>' +
