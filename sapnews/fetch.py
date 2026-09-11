@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import re
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any, Iterable
@@ -68,11 +69,18 @@ def _passa_filtro(entry_text: str, termini: Iterable[str] | None) -> bool:
     return any(t.lower() in basso for t in termini)
 
 
-def parse_feed(testo: str, source: dict[str, Any], max_items: int) -> tuple[list[Item], int]:
-    """Trasforma il corpo di un feed negli Item grezzi (non ancora classificati)."""
+def parse_feed(testo: str, source: dict[str, Any],
+               max_items: int) -> tuple[list[Item], int, int]:
+    """Trasforma il corpo di un feed negli Item grezzi (non ancora classificati).
+
+    Ritorna (item tenuti, voci scartate, voci totali nel feed). Il totale serve a
+    distinguere due casi che sembrano uguali ma non lo sono: un feed rotto (zero
+    voci) e un feed sano in cui oggi nessuna voce parlava di SAP (filtro solo_se).
+    """
     feed = feedparser.parse(testo)
     items: list[Item] = []
     scartati = 0
+    totali = len(feed.entries)
     for entry in feed.entries[: max_items * 3]:
         url = (getattr(entry, "link", "") or "").strip()
         titolo = _clean(getattr(entry, "title", "") or "", 240)
@@ -100,7 +108,38 @@ def parse_feed(testo: str, source: dict[str, Any], max_items: int) -> tuple[list
         ))
         if len(items) >= max_items:
             break
-    return items, scartati
+    return items, scartati, totali
+
+
+FEED_LINK = re.compile(
+    r"""<link[^>]+?(?:type=["']application/(?:rss|atom)\+xml["'][^>]*?href=["']([^"']+)["']"""
+    r"""|href=["']([^"']+)["'][^>]*?type=["']application/(?:rss|atom)\+xml["'])""",
+    re.I | re.S)
+
+
+def scopri_feed(session: requests.Session, url: str, timeout: int) -> str | None:
+    """Ultima spiaggia: chiede alla home del sito dov'e' il suo feed.
+
+    I siti riorganizzano i path RSS senza avvisare. Invece di lasciar morire la
+    fonte, leggiamo il <link rel="alternate"> della home, che e' il modo standard
+    con cui un sito dichiara il proprio feed.
+    """
+    from urllib.parse import urljoin, urlsplit
+
+    parti = urlsplit(url)
+    home = f"{parti.scheme}://{parti.netloc}/"
+    try:
+        r = session.get(home, timeout=timeout, headers={"Accept": "text/html,*/*"})
+        if r.status_code >= 400:
+            return None
+        trovato = FEED_LINK.search(r.text[:200_000])
+        if not trovato:
+            return None
+        href = trovato.group(1) or trovato.group(2)
+        candidato = urljoin(home, href.strip())
+        return candidato if candidato != url else None
+    except requests.RequestException:
+        return None
 
 
 def fetch_source(source: dict[str, Any], session: requests.Session,
@@ -111,28 +150,45 @@ def fetch_source(source: dict[str, Any], session: requests.Session,
     salute = SourceHealth(id=source["id"], nome=source["nome"], tipo=source["tipo"],
                           url=source["url"], ultimo_tentativo=iso(now_utc()))
 
-    candidati = [source["url"], *(source.get("fallback") or [])]
-    ultimo_errore = ""
-    for url in candidati:
+    def prova(url: str, scoperto: bool = False) -> tuple[list[Item], bool, str]:
+        """(items, riuscito, errore) per un singolo url."""
         try:
             r = session.get(url, timeout=timeout)
             if r.status_code >= 400:
-                ultimo_errore = f"HTTP {r.status_code}"
-                continue
-            items, scartati = parse_feed(r.text, source, max_items)
-            if not items:
-                ultimo_errore = "feed vuoto o nessun elemento utile"
-                continue
+                return [], False, f"HTTP {r.status_code}"
+            items, scartati, totali = parse_feed(r.text, source, max_items)
+            if totali == 0:
+                return [], False, "nessuna voce nel feed"
+            # Zero item con voci presenti significa che il filtro solo_se ha
+            # scartato tutto: la fonte e' sana, semplicemente oggi non parla di noi.
             salute.ok = True
-            salute.stato = f"HTTP {r.status_code}"
+            salute.stato = f"HTTP {r.status_code}" + (" - feed trovato automaticamente" if scoperto else "")
             salute.elementi = len(items)
             salute.scartati = scartati
             salute.url_usato = url
             salute.ultimo_ok = salute.ultimo_tentativo
-            return items, salute
+            if scoperto:
+                salute.suggerimento = url
+            return items, True, ""
         except requests.RequestException as exc:
-            ultimo_errore = type(exc).__name__
-            log.warning("fonte %s: %s su %s", source["id"], ultimo_errore, url)
+            return [], False, type(exc).__name__
+
+    candidati = [source["url"], *(source.get("fallback") or [])]
+    ultimo_errore = ""
+    for url in candidati:
+        items, riuscito, errore = prova(url)
+        if riuscito:
+            return items, salute
+        ultimo_errore = errore
+        log.warning("fonte %s: %s su %s", source["id"], errore, url)
+
+    scoperto = scopri_feed(session, candidati[0], timeout)
+    if scoperto and scoperto not in candidati:
+        log.info("fonte %s: provo il feed dichiarato dal sito: %s", source["id"], scoperto)
+        items, riuscito, errore = prova(scoperto, scoperto=True)
+        if riuscito:
+            return items, salute
+        ultimo_errore = errore
 
     salute.stato = ultimo_errore or "nessun url disponibile"
     salute.url_usato = candidati[-1] if candidati else ""
@@ -152,7 +208,7 @@ def fetch_from_fixtures(source: dict[str, Any], directory: Path,
     if not percorso.exists():
         salute.stato = "fixture assente"
         return [], salute
-    items, scartati = parse_feed(percorso.read_text(encoding="utf-8"), source, max_items)
+    items, scartati, _ = parse_feed(percorso.read_text(encoding="utf-8"), source, max_items)
     salute.ok = bool(items)
     salute.stato = "fixture" if items else "fixture senza elementi utili"
     salute.elementi = len(items)

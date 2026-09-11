@@ -95,6 +95,7 @@ class SourceHealth:
     elementi: int = 0
     scartati: int = 0
     url_usato: str = ""
+    suggerimento: str = ""          # url da mettere in config se trovato da solo
     ultimo_ok: str | None = None
     ultimo_tentativo: str = ""
 

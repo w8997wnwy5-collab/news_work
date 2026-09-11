@@ -107,10 +107,34 @@ def test_il_filtro_solo_se_scarta_le_voci_fuori_tema():
         {"titolo": "SAP e la supply chain", "url": "https://x.test/1"},
         {"titolo": "Novità su Oracle Fusion", "url": "https://x.test/2"},
     ])
-    items, scartati = parse_feed(feed, {"id": "t", "nome": "T", "tipo": "press",
-                                        "solo_se": ["sap"]}, max_items=10)
+    items, scartati, totali = parse_feed(feed, {"id": "t", "nome": "T", "tipo": "press",
+                                               "solo_se": ["sap"]}, max_items=10)
     assert [i.titolo for i in items] == ["SAP e la supply chain"]
-    assert scartati == 1
+    assert (scartati, totali) == (1, 2)
+
+
+def test_un_feed_sano_senza_notizie_sap_non_e_un_feed_rotto():
+    """Distinzione che conta: 'oggi non parla di noi' non e' 'la fonte e' morta'."""
+    feed = rss([{"titolo": "Novita su Oracle Fusion", "url": "https://x.test/1"}])
+    items, scartati, totali = parse_feed(feed, {"id": "t", "nome": "T", "tipo": "press",
+                                               "solo_se": ["sap"]}, max_items=10)
+    assert items == [] and scartati == 1 and totali == 1
+
+    vuoto = rss([])
+    _, _, totali_vuoto = parse_feed(vuoto, {"id": "t", "nome": "T", "tipo": "press"}, 10)
+    assert totali_vuoto == 0
+
+
+def test_scoperta_del_feed_dichiarato_dal_sito():
+    from sapnews.fetch import FEED_LINK
+
+    for html, atteso in (
+        ('<link rel="alternate" type="application/rss+xml" href="/blog/feed/">', "/blog/feed/"),
+        ('<link href="https://a.test/rss" type="application/atom+xml" rel="alternate">', "https://a.test/rss"),
+    ):
+        trovato = FEED_LINK.search(html)
+        assert (trovato.group(1) or trovato.group(2)) == atteso
+    assert FEED_LINK.search("<link rel=stylesheet href=/a.css>") is None
 
 
 def test_lo_storico_scarta_le_notizie_troppo_vecchie(tmp_path: Path):

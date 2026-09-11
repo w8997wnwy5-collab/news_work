@@ -3,6 +3,8 @@
 Radar giornaliero delle notizie del mondo SAP e dei tool esterni che funzionano bene
 sulla nostra soluzione, con una dashboard interattiva pubblicata su GitHub Pages.
 
+**Dashboard:** https://w8997wnwy5-collab.github.io/news_work/ (attiva dopo il passo 1 qui sotto)
+
 Ogni mattina il tool legge le fonti configurate, tiene solo quello che riguarda il
 nostro stack, assegna una categoria e un punteggio di rilevanza, e aggiorna la
 dashboard. Nessuna azione manuale richiesta.
@@ -185,7 +187,8 @@ tests/              test della pipeline, completamente offline
 
 ## Prima attivazione
 
-1. **GitHub Pages**: *Settings → Pages → Source: GitHub Actions*. Senza questo passo il
+1. **GitHub Pages**: *Settings → Pages → Source: GitHub Actions*. Da quel momento la
+   dashboard vive su https://w8997wnwy5-collab.github.io/news_work/. Senza questo passo il
    workflow continua a funzionare e ad aggiornare i dati nel repository, ma la dashboard
    non viene pubblicata (il run lo segnala con una nota).
 2. **Primo run**: *Actions → Radar SAP → Run workflow*, per non aspettare la mattina dopo.

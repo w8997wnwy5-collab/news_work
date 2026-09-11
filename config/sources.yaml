@@ -93,7 +93,10 @@ sources:
     nome: "The Register - ERP"
     tipo: press
     peso: 10
-    url: "https://www.theregister.com/software/erp/headlines.atom"
+    url: "https://www.theregister.com/headlines.atom"
+    fallback:
+      - "https://www.theregister.com/software/headlines.atom"
+      - "https://www.theregister.com/software/erp/headlines.atom"
     solo_se: ["sap", "s/4hana", "s4hana", "hana", "ariba"]
 
   - id: enterprise_times
@@ -139,18 +142,20 @@ sources:
     tipo: vendor
     peso: 10
     vendor: basis_technologies
-    url: "https://basistechnologies.com/feed/"
+    url: "https://basistechnologies.com/blog/feed/"
     fallback:
-      - "https://basistechnologies.com/blog/feed/"
+      - "https://basistechnologies.com/feed/"
+      - "https://basistechnologies.com/resources/blog/feed/"
 
   - id: tricentis_blog
     nome: "Tricentis Blog"
     tipo: vendor
     peso: 10
     vendor: tricentis
-    url: "https://www.tricentis.com/blog/feed"
+    url: "https://www.tricentis.com/blog/feed/"
     fallback:
-      - "https://www.tricentis.com/feed"
+      - "https://www.tricentis.com/blog/rss.xml"
+      - "https://www.tricentis.com/feed/"
     solo_se: ["sap", "s/4hana", "s4hana", "erp"]
 
   - id: snp_blog
@@ -158,15 +163,18 @@ sources:
     tipo: vendor
     peso: 10
     vendor: snp
-    url: "https://www.snpgroup.com/feed/"
+    url: "https://www.snpgroup.com/en/feed/"
+    fallback:
+      - "https://www.snpgroup.com/feed/"
 
   - id: celonis_blog
     nome: "Celonis Blog"
     tipo: vendor
     peso: 10
     vendor: celonis
-    url: "https://www.celonis.com/blog/rss.xml"
+    url: "https://www.celonis.com/blog/feed/"
     fallback:
+      - "https://www.celonis.com/blog/rss.xml"
       - "https://www.celonis.com/feed/"
 
   - id: figaf_blog
@@ -205,8 +213,9 @@ sources:
     tipo: vendor
     peso: 8
     vendor: theobald
-    url: "https://theobald-software.com/en/feed/"
+    url: "https://theobald-software.com/en/blog/feed/"
     fallback:
+      - "https://theobald-software.com/en/feed/"
       - "https://theobald-software.com/feed/"
 
   - id: neptune_blog
@@ -214,14 +223,18 @@ sources:
     tipo: vendor
     peso: 8
     vendor: neptune
-    url: "https://www.neptune-software.com/feed/"
+    url: "https://www.neptune-software.com/blog/feed/"
+    fallback:
+      - "https://www.neptune-software.com/feed/"
 
   - id: blackline_blog
     nome: "BlackLine Blog"
     tipo: vendor
     peso: 8
     vendor: blackline
-    url: "https://www.blackline.com/feed/"
+    url: "https://www.blackline.com/blog/feed/"
+    fallback:
+      - "https://www.blackline.com/feed/"
     solo_se: ["sap", "erp", "close", "accounting", "reconcil"]
 
   - id: serrala_blog
