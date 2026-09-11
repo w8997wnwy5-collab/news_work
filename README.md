@@ -147,6 +147,11 @@ python -m sapnews update --fixtures ./feed-locali       # giro offline: legge <i
 Tutto si cambia nello YAML, senza toccare il codice. Dopo la modifica, `python -m
 sapnews update` (o il run automatico del giorno dopo) applica tutto.
 
+Le modifiche valgono **anche sul passato**: ogni giro riclassifica l'intero archivio con
+la configurazione corrente, quindi alzare una soglia o accendere un filtro ripulisce
+anche quello che era già dentro. Come effetto collaterale il punteggio di una notizia
+cala di qualche punto invecchiando, perché perde il bonus di freschezza.
+
 ### Aggiungere una fonte
 
 ```yaml

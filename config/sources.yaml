@@ -48,26 +48,26 @@ sources:
     nome: "SAP Community - Technology blogs"
     tipo: official
     peso: 16
-    url: "https://community.sap.com/t5/technology-blog-posts-by-sap/bg-p/technology-blog-sap/rss"
+    url: "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-sap"
     fallback:
-      - "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-sap"
+      - "https://community.sap.com/t5/technology-blog-posts-by-sap/bg-p/technology-blog-sap/rss"
       - "https://blogs.sap.com/feed/"
 
   - id: sap_community_erp
     nome: "SAP Community - ERP blogs"
     tipo: official
     peso: 16
-    url: "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/bg-p/erp-blog-sap/rss"
+    url: "https://community.sap.com/khhcw49343/rss/board?board.id=erp-blog-sap"
     fallback:
-      - "https://community.sap.com/khhcw49343/rss/board?board.id=erp-blog-sap"
+      - "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/bg-p/erp-blog-sap/rss"
 
   - id: sap_community_members
     nome: "SAP Community - blog dei membri"
     tipo: community
     peso: 10
-    url: "https://community.sap.com/t5/technology-blog-posts-by-members/bg-p/technology-blog-members/rss"
+    url: "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-members"
     fallback:
-      - "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-members"
+      - "https://community.sap.com/t5/technology-blog-posts-by-members/bg-p/technology-blog-members/rss"
 
   # --------------------------- Stampa e analisti ---------------------------
   - id: erp_today
@@ -87,9 +87,9 @@ sources:
     nome: "E-3 Magazine (EN)"
     tipo: press
     peso: 12
-    url: "https://e3mag.com/en/feed/"
+    url: "https://e3mag.com/feed/"
     fallback:
-      - "https://e3mag.com/feed/"
+      - "https://e3mag.com/en/feed/"
 
   - id: diginomica
     nome: "diginomica"
@@ -121,9 +121,9 @@ sources:
     tipo: vendor
     peso: 12
     vendor: onapsis
-    url: "https://onapsis.com/blog/rss.xml"
+    url: "https://onapsis.com/feed/"
     fallback:
-      - "https://onapsis.com/feed/"
+      - "https://onapsis.com/blog/rss.xml"
 
   - id: securitybridge_blog
     nome: "SecurityBridge Blog"
@@ -158,9 +158,9 @@ sources:
     tipo: vendor
     peso: 8
     vendor: avantra
-    url: "https://www.avantra.com/blog/rss.xml"
+    url: "https://www.avantra.com/feed/"
     fallback:
-      - "https://www.avantra.com/feed/"
+      - "https://www.avantra.com/blog/rss.xml"
 
   - id: redwood_blog
     nome: "Redwood Software Blog"
