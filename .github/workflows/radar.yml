@@ -89,19 +89,43 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Committa i dati aggiornati
+        # data/ e docs/ sono artefatti rigenerati per intero a ogni giro: se nel
+        # frattempo il branch e' avanzato, la versione appena prodotta e' quella
+        # buona. Per questo si riallinea la storia con un reset invece di
+        # rebasare (un rebase finisce in conflitto su file rigenerati) e si
+        # ricommitta sopra. Se dopo i tentativi il push non passa, lo step deve
+        # fallire: un aggiornamento giornaliero che non pubblica e tace e' peggio
+        # di uno che si ferma.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data docs
-          if git diff --cached --quiet; then
-            echo "Nessuna novità da committare."
-          else
-            git commit -m "Radar SAP: aggiornamento del $(date -u +'%d/%m/%Y')"
-            for tentativo in 1 2 3 4; do
-              git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break
-              echo "push fallito, nuovo tentativo fra $((2 ** tentativo))s"
-              sleep $((2 ** tentativo))
-            done
+
+          pubblicato=0
+          for tentativo in 1 2 3 4; do
+            git fetch --quiet origin "${GITHUB_REF_NAME}"
+            git reset --quiet --mixed "origin/${GITHUB_REF_NAME}"
+            git add data docs
+
+            if git diff --cached --quiet; then
+              echo "Nessuna novità da committare."
+              pubblicato=1
+              break
+            fi
+
+            git commit --quiet -m "Radar SAP: aggiornamento del $(date -u +'%d/%m/%Y')"
+            if git push --quiet origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "Dati pubblicati."
+              pubblicato=1
+              break
+            fi
+
+            echo "push fallito, nuovo tentativo fra $((2 ** tentativo))s"
+            sleep $((2 ** tentativo))
+          done
+
+          if [ "$pubblicato" != "1" ]; then
+            echo "::error::I dati aggiornati non sono stati pubblicati sul branch ${GITHUB_REF_NAME}."
+            exit 1
           fi
 
       # --- pubblicazione su GitHub Pages (solo dal branch principale) -------
