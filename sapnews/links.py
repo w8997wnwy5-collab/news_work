@@ -16,6 +16,18 @@ from .fetch import build_session
 from .models import iso, now_utc
 
 
+# Codici con cui un sito dice "non sei un browser", non "la pagina non esiste".
+ANTIBOT = {401, 403, 429, 999}
+
+
+def esito_da_stato(stato: int) -> str:
+    if stato < 400:
+        return "ok"
+    if stato in ANTIBOT:
+        return "bloccato"
+    return "rotto"
+
+
 def _check(session: requests.Session, url: str, timeout: int = 15) -> dict[str, Any]:
     try:
         r = session.head(url, timeout=timeout, allow_redirects=True)
@@ -24,11 +36,12 @@ def _check(session: requests.Session, url: str, timeout: int = 15) -> dict[str, 
             r = session.get(r.url if r.history else url, timeout=timeout,
                             allow_redirects=True, stream=True)
             r.close()
-        return {"stato": r.status_code, "ok": r.status_code < 400,
+        esito = esito_da_stato(r.status_code)
+        return {"stato": r.status_code, "esito": esito, "ok": esito != "rotto",
                 "finale": r.url, "controllato_il": iso(now_utc())}
     except requests.RequestException as exc:
-        return {"stato": 0, "ok": False, "errore": type(exc).__name__,
-                "controllato_il": iso(now_utc())}
+        return {"stato": 0, "esito": "rotto", "ok": False,
+                "errore": type(exc).__name__, "controllato_il": iso(now_utc())}
 
 
 def raccogli_link(vendors: list[dict[str, Any]]) -> list[str]:

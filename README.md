@@ -178,6 +178,16 @@ In `config/vendors.yaml`. `link.demo` e `link.docs` sono facoltativi: se mancano
 il controllo settimanale li trova rotti — la dashboard ripiega automaticamente su
 `link.sito`, quindi un pulsante non porta mai su una pagina morta.
 
+Il catalogo contiene solo url verificati con `python -m sapnews check-links`: per 16
+vendor su 27 il pulsante porta alla pagina demo vera, per gli altri al sito ufficiale
+(non espongono una pagina demo a indirizzo stabile).
+
+Il controllo distingue tre esiti, e la differenza conta: **ok**, **rotto** (404 o errore
+di rete, e lì scatta il ripiego) e **bloccato** — LinkedIn risponde `999` e alcuni siti
+`403` a qualunque client che non sia un browser. Quei link funzionano benissimo per una
+persona che ci clicca: trattarli come rotti farebbe sparire link validi, quindi restano
+invariati e il pannello li elenca a parte.
+
 ---
 
 ## Struttura

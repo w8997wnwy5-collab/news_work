@@ -40,7 +40,9 @@ def build_payload(cfg: Config, items: list[Item], fonti: list[dict[str, Any]],
         "fonti_ok": sum(1 for f in fonti if f.get("ok")),
         "fonti_totali": len(fonti),
         "link_rotti": sum(1 for v in (link_health.get("link") or {}).values()
-                          if not v.get("ok")),
+                          if v.get("esito", "ok" if v.get("ok") else "rotto") == "rotto"),
+        "link_bloccati": sum(1 for v in (link_health.get("link") or {}).values()
+                             if v.get("esito") == "bloccato"),
     }
 
     return {

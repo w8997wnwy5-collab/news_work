@@ -52,8 +52,6 @@ vendors:
     integrazione: ["S/4HANA private", "ECC", "BTP"]
     link:
       sito: "https://securitybridge.com"
-      docs: "https://securitybridge.com/resources/"
-      demo: "https://securitybridge.com/request-a-demo/"
       linkedin: "https://www.linkedin.com/company/securitybridge"
 
   - id: pathlock
@@ -108,7 +106,6 @@ vendors:
     link:
       sito: "https://www.tricentis.com"
       docs: "https://documentation.tricentis.com"
-      demo: "https://www.tricentis.com/request-demo"
       linkedin: "https://www.linkedin.com/company/tricentis"
 
   - id: avantra
@@ -125,8 +122,6 @@ vendors:
     integrazione: ["S/4HANA private", "HANA", "ECC"]
     link:
       sito: "https://www.avantra.com"
-      docs: "https://www.avantra.com/resources"
-      demo: "https://www.avantra.com/request-a-demo"
       linkedin: "https://www.linkedin.com/company/avantra"
 
   - id: redwood
@@ -144,7 +139,6 @@ vendors:
     link:
       sito: "https://www.redwood.com"
       docs: "https://www.redwood.com/resources/"
-      demo: "https://www.redwood.com/request-a-demo/"
       linkedin: "https://www.linkedin.com/company/redwood-software"
 
   - id: uipath
@@ -162,7 +156,6 @@ vendors:
     link:
       sito: "https://www.uipath.com"
       docs: "https://docs.uipath.com"
-      demo: "https://www.uipath.com/company/contact-us/request-demo"
       linkedin: "https://www.linkedin.com/company/uipath"
 
   # ----------------------- Integrazione e sviluppo BTP ---------------------
@@ -180,8 +173,6 @@ vendors:
     integrazione: ["Integration Suite", "SAP PI/PO", "BTP"]
     link:
       sito: "https://figaf.com"
-      docs: "https://docs.figaf.com"
-      demo: "https://figaf.com/book-a-demo/"
       linkedin: "https://www.linkedin.com/company/figaf"
 
   - id: int4
@@ -198,7 +189,6 @@ vendors:
     integrazione: ["S/4HANA private", "Integration Suite", "SAP PI/PO"]
     link:
       sito: "https://int4.com"
-      docs: "https://int4.com/resources/"
       demo: "https://int4.com/contact/"
       linkedin: "https://www.linkedin.com/company/int4"
 
@@ -217,7 +207,6 @@ vendors:
     link:
       sito: "https://www.neptune-software.com"
       docs: "https://docs.neptune-software.com"
-      demo: "https://www.neptune-software.com/request-a-demo/"
       linkedin: "https://www.linkedin.com/company/neptune-software"
 
   # ------------------------- Trasformazione S/4HANA ------------------------
@@ -273,7 +262,6 @@ vendors:
     link:
       sito: "https://www.blackline.com"
       docs: "https://www.blackline.com/resources/"
-      demo: "https://www.blackline.com/request-demo/"
       linkedin: "https://www.linkedin.com/company/blackline"
 
   - id: serrala
@@ -290,7 +278,6 @@ vendors:
     integrazione: ["S/4HANA private", "ECC"]
     link:
       sito: "https://www.serrala.com"
-      docs: "https://www.serrala.com/en/resources/"
       demo: "https://www.serrala.com/en/contact/"
       linkedin: "https://www.linkedin.com/company/serrala"
 
@@ -345,7 +332,6 @@ vendors:
     link:
       sito: "https://www.kyriba.com"
       docs: "https://www.kyriba.com/resources/"
-      demo: "https://www.kyriba.com/contact/"
       linkedin: "https://www.linkedin.com/company/kyriba"
 
   # ------------------------- Supply chain & logistica ----------------------
@@ -400,7 +386,6 @@ vendors:
     link:
       sito: "https://www.project44.com"
       docs: "https://developers.project44.com"
-      demo: "https://www.project44.com/request-a-demo"
       linkedin: "https://www.linkedin.com/company/project44"
 
   # ------------------------- Dati, estrazione, analytics -------------------
@@ -454,9 +439,7 @@ vendors:
     integrazione: ["S/4HANA private", "ECC"]
     link:
       sito: "https://www.precisely.com"
-      docs: "https://docs.precisely.com"
-      demo: "https://www.precisely.com/demo"
-      linkedin: "https://www.linkedin.com/company/precisely-data"
+      linkedin: "https://www.linkedin.com/company/precisely"
 
   # ------------------------ HR, procurement, adoption ----------------------
   - id: whatfix
