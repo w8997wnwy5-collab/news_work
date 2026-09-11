@@ -4,6 +4,10 @@ on:
   push:
     branches: ["**"]
   pull_request:
+  # I commit di dati fatti dal workflow usano GITHUB_TOKEN, e GitHub non avvia
+  # workflow per quei push: l'head resta senza check. Questo permette di
+  # lanciare i test a mano su qualunque branch.
+  workflow_dispatch:
 
 jobs:
   test:
