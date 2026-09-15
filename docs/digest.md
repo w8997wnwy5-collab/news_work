@@ -1,7 +1,7 @@
 # Radar SAP - 15/09/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 33 notizie (20 da leggere) da 21/21 fonti attive.
+Ultime 24h: 34 notizie (20 da leggere) da 21/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
@@ -10,6 +10,7 @@ Ultime 24h: 33 notizie (20 da leggere) da 21/21 fonti attive.
 - **[Da leggere]** [ECC to S/4HANA conversion (brownfield)](https://www.reddit.com/r/SAP/comments/1wg5xvv/ecc_to_s4hana_conversion_brownfield) - _Reddit r/SAP_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=ECC+S%2F4HANA+conversion+brownfield&sortBy=%22date_posted%22)
 - [Da monitorare] [By API or by screen, the ledger does not care](https://int4.com/by-api-or-by-screen-the-ledger-does-not-care) - _Int4 Blog_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=API+screen+the+ledger+does+not+care&sortBy=%22date_posted%22)
 - [Da monitorare] [Over your FUE entitlement in RISE with SAP? It is fixable, and it is not a role redesign project](https://community.sap.com/t5/technology-blog-posts-by-members/over-your-fue-entitlement-in-rise-with-sap-it-is-fixable-and-it-is-not-a/ba-p/14483931) - _SAP Community - blog dei membri_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Over+your+FUE+entitlement+RISE+with+SAP+fixable+and&sortBy=%22date_posted%22)
+- [Da monitorare] [SAP BW or SD functional consultant (inhouse) S/4HANA public cloud?](https://www.reddit.com/r/SAP/comments/1wgrb9n/sap_bw_or_sd_functional_consultant_inhouse_s4hana) - _Reddit r/SAP_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+functional+consultant+inhouse+S%2F4HANA+public+cloud&sortBy=%22date_posted%22)
 
 ## BTP & Integrazione
 
@@ -18,18 +19,17 @@ Ultime 24h: 33 notizie (20 da leggere) da 21/21 fonti attive.
 - **[Da leggere]** [Webinar: SAP Integration Suite migration challenge: how to deal without ESR?](https://sapinsider.org/videos/webinar-sap-integration-suite-migration-challenge-how-to-deal-without-esr) - _SAPinsider_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Webinar+SAP+Integration+Suite+migration+challenge+how+deal+without&sortBy=%22date_posted%22)
 -  [conarum Frames RFC-to-RAP OData Migration as an Architecture Governance Decision](https://sapinsider.org/blogs/conarum-frames-rfc-to-rap-odata-migration-as-an-architecture-governance-decision) - _SAPinsider_ (rilevanza 32) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=conarum+Frames+RFC-to-RAP+OData+Migration+Architecture+Governance+Decision&sortBy=%22date_posted%22)
 
-## Basis, HANA & Operations
-
-- [Da monitorare] [SAP Cloud ALM vs Solution Manager: What’s Actually Changing](https://www.avantra.com/blog/sap-cloud-alm-vs-solution-manager) - _Avantra Blog_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Cloud+ALM+Solution+Manager+What+Actually+Changing&sortBy=%22date_posted%22)
-- [Da monitorare] [Best Practises: Be Prepared - Remote System Connections](https://community.sap.com/t5/technology-blog-posts-by-sap/best-practises-be-prepared-remote-system-connections/ba-p/14482925) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Best+Practises+Prepared+Remote+System+Connections&sortBy=%22date_posted%22)
--  [What Customers Need to Know About SAP’s API Policy](https://erp.today/sap-api-policy-integrations-custom-abap-ai-agents) - _ERP Today_ (rilevanza 32) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=What+Customers+Need+Know+About+SAP+API+Policy&sortBy=%22date_posted%22)
--  [Your ABAP backlog is not a capacity problem. We gave the AI toolchain to consultants, not developers](https://community.sap.com/t5/technology-blog-posts-by-members/your-abap-backlog-is-not-a-capacity-problem-we-gave-the-ai-toolchain-to/ba-p/14484397) - _SAP Community - blog dei membri_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Your+ABAP+backlog+not+capacity+problem.+gave+the+toolchain&sortBy=%22date_posted%22)
-
 ## AI, Dati & Analytics
 
 - **[Da leggere]** [Comset’s Long-Term BusinessObjects Work Highlights a Path From On-Premise Reporting to SAP Analytics Cloud](https://sapinsider.org/blogs/comsets-long-term-businessobjects-work-highlights-a-path-from-on-premise-reporting-to-sap-analytics-cloud) - _SAPinsider_ (rilevanza 74) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Comset+Long-Term+BusinessObjects+Work+Highlights+Path+From+On-Premise+Reporting&sortBy=%22date_posted%22)
 - [Da monitorare] [Joule Studio is Coming to Devtoberfest - 6 Sessions You Will Not Want to Miss (Plus some bonuses!)](https://community.sap.com/t5/technology-blog-posts-by-sap/joule-studio-is-coming-to-devtoberfest-6-sessions-you-will-not-want-to-miss/ba-p/14483349) - _SAP Community - Technology blogs_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Joule+Studio+Coming+Devtoberfest+Sessions+You+Will+Not+Want&sortBy=%22date_posted%22)
 - [Da monitorare] [Evaluating an AI agent platform for SAP, what should I ask the vendor?](https://www.reddit.com/r/SAP/comments/1wg8k0d/evaluating_an_ai_agent_platform_for_sap_what) - _Reddit r/SAP_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Evaluating+agent+platform+for+SAP+what+should+ask+the&sortBy=%22date_posted%22)
+
+## Basis, HANA & Operations
+
+- [Da monitorare] [SAP Cloud ALM vs Solution Manager: What’s Actually Changing](https://www.avantra.com/blog/sap-cloud-alm-vs-solution-manager) - _Avantra Blog_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Cloud+ALM+Solution+Manager+What+Actually+Changing&sortBy=%22date_posted%22)
+- [Da monitorare] [Best Practises: Be Prepared - Remote System Connections](https://community.sap.com/t5/technology-blog-posts-by-sap/best-practises-be-prepared-remote-system-connections/ba-p/14482925) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Best+Practises+Prepared+Remote+System+Connections&sortBy=%22date_posted%22)
+-  [What Customers Need to Know About SAP’s API Policy](https://erp.today/sap-api-policy-integrations-custom-abap-ai-agents) - _ERP Today_ (rilevanza 32) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=What+Customers+Need+Know+About+SAP+API+Policy&sortBy=%22date_posted%22)
 
 ## Supply Chain & Logistica
 
