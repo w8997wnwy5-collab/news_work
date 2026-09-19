@@ -1,0 +1,197 @@
+# ---------------------------------------------------------------------------
+# Fonti RSS/Atom del radar.
+#
+#   tipo:     official | community | press | vendor
+#   peso:     bonus di credibilità sul punteggio di rilevanza
+#   url:      feed principale
+#   fallback: feed alternativi provati in ordine se il principale non risponde
+#             (i siti SAP cambiano spesso i path RSS: il fallback evita che una
+#              fonte muoia in silenzio)
+#   vendor:   id in config/vendors.yaml -> la card mostra i pulsanti Demo/Call
+#   solo_se:  se presente, la notizia entra solo se contiene uno di questi
+#             termini (usato per fonti generaliste come Diginomica o Reddit)
+#
+# Il pannello "Controllo" della dashboard mostra lo stato di ogni fonte:
+# se una resta rossa per giorni, cambiare l'url qui è l'unica azione richiesta.
+# ---------------------------------------------------------------------------
+
+defaults:
+  max_items: 25          # elementi letti per fonte ad ogni giro
+  timeout: 20            # secondi
+
+# Vendor senza un feed pubblico utilizzabile. Restano nel catalogo di
+# config/vendors.yaml (con documentazione, demo e contatti), ma non alimentano
+# le notizie. Verificato sul campo, non per supposizione:
+#   - Basis Technologies, Enterprise Times: rispondono 403 alle richieste
+#     automatiche, e non aggiriamo un blocco esplicito.
+#   - Tricentis, SNP, Celonis, Theobald, Neptune, BlackLine: nessun feed
+#     raggiungibile e nessun <link rel="alternate"> dichiarato dal sito.
+# Se in futuro ne pubblicano uno, basta riaggiungere qui la voce.
+
+sources:
+  # ----------------------------- SAP ufficiale -----------------------------
+  - id: sap_news_center
+    nome: "SAP News Center"
+    tipo: official
+    peso: 20
+    url: "https://news.sap.com/feed/"
+
+  - id: sap_news_italia
+    nome: "SAP News Italia"
+    tipo: official
+    peso: 20
+    url: "https://news.sap.com/italy/feed/"
+    fallback:
+      - "https://news.sap.com/italy/feed/atom/"
+
+  - id: sap_community_tech
+    nome: "SAP Community - Technology blogs"
+    tipo: official
+    peso: 16
+    url: "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-sap"
+    fallback:
+      - "https://community.sap.com/t5/technology-blog-posts-by-sap/bg-p/technology-blog-sap/rss"
+      - "https://blogs.sap.com/feed/"
+
+  - id: sap_community_erp
+    nome: "SAP Community - ERP blogs"
+    tipo: official
+    peso: 16
+    url: "https://community.sap.com/khhcw49343/rss/board?board.id=erp-blog-sap"
+    fallback:
+      - "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/bg-p/erp-blog-sap/rss"
+
+  - id: sap_community_members
+    nome: "SAP Community - blog dei membri"
+    tipo: community
+    peso: 10
+    url: "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-members"
+    fallback:
+      - "https://community.sap.com/t5/technology-blog-posts-by-members/bg-p/technology-blog-members/rss"
+
+  # --------------------------- Stampa e analisti ---------------------------
+  - id: erp_today
+    nome: "ERP Today"
+    tipo: press
+    peso: 12
+    url: "https://erp.today/feed/"
+    solo_se: ["sap", "s/4hana", "s4hana", "btp", "ariba", "successfactors", "hana"]
+
+  - id: sapinsider
+    nome: "SAPinsider"
+    tipo: press
+    peso: 14
+    url: "https://sapinsider.org/feed/"
+
+  - id: e3mag
+    nome: "E-3 Magazine (EN)"
+    tipo: press
+    peso: 12
+    url: "https://e3mag.com/feed/"
+    fallback:
+      - "https://e3mag.com/en/feed/"
+
+  - id: diginomica
+    nome: "diginomica"
+    tipo: press
+    peso: 12
+    url: "https://diginomica.com/feed"
+    solo_se: ["sap", "s/4hana", "s4hana", "btp", "ariba", "successfactors", "concur"]
+
+  - id: theregister_erp
+    nome: "The Register - ERP"
+    tipo: press
+    peso: 10
+    url: "https://www.theregister.com/headlines.atom"
+    fallback:
+      - "https://www.theregister.com/software/headlines.atom"
+      - "https://www.theregister.com/software/erp/headlines.atom"
+    solo_se: ["sap", "s/4hana", "s4hana", "hana", "ariba"]
+
+  - id: reddit_sap
+    nome: "Reddit r/SAP"
+    tipo: community
+    peso: 6
+    url: "https://www.reddit.com/r/SAP/.rss"
+    max_items: 20
+
+  # ------------------- Vendor e partner dell'ecosistema -------------------
+  - id: onapsis_blog
+    nome: "Onapsis Blog"
+    tipo: vendor
+    peso: 12
+    vendor: onapsis
+    url: "https://onapsis.com/feed/"
+    fallback:
+      - "https://onapsis.com/blog/rss.xml"
+
+  - id: securitybridge_blog
+    nome: "SecurityBridge Blog"
+    tipo: vendor
+    peso: 12
+    vendor: securitybridge
+    url: "https://securitybridge.com/feed/"
+
+  - id: pathlock_blog
+    nome: "Pathlock Blog"
+    tipo: vendor
+    peso: 8
+    vendor: pathlock
+    url: "https://pathlock.com/feed/"
+
+  - id: figaf_blog
+    nome: "Figaf Blog"
+    tipo: vendor
+    peso: 10
+    vendor: figaf
+    url: "https://figaf.com/feed/"
+
+  - id: int4_blog
+    nome: "Int4 Blog"
+    tipo: vendor
+    peso: 10
+    vendor: int4
+    url: "https://int4.com/feed/"
+
+  - id: avantra_blog
+    nome: "Avantra Blog"
+    tipo: vendor
+    peso: 8
+    vendor: avantra
+    url: "https://www.avantra.com/feed/"
+    fallback:
+      - "https://www.avantra.com/blog/rss.xml"
+
+  - id: redwood_blog
+    nome: "Redwood Software Blog"
+    tipo: vendor
+    peso: 8
+    vendor: redwood
+    url: "https://www.redwood.com/feed/"
+    solo_se: ["sap", "s/4hana", "s4hana", "erp", "job", "automation"]
+
+  - id: serrala_blog
+    nome: "Serrala Blog"
+    tipo: vendor
+    peso: 8
+    vendor: serrala
+    url: "https://www.serrala.com/feed/"
+    solo_se: ["sap", "erp", "payment", "cash", "treasury", "s/4hana"]
+
+  - id: fivetran_blog
+    nome: "Fivetran Blog"
+    tipo: vendor
+    peso: 6
+    vendor: fivetran
+    url: "https://www.fivetran.com/blog/rss.xml"
+    fallback:
+      - "https://www.fivetran.com/feed"
+    solo_se: ["sap", "hana", "erp"]
+
+  - id: whatfix_blog
+    nome: "Whatfix Blog"
+    tipo: vendor
+    peso: 6
+    vendor: whatfix
+    url: "https://whatfix.com/blog/feed/"
+    solo_se: ["sap", "erp", "successfactors", "fiori"]

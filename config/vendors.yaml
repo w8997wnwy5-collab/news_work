@@ -1,0 +1,495 @@
+# ---------------------------------------------------------------------------
+# Catalogo dei tool esterni che funzionano bene sul NOSTRO stack
+# (S/4HANA private cloud / on-premise + SAP BTP & Integration Suite).
+#
+# Ogni voce alimenta una card nella scheda "Vendor & Tool" della dashboard, con
+# i pulsanti per la documentazione, la demo e la richiesta di call al vendor.
+# Se un vendor ha anche un blog RSS, lo si aggancia in config/sources.yaml con
+# `vendor: <id>`: in quel caso le sue notizie mostrano gli stessi pulsanti.
+#
+# link.demo / link.call sono facoltativi: se mancano (o se il controllo
+# settimanale li segna rotti) la dashboard ripiega sul sito ufficiale, quindi
+# un pulsante non porta mai su una pagina morta.
+# ---------------------------------------------------------------------------
+
+hub:
+  sap_store: "https://store.sap.com"
+  partner_finder: "https://partnerfinder.sap.com"
+  certified_solutions: "https://www.sap.com/partners/find.html"
+
+vendors:
+  # ------------------------------- Security -------------------------------
+  - id: onapsis
+    nome: "Onapsis"
+    categoria: security
+    claim: "Vulnerability management e sicurezza del codice per SAP"
+    cosa_fa: >-
+      Scansiona sistemi ABAP e HANA per vulnerabilità, misconfigurazioni e
+      note di sicurezza mancanti; analizza il codice custom prima del trasporto.
+    perche_ci_serve: >-
+      Su S/4HANA private restiamo noi responsabili del patching: Onapsis
+      trasforma il Patch Day SAP in una lista di azioni per sistema, e il
+      controllo codice si inserisce nel gate di trasporto verso il clean core.
+    maturita: "Partner SAP, molto diffuso in enterprise"
+    integrazione: ["S/4HANA private", "ECC", "HANA", "BTP"]
+    link:
+      sito: "https://onapsis.com"
+      docs: "https://onapsis.com/resources/"
+      demo: "https://onapsis.com/contact-us/"
+      linkedin: "https://www.linkedin.com/company/onapsis"
+
+  - id: securitybridge
+    nome: "SecurityBridge"
+    categoria: security
+    claim: "Piattaforma di sicurezza SAP-native (add-on ABAP)"
+    cosa_fa: >-
+      Monitoraggio in tempo reale di eventi, patch, autorizzazioni e anomalie
+      direttamente dentro il sistema SAP, con inoltro al SIEM aziendale.
+    perche_ci_serve: >-
+      Essendo un add-on ABAP non richiede infrastruttura esterna: adatto a un
+      private cloud dove vogliamo telemetria di sicurezza senza aprire flussi.
+    maturita: "SAP certified, focus esclusivo su SAP"
+    integrazione: ["S/4HANA private", "ECC", "BTP"]
+    link:
+      sito: "https://securitybridge.com"
+      linkedin: "https://www.linkedin.com/company/securitybridge"
+
+  - id: pathlock
+    nome: "Pathlock"
+    categoria: security
+    claim: "Access governance, SoD e controlli continui"
+    cosa_fa: >-
+      Analisi dei conflitti di segregazione dei compiti, gestione accessi
+      privilegiati e monitoraggio delle transazioni sensibili.
+    perche_ci_serve: >-
+      Alternativa (o complemento) a SAP GRC Access Control quando servono
+      controlli cross-application tra S/4HANA, SuccessFactors e Ariba.
+    maturita: "SAP certified"
+    integrazione: ["S/4HANA private", "SuccessFactors", "Ariba"]
+    link:
+      sito: "https://pathlock.com"
+      docs: "https://pathlock.com/resources/"
+      demo: "https://pathlock.com/request-a-demo/"
+      linkedin: "https://www.linkedin.com/company/pathlock"
+
+  # ------------------------ Basis, DevOps, Operations ----------------------
+  - id: basis_technologies
+    nome: "Basis Technologies (ActiveControl)"
+    categoria: tech_ops
+    claim: "DevOps e automazione dei trasporti SAP"
+    cosa_fa: >-
+      Gestione e analisi dipendenze dei trasporti, deploy automatizzati,
+      rilevamento conflitti e integrazione con pipeline CI/CD.
+    perche_ci_serve: >-
+      Con S/4HANA on-premise più estensioni BTP i trasporti restano il collo
+      di bottiglia: ActiveControl è l'alternativa più usata a ChaRM.
+    maturita: "SAP certified, standard di mercato per il change SAP"
+    integrazione: ["S/4HANA private", "ECC", "ABAP Cloud"]
+    link:
+      sito: "https://basistechnologies.com"
+      docs: "https://basistechnologies.com/resources/"
+      demo: "https://basistechnologies.com/request-a-demo/"
+      linkedin: "https://www.linkedin.com/company/basis-technologies"
+
+  - id: tricentis
+    nome: "Tricentis (Tosca + LiveCompare)"
+    categoria: tech_ops
+    claim: "Test automation e change impact analysis per SAP"
+    cosa_fa: >-
+      Test automatizzati end-to-end su GUI, Fiori e API, con LiveCompare che
+      calcola l'impatto reale di note, feature pack e upgrade.
+    perche_ci_serve: >-
+      Riduce la finestra di regressione a ogni upgrade S/4HANA: LiveCompare
+      dice quali test servono davvero invece di ritestare tutto.
+    maturita: "SAP Endorsed App (rivenduto anche da SAP)"
+    integrazione: ["S/4HANA private", "ECC", "Fiori", "BTP"]
+    link:
+      sito: "https://www.tricentis.com"
+      docs: "https://documentation.tricentis.com"
+      linkedin: "https://www.linkedin.com/company/tricentis"
+
+  - id: avantra
+    nome: "Avantra"
+    categoria: tech_ops
+    claim: "AIOps e monitoraggio proattivo del panorama SAP"
+    cosa_fa: >-
+      Health check automatici, self-healing, report di conformità e
+      monitoraggio di sistemi SAP su hyperscaler o data center.
+    perche_ci_serve: >-
+      Copre il gap operativo tipico del private cloud, dove il monitoraggio
+      dell'hyperscaler non conosce la semantica SAP.
+    maturita: "SAP certified"
+    integrazione: ["S/4HANA private", "HANA", "ECC"]
+    link:
+      sito: "https://www.avantra.com"
+      linkedin: "https://www.linkedin.com/company/avantra"
+
+  - id: redwood
+    nome: "Redwood (RunMyJobs)"
+    categoria: tech_ops
+    claim: "Job scheduling e orchestrazione dei processi SAP"
+    cosa_fa: >-
+      Pianificazione centralizzata dei job SAP e non-SAP, con dipendenze
+      cross-system, SLA e gestione degli errori.
+    perche_ci_serve: >-
+      Sostituisce lo scheduling nativo quando i flussi attraversano S/4HANA,
+      BTP e sistemi esterni; è la soluzione rivenduta da SAP.
+    maturita: "SAP Endorsed App / SAP Solution Extension"
+    integrazione: ["S/4HANA private", "BTP", "ECC"]
+    link:
+      sito: "https://www.redwood.com"
+      docs: "https://www.redwood.com/resources/"
+      linkedin: "https://www.linkedin.com/company/redwood-software"
+
+  - id: uipath
+    nome: "UiPath"
+    categoria: tech_ops
+    claim: "RPA sui processi SAP GUI e Fiori"
+    cosa_fa: >-
+      Automatizza attività ripetitive su SAP GUI, Fiori e web, con connettori
+      SAP certificati e integrazione con AI per document understanding.
+    perche_ci_serve: >-
+      Copre le attività che non vale la pena sviluppare in ABAP o su BTP,
+      tipicamente data entry massivo e riconciliazioni manuali.
+    maturita: "SAP certified"
+    integrazione: ["S/4HANA private", "ECC", "Fiori"]
+    link:
+      sito: "https://www.uipath.com"
+      docs: "https://docs.uipath.com"
+      linkedin: "https://www.linkedin.com/company/uipath"
+
+  # ----------------------- Integrazione e sviluppo BTP ---------------------
+  - id: figaf
+    nome: "Figaf"
+    categoria: btp_integration
+    claim: "DevOps e test automatici per Integration Suite / CPI"
+    cosa_fa: >-
+      Versiona gli iFlow, li trasporta tra tenant e rigioca i messaggi reali
+      come test di regressione dopo ogni modifica o aggiornamento SAP.
+    perche_ci_serve: >-
+      Integration Suite viene aggiornata da SAP ogni mese: senza regressione
+      automatica sugli iFlow ce ne accorgiamo in produzione.
+    maturita: "Specialista di nicchia, molto usato su CPI/PI"
+    integrazione: ["Integration Suite", "SAP PI/PO", "BTP"]
+    link:
+      sito: "https://figaf.com"
+
+  - id: int4
+    nome: "Int4 (Int4 Suite)"
+    categoria: btp_integration
+    claim: "Test automation per le interfacce SAP"
+    cosa_fa: >-
+      Genera test dai messaggi di integrazione reali (IDoc, proxy, iFlow) e li
+      esegue in modo automatico con validazione del payload.
+    perche_ci_serve: >-
+      Sui progetti di conversione S/4HANA il rischio più alto sono le
+      interfacce: Int4 rende ripetibile la loro validazione.
+    maturita: "SAP certified"
+    integrazione: ["S/4HANA private", "Integration Suite", "SAP PI/PO"]
+    link:
+      sito: "https://int4.com"
+      demo: "https://int4.com/contact/"
+      linkedin: "https://www.linkedin.com/company/int4"
+
+  - id: neptune
+    nome: "Neptune Software (DXP)"
+    categoria: btp_integration
+    claim: "App low-code su dati SAP, on-premise o su BTP"
+    cosa_fa: >-
+      Piattaforma per costruire app mobile e web sui dati SAP, con runtime
+      installabile dentro il sistema ABAP o su BTP.
+    perche_ci_serve: >-
+      Utile dove BTP non è ancora la strada (app offline, scenari di magazzino)
+      mantenendo comunque il core pulito.
+    maturita: "SAP certified, storico nell'ecosistema"
+    integrazione: ["S/4HANA private", "ECC", "BTP"]
+    link:
+      sito: "https://www.neptune-software.com"
+      docs: "https://docs.neptune-software.com"
+      linkedin: "https://www.linkedin.com/company/neptune-software"
+
+  # ------------------------- Trasformazione S/4HANA ------------------------
+  - id: snp
+    nome: "SNP (CrystalBridge / BLUEFIELD)"
+    categoria: s4hana
+    claim: "Analisi e trasformazione dei dati verso S/4HANA"
+    cosa_fa: >-
+      Fotografa il sistema esistente, simula la conversione e sposta
+      selettivamente dati e configurazioni (selective data transition).
+    perche_ci_serve: >-
+      È l'approccio di riferimento quando il brownfield puro è troppo
+      rischioso e il greenfield troppo costoso.
+    maturita: "SAP partner, metodologia riconosciuta"
+    integrazione: ["S/4HANA private", "ECC"]
+    link:
+      sito: "https://www.snpgroup.com"
+      docs: "https://www.snpgroup.com/en/resources/"
+      demo: "https://www.snpgroup.com/en/contact/"
+      linkedin: "https://www.linkedin.com/company/snp-schneider-neureither-partner-se"
+
+  - id: smartshift
+    nome: "smartShift"
+    categoria: s4hana
+    claim: "Remediation automatica del codice ABAP custom"
+    cosa_fa: >-
+      Analizza e riscrive automaticamente il codice custom per renderlo
+      compatibile con S/4HANA e con le regole ABAP Cloud.
+    perche_ci_serve: >-
+      Il custom code è la voce di costo principale dell'upgrade: qui si
+      automatizza la parte meccanica del percorso verso il clean core.
+    maturita: "SAP partner, usato su conversioni grandi"
+    integrazione: ["S/4HANA private", "ECC", "ABAP Cloud"]
+    link:
+      sito: "https://smartshift.com"
+      docs: "https://smartshift.com/resources/"
+      demo: "https://smartshift.com/contact/"
+      linkedin: "https://www.linkedin.com/company/smartshift-technologies"
+
+  # ---------------------------- Finance & Tax -----------------------------
+  - id: blackline
+    nome: "BlackLine"
+    categoria: finance
+    claim: "Riconciliazioni e chiusura contabile automatizzate"
+    cosa_fa: >-
+      Riconciliazione conti, matching delle transazioni, task di chiusura e
+      certificazione dei saldi con audit trail.
+    perche_ci_serve: >-
+      Si innesta sul Universal Journal di S/4HANA e accorcia la chiusura senza
+      sviluppo custom nel core.
+    maturita: "SAP Solution Extension (rivenduto da SAP)"
+    integrazione: ["S/4HANA private", "ECC"]
+    link:
+      sito: "https://www.blackline.com"
+      docs: "https://www.blackline.com/resources/"
+      linkedin: "https://www.linkedin.com/company/blackline"
+
+  - id: serrala
+    nome: "Serrala"
+    categoria: finance
+    claim: "Order-to-cash, pagamenti e tesoreria su SAP"
+    cosa_fa: >-
+      Automazione degli incassi, gestione centralizzata dei pagamenti, cash
+      application e previsione di liquidità.
+    perche_ci_serve: >-
+      Nasce come add-on SAP: gira dentro il nostro ABAP o affianco ad esso,
+      senza duplicare l'anagrafica clienti.
+    maturita: "SAP certified, radici nell'ecosistema SAP"
+    integrazione: ["S/4HANA private", "ECC"]
+    link:
+      sito: "https://www.serrala.com"
+      demo: "https://www.serrala.com/en/contact/"
+      linkedin: "https://www.linkedin.com/company/serrala"
+
+  - id: esker
+    nome: "Esker"
+    categoria: finance
+    claim: "Automazione documentale AP / AR"
+    cosa_fa: >-
+      Acquisizione e riconoscimento delle fatture passive, invio delle attive,
+      workflow di approvazione e portale fornitori.
+    perche_ci_serve: >-
+      Copre la parte documentale che S/4HANA non gestisce nativamente,
+      restituendo al core solo il documento contabile pulito.
+    maturita: "SAP certified"
+    integrazione: ["S/4HANA private", "ECC", "Ariba"]
+    link:
+      sito: "https://www.esker.com"
+      docs: "https://www.esker.com/resources/"
+      demo: "https://www.esker.com/contact-us/"
+      linkedin: "https://www.linkedin.com/company/esker"
+
+  - id: vertex
+    nome: "Vertex"
+    categoria: finance
+    claim: "Determinazione automatica delle imposte indirette"
+    cosa_fa: >-
+      Motore fiscale che calcola IVA e imposte indirette in tempo reale sulle
+      transazioni, con contenuto normativo aggiornato dal vendor.
+    perche_ci_serve: >-
+      Con operatività multi-paese evita di mantenere a mano le condizioni
+      fiscali in SD/MM ad ogni cambio normativo.
+    maturita: "SAP certified, integrazione nativa S/4HANA"
+    integrazione: ["S/4HANA private", "ECC", "Ariba"]
+    link:
+      sito: "https://www.vertexinc.com"
+      docs: "https://www.vertexinc.com/resources"
+      demo: "https://www.vertexinc.com/contact-us"
+      linkedin: "https://www.linkedin.com/company/vertex-inc"
+
+  - id: kyriba
+    nome: "Kyriba"
+    categoria: finance
+    claim: "Tesoreria, liquidità e rischio cambio"
+    cosa_fa: >-
+      Piattaforma cloud per cash management, pagamenti, hedging e connettività
+      bancaria, con connettore SAP.
+    perche_ci_serve: >-
+      Alternativa a un progetto TRM completo quando serve visibilità cash
+      multi-banca in tempi brevi.
+    maturita: "SAP certified"
+    integrazione: ["S/4HANA private", "ECC"]
+    link:
+      sito: "https://www.kyriba.com"
+      docs: "https://www.kyriba.com/resources/"
+      linkedin: "https://www.linkedin.com/company/kyriba"
+
+  # ------------------------- Supply chain & logistica ----------------------
+  - id: celonis
+    nome: "Celonis"
+    categoria: logistics
+    claim: "Process mining sui processi SAP"
+    cosa_fa: >-
+      Ricostruisce dai log SAP il processo reale (P2P, O2C, chiusura) e misura
+      scostamenti, rilavorazioni e opportunità di automazione.
+    perche_ci_serve: >-
+      Prima di un upgrade o di un'estensione BTP dice dove il processo perde
+      davvero tempo, evitando sviluppi inutili.
+    maturita: "SAP Endorsed App"
+    integrazione: ["S/4HANA private", "ECC", "Ariba", "BTP"]
+    link:
+      sito: "https://www.celonis.com"
+      docs: "https://docs.celonis.com"
+      demo: "https://www.celonis.com/contact/"
+      linkedin: "https://www.linkedin.com/company/celonis"
+
+  - id: vistex
+    nome: "Vistex"
+    categoria: logistics
+    claim: "Gestione di rebate, pricing e incentivi commerciali"
+    cosa_fa: >-
+      Gestisce accordi commerciali complessi, rebate, royalty e provvigioni
+      dentro i processi SD/MM.
+    perche_ci_serve: >-
+      Evita il classico sviluppo custom su condizioni di prezzo, che è uno dei
+      principali ostacoli al clean core.
+    maturita: "SAP Solution Extension"
+    integrazione: ["S/4HANA private", "ECC"]
+    link:
+      sito: "https://www.vistex.com"
+      docs: "https://www.vistex.com/resources/"
+      demo: "https://www.vistex.com/contact/"
+      linkedin: "https://www.linkedin.com/company/vistex"
+
+  - id: project44
+    nome: "project44"
+    categoria: logistics
+    claim: "Visibilità in tempo reale delle spedizioni"
+    cosa_fa: >-
+      Tracciamento multimodale delle spedizioni con ETA predittive e alert,
+      integrato con i processi di trasporto e magazzino.
+    perche_ci_serve: >-
+      Porta dentro S/4HANA o TM lo stato reale dei trasporti senza costruire
+      integrazioni punto a punto con ogni vettore.
+    maturita: "SAP partner, integrazione con SAP TM/EWM"
+    integrazione: ["S/4HANA private", "SAP TM", "Integration Suite"]
+    link:
+      sito: "https://www.project44.com"
+      docs: "https://developers.project44.com"
+      linkedin: "https://www.linkedin.com/company/project44"
+
+  # ------------------------- Dati, estrazione, analytics -------------------
+  - id: theobald
+    nome: "Theobald Software (Xtract)"
+    categoria: ai_data
+    claim: "Estrazione dati SAP verso BI e database esterni"
+    cosa_fa: >-
+      Estrae tabelle, CDS view, BW e query SAP verso SQL Server, Power BI,
+      Snowflake e altri target, senza sviluppo ABAP.
+    perche_ci_serve: >-
+      Soluzione pragmatica ed economica per alimentare reporting esterno
+      accanto a Datasphere, con licensing chiaro.
+    maturita: "SAP certified, molto diffuso in area DACH"
+    integrazione: ["S/4HANA private", "ECC", "BW", "HANA"]
+    link:
+      sito: "https://theobald-software.com"
+      docs: "https://help.theobald-software.com"
+      demo: "https://theobald-software.com/en/contact/"
+      linkedin: "https://www.linkedin.com/company/theobald-software-gmbh"
+
+  - id: fivetran
+    nome: "Fivetran"
+    categoria: ai_data
+    claim: "Replica gestita dei dati SAP verso il cloud data warehouse"
+    cosa_fa: >-
+      Connettori gestiti per SAP ERP e HANA che replicano in continuo su
+      Snowflake, BigQuery, Databricks e simili.
+    perche_ci_serve: >-
+      Da valutare in alternativa o a complemento di Datasphere quando il data
+      platform aziendale è già fuori da SAP.
+    maturita: "Connettori SAP maturi, modello a consumo"
+    integrazione: ["S/4HANA private", "ECC", "HANA"]
+    link:
+      sito: "https://www.fivetran.com"
+      docs: "https://fivetran.com/docs"
+      demo: "https://www.fivetran.com/demo"
+      linkedin: "https://www.linkedin.com/company/fivetran"
+
+  - id: precisely
+    nome: "Precisely (Automate Studio)"
+    categoria: ai_data
+    claim: "Caricamento e manutenzione massiva dei dati SAP da Excel"
+    cosa_fa: >-
+      Permette a utenti business di eseguire transazioni SAP in massa da Excel
+      con validazione e tracciabilità.
+    perche_ci_serve: >-
+      Sostituisce script LSMW/BDC artigianali durante migrazioni e attività
+      di data cleansing continue.
+    maturita: "SAP certified"
+    integrazione: ["S/4HANA private", "ECC"]
+    link:
+      sito: "https://www.precisely.com"
+      linkedin: "https://www.linkedin.com/company/precisely"
+
+  # ------------------------ HR, procurement, adoption ----------------------
+  - id: whatfix
+    nome: "Whatfix"
+    categoria: hr_procurement
+    claim: "Digital adoption su Fiori e SuccessFactors"
+    cosa_fa: >-
+      Guide interattive in-app, walkthrough e analisi dell'uso reale delle
+      transazioni da parte degli utenti.
+    perche_ci_serve: >-
+      Riduce il carico di formazione e ticket dopo un rilascio Fiori o un
+      aggiornamento SuccessFactors.
+    maturita: "SAP partner"
+    integrazione: ["Fiori", "SuccessFactors", "S/4HANA private"]
+    link:
+      sito: "https://whatfix.com"
+      docs: "https://support.whatfix.com"
+      demo: "https://whatfix.com/request-demo/"
+      linkedin: "https://www.linkedin.com/company/whatfix"
+
+  - id: docusign
+    nome: "Docusign"
+    categoria: hr_procurement
+    claim: "Firma elettronica integrata nei processi SAP"
+    cosa_fa: >-
+      Firma elettronica e gestione del ciclo di vita dei contratti, con
+      integrazioni verso SuccessFactors, Ariba e il core ERP.
+    perche_ci_serve: >-
+      Chiude il processo di assunzione e quello contrattuale senza uscire dal
+      flusso applicativo.
+    maturita: "Integrazioni SAP pubblicate su SAP Store"
+    integrazione: ["SuccessFactors", "Ariba", "S/4HANA private"]
+    link:
+      sito: "https://www.docusign.com"
+      docs: "https://developers.docusign.com"
+      demo: "https://www.docusign.com/demo"
+      linkedin: "https://www.linkedin.com/company/docusign"
+
+  - id: phenom
+    nome: "Phenom"
+    categoria: hr_procurement
+    claim: "AI per talent acquisition accanto a SuccessFactors"
+    cosa_fa: >-
+      Career site, matching dei candidati e automazione dello screening con
+      sincronizzazione verso SuccessFactors Recruiting.
+    perche_ci_serve: >-
+      Copre l'esperienza candidato dove SuccessFactors resta più debole,
+      mantenendo SF come sistema di riferimento.
+    maturita: "SAP partner"
+    integrazione: ["SuccessFactors"]
+    link:
+      sito: "https://www.phenom.com"
+      docs: "https://developer.phenom.com"
+      demo: "https://www.phenom.com/request-demo"
