@@ -12,6 +12,14 @@
 # un pulsante non porta mai su una pagina morta.
 # ---------------------------------------------------------------------------
 
+# Host che rispondono alle richieste automatiche in modo incoerente: lo stesso
+# indirizzo, a due minuti di distanza, torna 200, 999 o 404 senza che la pagina
+# sia cambiata. Su questi host un 404 non dimostra che la pagina non esista, e
+# trattarlo come rotto porta a cancellare link validi: il controllo li annota
+# come non verificabili e lascia il link dov'è.
+host_incerti:
+  - "linkedin.com"
+
 hub:
   sap_store: "https://store.sap.com"
   partner_finder: "https://partnerfinder.sap.com"
@@ -404,6 +412,7 @@ vendors:
       sito: "https://theobald-software.com"
       docs: "https://help.theobald-software.com"
       demo: "https://theobald-software.com/en/contact/"
+      linkedin: "https://www.linkedin.com/company/theobald-software-gmbh"
 
   - id: fivetran
     nome: "Fivetran"
@@ -492,3 +501,4 @@ vendors:
       sito: "https://www.phenom.com"
       docs: "https://developer.phenom.com"
       demo: "https://www.phenom.com/request-demo"
+      linkedin: "https://www.linkedin.com/company/phenom-people"

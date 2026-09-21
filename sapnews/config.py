@@ -51,6 +51,11 @@ class Config:
     def vendor_list(self) -> list[dict[str, Any]]:
         return self.vendors.get("vendors", [])
 
+    @property
+    def host_incerti(self) -> list[str]:
+        """Host il cui codice di errore non dice nulla sullo stato della pagina."""
+        return self.vendors.get("host_incerti", []) or []
+
     def vendor_by_id(self, vid: str | None) -> dict[str, Any] | None:
         if not vid:
             return None

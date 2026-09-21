@@ -188,6 +188,14 @@ di rete, e lì scatta il ripiego) e **bloccato** — LinkedIn risponde `999` e a
 persona che ci clicca: trattarli come rotti farebbe sparire link validi, quindi restano
 invariati e il pannello li elenca a parte.
 
+Su alcuni host nemmeno un 404 è un verdetto. LinkedIn, allo stesso indirizzo e a due
+minuti di distanza, ha risposto `200`, `999` e `404` senza che la pagina cambiasse: il
+codice dice come è stata trattata *quella richiesta*, non se la pagina esiste. Gli host
+che si comportano così stanno in `host_incerti` (in `config/vendors.yaml`) e lì nessun
+errore diventa mai "rotto": il link resta dov'è e il pannello lo mostra come non
+verificabile. Il principio è che degradare un link valido costa più che lasciarne
+passare uno morto, perché il primo danno è silenzioso.
+
 ---
 
 ## Struttura

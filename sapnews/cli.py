@@ -75,7 +75,7 @@ def cmd_update(args: argparse.Namespace) -> int:
     urls = raccogli_link(cfg.vendor_list)
     if args.check_links:
         log.info("controllo di %d link vendor", len(urls))
-        store.set_link_health(check_links(urls))
+        store.set_link_health(check_links(urls, host_incerti=cfg.host_incerti))
     else:
         dimenticati = store.prune_link_health(set(urls))
         if dimenticati:
@@ -112,7 +112,7 @@ def cmd_render(args: argparse.Namespace) -> int:
 def cmd_check_links(args: argparse.Namespace) -> int:
     cfg = load_config(args.root)
     urls = raccogli_link(cfg.vendor_list)
-    risultati = check_links(urls)
+    risultati = check_links(urls, host_incerti=cfg.host_incerti)
     rotti = {u: r for u, r in risultati.items() if not r.get("ok")}
     for u, r in sorted(rotti.items()):
         log.warning("link rotto (%s): %s", r.get("stato") or r.get("errore"), u)
