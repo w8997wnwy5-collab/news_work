@@ -1,22 +1,24 @@
-# Radar SAP - 20/09/2026
+# Radar SAP - 21/09/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 8 notizie (30 da leggere) da 21/21 fonti attive.
-
-## Altro / Ecosistema
-
--  [Tailoring Security Analysis with Custom Checks and Policies in Configuration & Security Analysis](https://community.sap.com/t5/technology-blog-posts-by-sap/tailoring-security-analysis-with-custom-checks-and-policies-in/ba-p/14487890) - _SAP Community - Technology blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Tailoring+Security+Analysis+with+Custom+Checks+and+Policies+Configuration&sortBy=%22date_posted%22)
--  [What is the SAP Salaries band in India?](https://www.reddit.com/r/SAP/comments/1wl74ha/what_is_the_sap_salaries_band_in_india) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=What+the+SAP+Salaries+band+India&sortBy=%22date_posted%22)
--  [Planning to do this. Please suggest your tips.](https://www.reddit.com/r/SAP/comments/1wl38iz/planning_to_do_this_please_suggest_your_tips) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Planning+this.+Please+suggest+your+tips.&sortBy=%22date_posted%22)
--  [Planning on doing SAP](https://www.reddit.com/r/SAP/comments/1wkjwgg/planning_on_doing_sap) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Planning+doing+SAP&sortBy=%22date_posted%22)
--  [SAP Denied my Student Verification, How do I get through??](https://www.reddit.com/r/SAP/comments/1wkhpdq/sap_denied_my_student_verification_how_do_i_get) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Denied+Student+Verification+How+get+through&sortBy=%22date_posted%22)
+Ultime 24h: 7 notizie (32 da leggere) da 21/21 fonti attive.
 
 ## BTP & Integrazione
 
-- **[Da leggere]** [Principal Propagation for MCP Servers - SAP Integration Suite to SAP S/4HANA On-Premise](https://community.sap.com/t5/technology-blog-posts-by-sap/principal-propagation-for-mcp-servers-sap-integration-suite-to-sap-s-4hana/ba-p/14488140) - _SAP Community - Technology blogs_ (rilevanza 96) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Principal+Propagation+for+MCP+Servers+SAP+Integration+Suite+SAP&sortBy=%22date_posted%22)
-- **[Da leggere]** [BTP MPL API docs](https://www.reddit.com/r/SAP/comments/1wl17g1/btp_mpl_api_docs) - _Reddit r/SAP_ (rilevanza 86) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=BTP+MPL+API+docs&sortBy=%22date_posted%22)
+- **[Da leggere]** [MCP Server for SAP Plant Maintenance on SAP Integration Suite: From CAP to the Governed Path](https://community.sap.com/t5/technology-blog-posts-by-members/mcp-server-for-sap-plant-maintenance-on-sap-integration-suite-from-cap-to/ba-p/14485732) - _SAP Community - blog dei membri_ (rilevanza 90) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=MCP+Server+for+SAP+Plant+Maintenance+SAP+Integration+Suite&sortBy=%22date_posted%22)
+- **[Da leggere]** [Step-by-Step Setup of OAuth2 SAML2 Bearer with Principal Propagation with on-prem ABAP with BTP CPI](https://community.sap.com/t5/technology-blog-posts-by-members/step-by-step-setup-of-oauth2-saml2-bearer-with-principal-propagation-with/ba-p/14484912) - _SAP Community - blog dei membri_ (rilevanza 86) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Step-by-Step+Setup+OAuth2+SAML2+Bearer+with+Principal+Propagation+with&sortBy=%22date_posted%22)
+- [Da monitorare] [Connecting SAP Build Process Automation to a Trial Document AI Instance](https://community.sap.com/t5/technology-blog-posts-by-members/connecting-sap-build-process-automation-to-a-trial-document-ai-instance/ba-p/14488568) - _SAP Community - blog dei membri_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Connecting+SAP+Build+Process+Automation+Trial+Document+Instance&sortBy=%22date_posted%22)
 
-## Supply Chain & Logistica
+## Altro / Ecosistema
 
--  [Moving from QA to SAP consultant](https://www.reddit.com/r/SAP/comments/1wkkssn/moving_from_qa_to_sap_consultant) - _Reddit r/SAP_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Moving+from+SAP+consultant&sortBy=%22date_posted%22)
+-  [Why Do Most Organizations struggle to Show RoI from their AI Investments](https://community.sap.com/t5/technology-blog-posts-by-sap/why-do-most-organizations-struggle-to-show-roi-from-their-ai-investments/ba-p/14488528) - _SAP Community - Technology blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Why+Most+Organizations+struggle+Show+RoI+from+their+Investments&sortBy=%22date_posted%22)
+-  [ASUG Colombia](https://www.reddit.com/r/SAP/comments/1wlfcix/asug_colombia) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=ASUG+Colombia&sortBy=%22date_posted%22)
+
+## S/4HANA & Clean Core
+
+-  [Instandhaltung mit SAP](https://e3mag.com/de/instandhaltung-mit-sap) - _E-3 Magazine (EN)_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Instandhaltung+mit+SAP&sortBy=%22date_posted%22)
+
+## Finance & Compliance
+
+-  [Scope and Future of Tax Transformation (Vertex, OneSource, Avalara with SAP/Oracle ERP)](https://www.reddit.com/r/SAP/comments/1wlpkoh/scope_and_future_of_tax_transformation_vertex) - _Reddit r/SAP_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Scope+and+Future+Tax+Transformation+Vertex+OneSource+Avalara+with&sortBy=%22date_posted%22)
 
