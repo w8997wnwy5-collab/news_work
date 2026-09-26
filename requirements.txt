@@ -1,0 +1,4 @@
+# Dipendenze runtime del tool SAP News Radar
+requests>=2.31,<3
+feedparser>=6.0.11,<7
+PyYAML>=6.0,<7

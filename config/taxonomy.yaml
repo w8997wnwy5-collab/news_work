@@ -1,0 +1,299 @@
+# ---------------------------------------------------------------------------
+# Tassonomia e profilo della nostra soluzione.
+#
+# Questo file decide DUE cose:
+#   1. in quale categoria finisce una notizia  -> blocco `categories`
+#   2. quanto ci riguarda  (punteggio 0-100)   -> blocco `profile`
+#
+# Modificare qui è il modo previsto per tarare il radar: nessun codice Python
+# va toccato. Dopo una modifica basta rilanciare `python -m sapnews update`.
+# ---------------------------------------------------------------------------
+
+profile:
+  name: "S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite"
+  descrizione: >-
+    Core ERP S/4HANA in private cloud / on-premise (percorso RISE e clean core),
+    esteso e integrato tramite SAP BTP: Integration Suite (CPI), estensioni
+    ABAP Cloud / CAP, Build e Datasphere. Aree funzionali seguite: Finance,
+    Logistica, HR & Procurement SaaS, Tech (Basis, Security, ABAP, AI).
+
+  # Termini che indicano "questa notizia parla proprio del nostro stack".
+  # weight si somma al punteggio di rilevanza.
+  boost:
+    - {term: "s/4hana", weight: 24}
+    - {term: "s4hana", weight: 24}
+    - {term: "private cloud", weight: 20}
+    - {term: "rise with sap", weight: 18}
+    - {term: "on-premise", weight: 14}
+    - {term: "on premise", weight: 14}
+    - {term: "clean core", weight: 22}
+    - {term: "business technology platform", weight: 22}
+    - {term: "btp", weight: 22}
+    - {term: "integration suite", weight: 22}
+    - {term: "cloud integration", weight: 16}
+    - {term: "cpi", weight: 14}
+    - {term: "abap cloud", weight: 18}
+    - {term: "restful application programming", weight: 14}
+    - {term: "cap ", weight: 8}
+    - {term: "cloud application programming", weight: 14}
+    - {term: "sap build", weight: 14}
+    - {term: "datasphere", weight: 14}
+    - {term: "joule", weight: 14}
+    - {term: "release 20", weight: 12}
+    - {term: "maintenance 2027", weight: 20}
+    - {term: "2027", weight: 10}
+    - {term: "2030", weight: 8}
+    - {term: "upgrade", weight: 10}
+    - {term: "feature pack", weight: 12}
+    - {term: "sap note", weight: 12}
+    - {term: "sap notes", weight: 12}
+    - {term: "fiori", weight: 10}
+    - {term: "sap gui", weight: 8}
+    - {term: "eudr", weight: 8}
+    - {term: "e-invoicing", weight: 10}
+    - {term: "fatturazione elettronica", weight: 12}
+
+  # Termini che segnalano prodotti / segmenti che NON usiamo: abbassano il
+  # punteggio senza escludere la notizia (resta visibile come "info").
+  penalize:
+    - {term: "business one", weight: -22}
+    - {term: "business bydesign", weight: -22}
+    - {term: "grow with sap", weight: -10}
+    - {term: "public cloud edition", weight: -6}
+    - {term: "ecc 6.0 only", weight: -4}
+
+  # Soglie di classificazione del livello di attenzione.
+  soglie:
+    must: 70      # "Da leggere"
+    watch: 40     # "Da monitorare"
+                  # sotto watch -> "Info"
+
+  # Punteggio minimo per entrare nel radar: sotto questa soglia la notizia
+  # viene considerata rumore e scartata.
+  min_score: 15
+
+  # SAP Community pubblica gli stessi contenuti anche in coreano, giapponese e
+  # cinese: notizie pertinenti ma illeggibili per il team. Con questa opzione
+  # restano fuori i titoli scritti in un alfabeto non latino.
+  # Metterla a false per ricevere anche quelli.
+  solo_alfabeto_latino: true
+
+# ---------------------------------------------------------------------------
+# Categorie. `color_slot` punta alla palette categoriale validata della
+# dashboard (slot 1-8, ordine fisso: non riordinare senza rivalidare i colori).
+# ---------------------------------------------------------------------------
+categories:
+  - id: s4hana
+    nome: "S/4HANA & Clean Core"
+    color_slot: 1
+    icona: "core"
+    descrizione: "Release, roadmap, manutenzione, upgrade e strategia clean core del core ERP."
+    sap_help: "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE"
+    keywords:
+      - {term: "s/4hana", weight: 20}
+      - {term: "s4hana", weight: 20}
+      - {term: "clean core", weight: 18}
+      - {term: "rise with sap", weight: 14}
+      - {term: "conversion", weight: 8}
+      - {term: "brownfield", weight: 14}
+      - {term: "greenfield", weight: 12}
+      - {term: "selective data transition", weight: 14}
+      - {term: "feature pack", weight: 12}
+      - {term: "release", weight: 6}
+      - {term: "roadmap", weight: 8}
+      - {term: "maintenance", weight: 8}
+      - {term: "ecc", weight: 8}
+      - {term: "erp", weight: 4}
+
+  - id: btp_integration
+    nome: "BTP & Integrazione"
+    color_slot: 2
+    icona: "plug"
+    descrizione: "SAP BTP, Integration Suite / CPI, estensioni ABAP Cloud e CAP, API e eventi."
+    sap_help: "https://help.sap.com/docs/btp"
+    keywords:
+      - {term: "btp", weight: 20}
+      - {term: "business technology platform", weight: 20}
+      - {term: "integration suite", weight: 20}
+      - {term: "cloud integration", weight: 16}
+      - {term: "cpi", weight: 14}
+      - {term: "iflow", weight: 14}
+      - {term: "api management", weight: 14}
+      - {term: "event mesh", weight: 14}
+      - {term: "advanced event mesh", weight: 14}
+      - {term: "kyma", weight: 14}
+      - {term: "cloud foundry", weight: 12}
+      - {term: "abap cloud", weight: 16}
+      - {term: "abap environment", weight: 14}
+      - {term: "cloud application programming", weight: 14}
+      - {term: "sap build", weight: 14}
+      - {term: "extension suite", weight: 12}
+      - {term: "odata", weight: 8}
+      - {term: "integration", weight: 4}
+
+  - id: finance
+    nome: "Finance & Compliance"
+    color_slot: 3
+    icona: "coins"
+    descrizione: "FI/CO, chiusure, tesoreria, tax, e-invoicing e adempimenti normativi."
+    sap_help: "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/finance"
+    keywords:
+      - {term: "finance", weight: 12}
+      - {term: "financial", weight: 10}
+      - {term: "fi/co", weight: 16}
+      - {term: "controlling", weight: 12}
+      - {term: "general ledger", weight: 14}
+      - {term: "universal journal", weight: 16}
+      - {term: "group reporting", weight: 14}
+      - {term: "financial closing", weight: 14}
+      - {term: "closing cockpit", weight: 14}
+      - {term: "treasury", weight: 12}
+      - {term: "tax", weight: 10}
+      - {term: "vat", weight: 10}
+      - {term: "e-invoicing", weight: 16}
+      - {term: "fatturazione elettronica", weight: 18}
+      - {term: "peppol", weight: 14}
+      - {term: "document compliance", weight: 14}
+      - {term: "accounts payable", weight: 12}
+      - {term: "accounts receivable", weight: 12}
+      - {term: "credit management", weight: 10}
+      - {term: "fp&a", weight: 12}
+      - {term: "analytics cloud planning", weight: 10}
+
+  - id: logistics
+    nome: "Supply Chain & Logistica"
+    color_slot: 4
+    icona: "truck"
+    descrizione: "MM, SD, PP, EWM/WM, TM, pianificazione e tracciabilità di filiera."
+    sap_help: "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/supply-chain"
+    keywords:
+      - {term: "supply chain", weight: 14}
+      - {term: "logistics", weight: 12}
+      - {term: "materials management", weight: 14}
+      - {term: "sales and distribution", weight: 14}
+      - {term: "production planning", weight: 14}
+      - {term: "ewm", weight: 16}
+      - {term: "extended warehouse", weight: 16}
+      - {term: "warehouse", weight: 10}
+      - {term: "transportation management", weight: 14}
+      - {term: "ibp", weight: 12}
+      - {term: "integrated business planning", weight: 14}
+      - {term: "manufacturing", weight: 10}
+      - {term: "digital manufacturing", weight: 12}
+      - {term: "inventory", weight: 10}
+      - {term: "procurement", weight: 8}
+      - {term: "mrp", weight: 12}
+      - {term: "batch management", weight: 10}
+      - {term: "track and trace", weight: 10}
+
+  - id: hr_procurement
+    nome: "HR, Procurement & Travel"
+    color_slot: 5
+    icona: "people"
+    descrizione: "SuccessFactors, Ariba, Concur, Fieldglass e integrazione con il core."
+    sap_help: "https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM"
+    keywords:
+      - {term: "successfactors", weight: 22}
+      - {term: "employee central", weight: 18}
+      - {term: "ariba", weight: 22}
+      - {term: "concur", weight: 20}
+      - {term: "fieldglass", weight: 20}
+      - {term: "sap hcm", weight: 18}
+      - {term: "payroll", weight: 14}
+      - {term: "h4s4", weight: 16}
+      - {term: "talent", weight: 8}
+      - {term: "recruiting", weight: 10}
+      - {term: "source to pay", weight: 14}
+      - {term: "business network", weight: 12}
+      - {term: "supplier", weight: 8}
+      - {term: "travel expense", weight: 12}
+
+  - id: tech_ops
+    nome: "Basis, HANA & Operations"
+    color_slot: 6
+    icona: "server"
+    descrizione: "Basis, HANA, performance, hyperscaler, monitoraggio, DevOps e trasporti."
+    sap_help: "https://help.sap.com/docs/SAP_HANA_PLATFORM"
+    keywords:
+      - {term: "basis", weight: 16}
+      - {term: "hana", weight: 14}
+      - {term: "sap hana", weight: 16}
+      - {term: "kernel", weight: 12}
+      - {term: "solution manager", weight: 14}
+      - {term: "cloud alm", weight: 16}
+      - {term: "charm", weight: 14}
+      - {term: "transport", weight: 10}
+      - {term: "focused run", weight: 14}
+      - {term: "system copy", weight: 12}
+      - {term: "hyperscaler", weight: 12}
+      - {term: "azure", weight: 8}
+      - {term: "aws", weight: 8}
+      - {term: "google cloud", weight: 8}
+      - {term: "downtime", weight: 10}
+      - {term: "performance", weight: 8}
+      - {term: "monitoring", weight: 10}
+      - {term: "devops", weight: 12}
+      - {term: "abap", weight: 10}
+      - {term: "fiori", weight: 10}
+      - {term: "ui5", weight: 12}
+
+  - id: security
+    nome: "Security & GRC"
+    color_slot: 7
+    icona: "shield"
+    descrizione: "Vulnerabilità, SAP Security Notes, Patch Day, autorizzazioni, SoD, identità."
+    sap_help: "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html"
+    keywords:
+      - {term: "security note", weight: 22}
+      - {term: "patch day", weight: 22}
+      - {term: "vulnerability", weight: 20}
+      - {term: "cve", weight: 20}
+      - {term: "exploit", weight: 18}
+      - {term: "cvss", weight: 18}
+      - {term: "grc", weight: 18}
+      - {term: "access control", weight: 14}
+      - {term: "segregation of duties", weight: 16}
+      - {term: "sod", weight: 12}
+      - {term: "identity authentication", weight: 16}
+      - {term: "identity provisioning", weight: 16}
+      - {term: "single sign-on", weight: 12}
+      - {term: "authorization", weight: 12}
+      - {term: "audit", weight: 10}
+      - {term: "ransomware", weight: 12}
+      - {term: "threat", weight: 10}
+      - {term: "hardening", weight: 12}
+
+  - id: ai_data
+    nome: "AI, Dati & Analytics"
+    color_slot: 8
+    icona: "spark"
+    descrizione: "Joule, AI Core/Foundation, Datasphere, SAC, Business Data Cloud e automazione."
+    sap_help: "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core"
+    keywords:
+      - {term: "joule", weight: 22}
+      - {term: "artificial intelligence", weight: 14}
+      - {term: "generative ai", weight: 16}
+      - {term: "ai agent", weight: 16}
+      - {term: "ai core", weight: 18}
+      - {term: "ai foundation", weight: 18}
+      - {term: "business ai", weight: 16}
+      - {term: "copilot", weight: 10}
+      - {term: "datasphere", weight: 20}
+      - {term: "business data cloud", weight: 20}
+      - {term: "analytics cloud", weight: 16}
+      - {term: "sac", weight: 8}
+      - {term: "data warehouse", weight: 12}
+      - {term: "cds view", weight: 14}
+      - {term: "embedded analytics", weight: 14}
+      - {term: "machine learning", weight: 12}
+      - {term: "rpa", weight: 12}
+      - {term: "process automation", weight: 12}
+      - {term: "document information extraction", weight: 14}
+
+  - id: altro
+    nome: "Altro / Ecosistema"
+    color_slot: 0
+    icona: "dot"
+    descrizione: "Notizie SAP che non ricadono in una categoria specifica: mercato, licensing, eventi, nomine."
+    sap_help: "https://www.sap.com/products.html"
+    keywords: []
