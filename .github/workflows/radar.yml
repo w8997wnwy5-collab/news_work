@@ -12,6 +12,14 @@ on:
   schedule:
     # 05:10 UTC = 07:10 in Italia con l'ora legale, 06:10 con l'ora solare.
     - cron: "10 5 * * *"
+    # Rete di sicurezza. GitHub non garantisce gli schedule: quando la coda di
+    # Actions è carica un giro può arrivare in ritardo o essere scartato del
+    # tutto, e il 27/09 è successo (nessun run, nemmeno accodato, due ore oltre
+    # l'orario). Il secondo giro non costa niente quando il primo è andato: la
+    # pipeline deduplica per id e committa solo se i file cambiano davvero,
+    # quindi un doppione esce con "Nessuna novità da committare". Resta dentro
+    # la stessa mattina italiana.
+    - cron: "40 7 * * *"
   workflow_dispatch:
     inputs:
       controlla_link:

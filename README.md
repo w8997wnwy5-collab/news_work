@@ -115,6 +115,12 @@ testa a `config/sources.yaml`, con il motivo di ciascuno.
 Non serve fare niente: il workflow gira ogni giorno alle **07:10 italiane**, aggiorna i
 dati, li committa e ripubblica la dashboard.
 
+C'è un secondo giro di riserva alle **09:40 italiane**, perché GitHub non garantisce gli
+schedule: quando la coda di Actions è carica un giro può arrivare in ritardo o sparire
+del tutto, ed è già capitato. Il doppione non fa danni: la pipeline deduplica per id e
+committa solo se i dati cambiano, quindi quando il primo giro è andato il secondo esce
+con "Nessuna novità da committare".
+
 Per lanciarlo a mano: *Actions → Radar SAP - aggiornamento giornaliero → Run workflow*.
 
 ### In locale
