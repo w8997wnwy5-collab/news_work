@@ -1,15 +1,13 @@
 # Radar SAP - 27/09/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 7 notizie (25 da leggere) da 21/21 fonti attive.
+Ultime 24h: 5 notizie (23 da leggere) da 21/21 fonti attive.
 
 ## Altro / Ecosistema
 
--  [From AI-Ready Data to Agent-Ready Data](https://community.sap.com/t5/technology-blog-posts-by-sap/from-ai-ready-data-to-agent-ready-data/ba-p/14492601) - _SAP Community - Technology blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+AI-Ready+Data+Agent-Ready+Data&sortBy=%22date_posted%22)
 -  [Understanding Form Templates in SAP Sales & Service Cloud V2](https://community.sap.com/t5/technology-blog-posts-by-members/understanding-form-templates-in-sap-sales-amp-service-cloud-v2/ba-p/14492282) - _SAP Community - blog dei membri_ (rilevanza 20) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Understanding+Form+Templates+SAP+Sales+Service+Cloud&sortBy=%22date_posted%22)
 -  [SAP-Academy-for-Customer-Success](https://www.reddit.com/r/SAP/comments/1wr0t5a/sapacademyforcustomersuccess) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP-Academy-for-Customer-Success&sortBy=%22date_posted%22)
 -  [Chi puo' aiutarmi?](https://www.reddit.com/r/SAP/comments/1wr07qy/chi_puo_aiutarmi) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Chi+puo+aiutarmi&sortBy=%22date_posted%22)
--  [Forward Deployed Engineering- FDE at SAP Labs India?](https://www.reddit.com/r/SAP/comments/1wqlryz/forward_deployed_engineering_fde_at_sap_labs_india) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Forward+Deployed+Engineering-+FDE+SAP+Labs+India&sortBy=%22date_posted%22)
 
 ## AI, Dati & Analytics
 
