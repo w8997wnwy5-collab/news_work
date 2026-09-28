@@ -188,11 +188,11 @@ Il catalogo contiene solo url verificati con `python -m sapnews check-links`: pe
 vendor su 27 il pulsante porta alla pagina demo vera, per gli altri al sito ufficiale
 (non espongono una pagina demo a indirizzo stabile).
 
-Il controllo distingue tre esiti, e la differenza conta: **ok**, **rotto** (404 o errore
-di rete, e lì scatta il ripiego) e **bloccato** — LinkedIn risponde `999` e alcuni siti
-`403` a qualunque client che non sia un browser. Quei link funzionano benissimo per una
-persona che ci clicca: trattarli come rotti farebbe sparire link validi, quindi restano
-invariati e il pannello li elenca a parte.
+Il controllo distingue tre esiti, e la differenza conta: **ok**, **rotto** (un codice
+HTTP di errore, tipicamente un 404, e lì scatta il ripiego) e **bloccato** — LinkedIn
+risponde `999` e alcuni siti `403` a qualunque client che non sia un browser. Quei link
+funzionano benissimo per una persona che ci clicca: trattarli come rotti farebbe sparire
+link validi, quindi restano invariati e il pannello li elenca a parte.
 
 Su alcuni host nemmeno un 404 è un verdetto. LinkedIn, allo stesso indirizzo e a due
 minuti di distanza, ha risposto `200`, `999` e `404` senza che la pagina cambiasse: il
@@ -201,6 +201,14 @@ che si comportano così stanno in `host_incerti` (in `config/vendors.yaml`) e l�
 errore diventa mai "rotto": il link resta dov'è e il pannello lo mostra come non
 verificabile. Il principio è che degradare un link valido costa più che lasciarne
 passare uno morto, perché il primo danno è silenzioso.
+
+Per lo stesso motivo una richiesta che non arriva a destinazione non è mai "rotto", su
+nessun host: se cade il DNS, scade il timeout o la connessione viene chiusa, non abbiamo
+visto la pagina e non possiamo dire niente di lei. È successo il 28/09 con
+`blackline.com`, che aveva risposto `200` quattro ore prima e in ogni controllo
+precedente: un `ConnectionError` di passaggio l'aveva fatto passare per rotto, e dato che
+il controllo dei link gira il lunedì il ripiego sarebbe rimasto su per una settimana. Un
+verdetto "rotto" ora lo può dare solo il server, rispondendo.
 
 ---
 

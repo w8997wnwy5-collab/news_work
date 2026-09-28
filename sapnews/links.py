@@ -8,6 +8,10 @@ Il verdetto ha tre stati, non due, perché non tutti i siti rispondono a uno
 script come risponderebbero a un browser. "bloccato" vuol dire che il
 controllo non è riuscito a stabilire nulla, e in quel caso il link resta dov'è:
 degradare un link valido è peggio che lasciarne passare uno morto.
+
+"rotto" lo dice solo un codice HTTP di errore, arrivato da un host che non
+combatte gli script. Se la risposta non arriva affatto — DNS, TLS, timeout,
+connessione chiusa — non sappiamo niente della pagina, e il link resta dov'è.
 """
 
 from __future__ import annotations
@@ -60,8 +64,13 @@ def _check(session: requests.Session, url: str, timeout: int = 15,
         return {"stato": r.status_code, "esito": esito, "ok": esito != "rotto",
                 "finale": r.url, "controllato_il": iso(now_utc())}
     except requests.RequestException as exc:
-        esito = "bloccato" if incerto else "rotto"
-        return {"stato": 0, "esito": esito, "ok": esito != "rotto",
+        # Qui non è arrivata nessuna risposta: DNS, TLS, timeout, connessione
+        # chiusa. Non è un verdetto sulla pagina, è l'assenza di un verdetto, e
+        # vale per qualsiasi host. Il 28/09 blackline.com ha dato ConnectionError
+        # alle 11:39 dopo un 200 quattro ore prima e in tutti i controlli
+        # precedenti: chiamarlo "rotto" ha degradato un link valido, e sarebbe
+        # rimasto così una settimana, fino al controllo del lunedì dopo.
+        return {"stato": 0, "esito": "bloccato", "ok": True,
                 "errore": type(exc).__name__, "controllato_il": iso(now_utc())}
 
 

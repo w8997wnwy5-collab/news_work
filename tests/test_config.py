@@ -1,5 +1,7 @@
+import requests
+
 from sapnews.config import load_config
-from sapnews.links import esito_da_stato, host_incerto
+from sapnews.links import _check, esito_da_stato, host_incerto
 
 from conftest import PROGETTO
 
@@ -49,3 +51,29 @@ def test_un_404_da_host_incerto_non_e_un_verdetto():
 def test_linkedin_e_dichiarato_host_incerto_nella_configurazione_reale():
     cfg = load_config(PROGETTO)
     assert "linkedin.com" in cfg.host_incerti
+
+def test_una_connessione_fallita_non_e_un_verdetto_su_nessun_host():
+    """Il 28/09 blackline.com ha dato ConnectionError alle 11:39 dopo un 200
+    quattro ore prima e in ogni controllo precedente. Una risposta che non arriva
+    non dice nulla sulla pagina: se diventa "rotto", la dashboard ripiega sul
+    sito ufficiale per un link valido e ci resta fino al lunedì dopo."""
+
+    class SessioneMorta:
+        def head(self, *a, **k):
+            raise requests.ConnectionError("nome non risolto")
+
+    esito = _check(SessioneMorta(), "https://www.blackline.com")
+    assert esito["esito"] == "bloccato"
+    assert esito["ok"] is True
+    assert esito["stato"] == 0
+    assert esito["errore"] == "ConnectionError"
+
+    # Vale anche sugli host già dichiarati incerti, e per un timeout.
+    class SessioneLenta:
+        def head(self, *a, **k):
+            raise requests.Timeout("troppo lenta")
+
+    lento = _check(SessioneLenta(), "https://www.linkedin.com/company/acme",
+                   incerto=True)
+    assert lento["esito"] == "bloccato"
+    assert lento["ok"] is True
