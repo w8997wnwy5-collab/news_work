@@ -1,7 +1,7 @@
 # Radar SAP - 29/09/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 31 notizie (27 da leggere) da 21/21 fonti attive.
+Ultime 24h: 29 notizie (26 da leggere) da 21/21 fonti attive.
 
 ## BTP & Integrazione
 
@@ -10,7 +10,7 @@ Ultime 24h: 31 notizie (27 da leggere) da 21/21 fonti attive.
 - **[Da leggere]** [SAP Business AI Platform, ABAP Environment - New Product Name](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-platform-abap-environment-new-product-name/ba-p/14492854) - _SAP Community - Technology blogs_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Business+Platform+ABAP+Environment+New+Product+Name&sortBy=%22date_posted%22)
 - [Da monitorare] [Agentic AI on BTP: Running Your Agents Unattended on a Schedule](https://community.sap.com/t5/technology-blog-posts-by-members/agentic-ai-on-btp-running-your-agents-unattended-on-a-schedule/ba-p/14493817) - _SAP Community - blog dei membri_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Agentic+BTP+Running+Your+Agents+Unattended+Schedule&sortBy=%22date_posted%22)
 - [Da monitorare] [SAP BTP Destinations: Configuration for Different Service Types](https://community.sap.com/t5/technology-blog-posts-by-members/sap-btp-destinations-configuration-for-different-service-types/ba-p/14493660) - _SAP Community - blog dei membri_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+BTP+Destinations+Configuration+for+Different+Service+Types&sortBy=%22date_posted%22)
-- [Da monitorare] [What’s new in Mobile development kit client 26.9](https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-mobile-development-kit-client-26-9/ba-p/14484188) - _SAP Community - Technology blogs_ (rilevanza 54) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=What+new+Mobile+development+kit+client+26.9&sortBy=%22date_posted%22)
+-  [The migration step is the easy part](https://figaf.com/the-migration-step-is-the-easy-part) - _Figaf Blog_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+migration+step+the+easy+part&sortBy=%22date_posted%22)
 
 ## S/4HANA & Clean Core
 
@@ -23,6 +23,7 @@ Ultime 24h: 31 notizie (27 da leggere) da 21/21 fonti attive.
 
 - [Da monitorare] [Connect to AWS S3 using SAP Cloud Connector for SAP Datasphere Replication flows](https://community.sap.com/t5/technology-blog-posts-by-sap/connect-to-aws-s3-using-sap-cloud-connector-for-sap-datasphere-replication/ba-p/14491719) - _SAP Community - Technology blogs_ (rilevanza 68) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Connect+AWS+using+SAP+Cloud+Connector+for+SAP+Datasphere&sortBy=%22date_posted%22)
 - [Da monitorare] [Publish SAP Databricks Views as Custom Data Products in SAP Business Data Cloud](https://community.sap.com/t5/technology-blog-posts-by-sap/publish-sap-databricks-views-as-custom-data-products-in-sap-business-data/ba-p/14494001) - _SAP Community - Technology blogs_ (rilevanza 54) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Publish+SAP+Databricks+Views+Custom+Data+Products+SAP+Business&sortBy=%22date_posted%22)
+- [Da monitorare] [Is a Data Product Ready for an AI Agent?](https://community.sap.com/t5/technology-blog-posts-by-sap/is-a-data-product-ready-for-an-ai-agent/ba-p/14494043) - _SAP Community - Technology blogs_ (rilevanza 50) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Data+Product+Ready+for+Agent&sortBy=%22date_posted%22)
 -  [Getting started with the MCP server on Lab Space for SAP Signavio Solutions](https://community.sap.com/t5/technology-blog-posts-by-sap/getting-started-with-the-mcp-server-on-lab-space-for-sap-signavio-solutions/ba-p/14493570) - _SAP Community - Technology blogs_ (rilevanza 36) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Getting+started+with+the+MCP+server+Lab+Space+for&sortBy=%22date_posted%22)
 
 ## Supply Chain & Logistica
@@ -33,7 +34,6 @@ Ultime 24h: 31 notizie (27 da leggere) da 21/21 fonti attive.
 
 ## Security & GRC
 
-- **[Da leggere]** [Security KPI Dashboards for SAP Operations Teams](https://www.avantra.com/blog/sap-security-dashboard) - _Avantra Blog_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Security+KPI+Dashboards+for+SAP+Operations+Teams&sortBy=%22date_posted%22)
 - [Da monitorare] [NVIDIA Launches New Security Platform for AI Agents as SAP Builds OpenShell Into Joule Studio](https://sapinsider.org/blogs/nvidia-ai-agent-security-openshell-sap-joule-studio) - _SAPinsider_ (rilevanza 68) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=NVIDIA+Launches+New+Security+Platform+for+Agents+SAP+Builds&sortBy=%22date_posted%22)
 
 ## Finance & Compliance
