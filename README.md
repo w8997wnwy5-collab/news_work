@@ -112,14 +112,23 @@ testa a `config/sources.yaml`, con il motivo di ciascuno.
 
 ## Uso quotidiano
 
-Non serve fare niente: il workflow gira ogni giorno alle **07:10 italiane**, aggiorna i
-dati, li committa e ripubblica la dashboard.
+Non serve fare niente: il giro parte ogni mattina alle **07:05 italiane**, aggiorna i
+dati, li committa e ripubblica la dashboard. I dati del giorno sono pronti entro le 07:10.
 
-C'è un secondo giro di riserva alle **09:40 italiane**, perché GitHub non garantisce gli
-schedule: quando la coda di Actions è carica un giro può arrivare in ritardo o sparire
-del tutto, ed è già capitato. Il doppione non fa danni: la pipeline deduplica per id e
-committa solo se i dati cambiano, quindi quando il primo giro è andato il secondo esce
-con "Nessuna novità da committare".
+La sveglia però non è il cron di GitHub, ed è una scelta deliberata. Gli `schedule` di
+Actions su questo repo slittano in modo sistematico: misurati per quattro giorni di fila,
+i due giri arrivavano con **circa sei ore di ritardo** (il giro delle 07:10 compariva
+verso le 13), e una volta non è arrivato affatto. GitHub lo dichiara — uno `schedule` può
+ritardare o essere scartato quando la coda è carica — e i cron sono già a minuti sfalsati,
+che è la mitigazione che GitHub stesso consiglia: dentro Actions non restava niente da
+spremere. Quindi la sveglia sta fuori: un Routine giornaliero chiama `workflow_dispatch`
+alle 07:05, e quello parte in pochi secondi.
+
+I due `schedule` nel workflow (05:10 e 07:40 UTC) sono rimasti come rete di sicurezza,
+per il caso in cui la sveglia esterna non parta. Quando arrivano — puntuali o in ritardo —
+e i dati del giorno ci sono già, non fanno danni: `merge()` deduplica per id e il commit
+parte solo se i file cambiano davvero, quindi il doppione chiude con "Nessuna novità da
+committare".
 
 Per lanciarlo a mano: *Actions → Radar SAP - aggiornamento giornaliero → Run workflow*.
 

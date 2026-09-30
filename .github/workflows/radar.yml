@@ -9,16 +9,20 @@ on:
       - "config/**"
       - "sapnews/**"
       - ".github/workflows/radar.yml"
+  # Questi due schedule NON sono la sveglia principale: sono la rete di sicurezza.
+  # Il giro di ogni mattina lo lancia un Routine esterno via workflow_dispatch alle
+  # 07:05 italiane, perché su questo repo gli schedule di Actions slittano in modo
+  # sistematico — misurati dal 27 al 30/09, arrivavano con circa sei ore di ritardo
+  # (il giro delle 07:10 compariva verso le 13) e il 28/09 il primo non è arrivato
+  # affatto. I minuti sono già sfalsati, che è la mitigazione consigliata da GitHub,
+  # quindi qui dentro non c'era altro da fare.
+  # Quando questi giri arrivano e i dati del giorno ci sono già non fanno danni:
+  # merge() deduplica per id e il commit parte solo se i file cambiano davvero,
+  # quindi il doppione chiude con "Nessuna novità da committare".
   schedule:
     # 05:10 UTC = 07:10 in Italia con l'ora legale, 06:10 con l'ora solare.
     - cron: "10 5 * * *"
-    # Rete di sicurezza. GitHub non garantisce gli schedule: quando la coda di
-    # Actions è carica un giro può arrivare in ritardo o essere scartato del
-    # tutto, e il 27/09 è successo (nessun run, nemmeno accodato, due ore oltre
-    # l'orario). Il secondo giro non costa niente quando il primo è andato: la
-    # pipeline deduplica per id e committa solo se i file cambiano davvero,
-    # quindi un doppione esce con "Nessuna novità da committare". Resta dentro
-    # la stessa mattina italiana.
+    # 07:40 UTC: secondo tentativo, sempre nella stessa mattina italiana.
     - cron: "40 7 * * *"
   workflow_dispatch:
     inputs:
