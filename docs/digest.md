@@ -1,7 +1,7 @@
 # Radar SAP - 14/10/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 47 notizie (25 da leggere) da 21/21 fonti attive.
+Ultime 24h: 45 notizie (25 da leggere) da 21/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
@@ -26,18 +26,18 @@ Ultime 24h: 47 notizie (25 da leggere) da 21/21 fonti attive.
 - [Da monitorare] [SAP TechEd 2026 highlights the power of AI to simplify UX](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-teched-2026-highlights-the-power-of-ai-to-simplify-ux/ba-p/14501956) - _SAP Community - Technology blogs_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+TechEd+2026+highlights+the+power+simplify&sortBy=%22date_posted%22)
 - [Da monitorare] [Architecting Digital Workforce: Understanding SAP Joule, Assistants, Agents, Skills and Joule studio](https://community.sap.com/t5/technology-blog-posts-by-sap/architecting-digital-workforce-understanding-sap-joule-assistants-agents/ba-p/14501524) - _SAP Community - Technology blogs_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Architecting+Digital+Workforce+Understanding+SAP+Joule+Assistants+Agents+Skills&sortBy=%22date_posted%22)
 - [Da monitorare] [SAP Joule unnötig kompliziert](https://www.reddit.com/r/SAP/comments/1x5lah0/sap_joule_unnötig_kompliziert) - _Reddit r/SAP_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Joule+unn%C3%B6tig+kompliziert&sortBy=%22date_posted%22)
+- [Da monitorare] [Partner Learning Accelerator: SAP Certified - Solution Architect - SAP Business AI Platform](https://community.sap.com/t5/technology-blog-posts-by-sap/partner-learning-accelerator-sap-certified-solution-architect-sap-business/ba-p/14502960) - _SAP Community - Technology blogs_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Partner+Learning+Accelerator+SAP+Certified+Solution+Architect+SAP+Business&sortBy=%22date_posted%22)
 
 ## Supply Chain & Logistica
 
 - [Da monitorare] [Warum Logistik-Transformationen scheitern](https://e3mag.com/de/warum-logistik-transformationen-scheitern) - _E-3 Magazine (EN)_ (rilevanza 50) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Warum+Logistik-Transformationen+scheitern&sortBy=%22date_posted%22)
 - [Da monitorare] [The Warehouse Already Knows](https://sapinsider.org/articles/the-warehouse-already-knows) - _SAPinsider_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+Warehouse+Already+Knows&sortBy=%22date_posted%22)
 
-## Security & GRC
-
-- [Da monitorare] [SAP Security Patch and Vulnerability Monitoring Guide](https://www.avantra.com/blog/sap-security-patch-and-vulnerability-monitoring-guide) - _Avantra Blog_ (rilevanza 48) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Security+Patch+and+Vulnerability+Monitoring+Guide&sortBy=%22date_posted%22)
-- [Da monitorare] [SAP Security Patch Day – October 2026](https://securitybridge.com/blog/sap-security-patch-day-october-2026) - _SecurityBridge Blog_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Security+Patch+Day+October+2026&sortBy=%22date_posted%22)
-
 ## Basis, HANA & Operations
 
 - [Da monitorare] [JOIN US: Meet SAP HANA Cloud @ SAP TechEd 2026](https://community.sap.com/t5/technology-blog-posts-by-sap/join-us-meet-sap-hana-cloud-sap-teched-2026/ba-p/14499507) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=JOIN+Meet+SAP+HANA+Cloud+SAP+TechEd+2026&sortBy=%22date_posted%22)
+
+## Security & GRC
+
+- [Da monitorare] [SAP Security Patch and Vulnerability Monitoring Guide](https://www.avantra.com/blog/sap-security-patch-and-vulnerability-monitoring-guide) - _Avantra Blog_ (rilevanza 48) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Security+Patch+and+Vulnerability+Monitoring+Guide&sortBy=%22date_posted%22)
 
