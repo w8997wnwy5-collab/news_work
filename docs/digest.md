@@ -1,30 +1,41 @@
 # Radar SAP - 19/10/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 9 notizie (29 da leggere) da 21/21 fonti attive.
-
-## Altro / Ecosistema
-
--  [Red Hat startet asago für KI-Governance](https://e3mag.com/de/red-hat-startet-asago-fuer-ki-governance) - _E-3 Magazine (EN)_ (rilevanza 22) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Red+Hat+startet+asago+f%C3%BCr+KI-Governance&sortBy=%22date_posted%22)
--  [Schedule line category not redetermining after custom code changes item category value on sales order](https://www.reddit.com/r/SAP/comments/1x91ajt/schedule_line_category_not_redetermining_after) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Schedule+line+category+not+redetermining+after+custom+code+changes&sortBy=%22date_posted%22)
--  [Sap fico interview document](https://www.reddit.com/r/SAP/comments/1x8xlf6/sap_fico_interview_document) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Sap+fico+interview+document&sortBy=%22date_posted%22)
+Ultime 24h: 23 notizie (33 da leggere) da 21/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
 - **[Da leggere]** [Several e-mail addresses, one SAP user: CERTRULE instead of the gateway mapping table for BTP apps](https://community.sap.com/t5/technology-blog-posts-by-members/several-e-mail-addresses-one-sap-user-certrule-instead-of-the-gateway/ba-p/14500734) - _SAP Community - blog dei membri_ (rilevanza 90) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Several+e-mail+addresses+one+SAP+user+CERTRULE+instead+the&sortBy=%22date_posted%22)
 - **[Da leggere]** [Yooz Connector](https://sapinsider.org/videos/yooz-connector) - _SAPinsider_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Yooz+Connector&sortBy=%22date_posted%22)
-
-## AI, Dati & Analytics
-
-- **[Da leggere]** [Business AI in ABAP Cloud - Embedding AI with the ABAP AI SDK](https://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-embedding-ai-with-the-abap-ai-sdk/ba-p/14501649) - _SAP Community - Technology blogs_ (rilevanza 88) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Business+ABAP+Cloud+Embedding+with+the+ABAP+SDK&sortBy=%22date_posted%22)
-
-## BTP & Integrazione
-
-- **[Da leggere]** [Adding XSUAA Security to a CAP Service on the BTP Trial](https://community.sap.com/t5/technology-blog-posts-by-members/adding-xsuaa-security-to-a-cap-service-on-the-btp-trial/ba-p/14506224) - _SAP Community - blog dei membri_ (rilevanza 80) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Adding+XSUAA+Security+CAP+Service+the+BTP+Trial&sortBy=%22date_posted%22)
+- **[Da leggere]** [From SOAP to RAP: Choosing a Web Service Technology in S/4HANA](https://community.sap.com/t5/technology-blog-posts-by-members/from-soap-to-rap-choosing-a-web-service-technology-in-s-4hana/ba-p/14505718) - _SAP Community - blog dei membri_ (rilevanza 72) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+SOAP+RAP+Choosing+Web+Service+Technology+S%2F4HANA&sortBy=%22date_posted%22)
+- **[Da leggere]** [Reversing the 5HP NBIC Intercompany STO in SAP S/4HANA Cloud Public Edition](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/reversing-the-5hp-nbic-intercompany-sto-in-sap-s-4hana-cloud-public-edition/ba-p/14506594) - _SAP Community - ERP blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Reversing+the+5HP+NBIC+Intercompany+STO+SAP+S%2F4HANA+Cloud&sortBy=%22date_posted%22)
+- **[Da leggere]** [Reversing the 5HP NBIC Intercompany STO in SAP S/4HANA Cloud Public Edition](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/reversing-the-5hp-nbic-intercompany-sto-in-sap-s-4hana-cloud-public-edition/ba-p/14506587) - _SAP Community - ERP blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Reversing+the+5HP+NBIC+Intercompany+STO+SAP+S%2F4HANA+Cloud&sortBy=%22date_posted%22)
 
 ## Basis, HANA & Operations
 
+- [Da monitorare] [Implementing Print and Download PDF Features in SAP RAP Applications on S/4 HANA 2025 On-Premise](https://community.sap.com/t5/technology-blog-posts-by-members/implementing-print-and-download-pdf-features-in-sap-rap-applications-on-s-4/ba-p/14504868) - _SAP Community - blog dei membri_ (rilevanza 68) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Implementing+Print+and+Download+PDF+Features+SAP+RAP+Applications&sortBy=%22date_posted%22)
 - [Da monitorare] [SAP HANA Data Provisioning Agent 2.8.1.2 on SLES 15.6 Installation and Connection to SAP HANA Cloud](https://community.sap.com/t5/technology-blog-posts-by-members/sap-hana-data-provisioning-agent-2-8-1-2-on-sles-15-6-installation-and/ba-p/14506183) - _SAP Community - blog dei membri_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+HANA+Data+Provisioning+Agent+2.8.1.2+SLES+15.6+Installation&sortBy=%22date_posted%22)
+- [Da monitorare] [Configuring SSL Encryption Between SAP ABAP Application Servers and SAP HANA](https://community.sap.com/t5/technology-blog-posts-by-sap/configuring-ssl-encryption-between-sap-abap-application-servers-and-sap/ba-p/14506654) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Configuring+SSL+Encryption+Between+SAP+ABAP+Application+Servers+and&sortBy=%22date_posted%22)
+- [Da monitorare] [ABAP development tools for Visual Studio Code: Version 1.2 released](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-development-tools-for-visual-studio-code-version-1-2-released/ba-p/14496347) - _SAP Community - Technology blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=ABAP+development+tools+for+Visual+Studio+Code+Version+1.2&sortBy=%22date_posted%22)
+- [Da monitorare] [ABAP development tools MCP server: Major update available!](https://community.sap.com/t5/technology-blog-posts-by-sap/abap-development-tools-mcp-server-major-update-available/ba-p/14496064) - _SAP Community - Technology blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=ABAP+development+tools+MCP+server+Major+update+available&sortBy=%22date_posted%22)
+
+## BTP & Integrazione
+
+- **[Da leggere]** [Seamless event-driven architecture with SAP Integration Suite, AEM and SAP S/4HANA hands-on workshop](https://community.sap.com/t5/technology-blog-posts-by-sap/seamless-event-driven-architecture-with-sap-integration-suite-aem-and-sap-s/ba-p/14505831) - _SAP Community - Technology blogs_ (rilevanza 96) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Seamless+event-driven+architecture+with+SAP+Integration+Suite+AEM+and&sortBy=%22date_posted%22)
+- **[Da leggere]** [BTP Transports with CTMS & Content Agent | Part 2: Content Agent and destinations in Dev](https://community.sap.com/t5/technology-blog-posts-by-members/btp-transports-with-ctms-amp-content-agent-part-2-content-agent-and/ba-p/14506140) - _SAP Community - blog dei membri_ (rilevanza 90) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=BTP+Transports+with+CTMS+Content+Agent+Part+Content+Agent&sortBy=%22date_posted%22)
+- **[Da leggere]** [Adding XSUAA Security to a CAP Service on the BTP Trial](https://community.sap.com/t5/technology-blog-posts-by-members/adding-xsuaa-security-to-a-cap-service-on-the-btp-trial/ba-p/14506224) - _SAP Community - blog dei membri_ (rilevanza 80) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Adding+XSUAA+Security+CAP+Service+the+BTP+Trial&sortBy=%22date_posted%22)
+- **[Da leggere]** [Agentic AI on BTP: Connecting Agents to SAP OData APIs without an MCP Server](https://community.sap.com/t5/technology-blog-posts-by-members/agentic-ai-on-btp-connecting-agents-to-sap-odata-apis-without-an-mcp-server/ba-p/14506364) - _SAP Community - blog dei membri_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Agentic+BTP+Connecting+Agents+SAP+OData+APIs+without+MCP&sortBy=%22date_posted%22)
+
+## AI, Dati & Analytics
+
+- **[Da leggere]** [Business AI in ABAP Cloud - Embedding AI with the ABAP AI SDK (Part 2)](https://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-embedding-ai-with-the-abap-ai-sdk-part-2/ba-p/14501649) - _SAP Community - Technology blogs_ (rilevanza 88) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Business+ABAP+Cloud+Embedding+with+the+ABAP+SDK+Part&sortBy=%22date_posted%22)
+- **[Da leggere]** [Business AI in ABAP Cloud - Embedding AI with the ABAP AI SDK](https://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-embedding-ai-with-the-abap-ai-sdk/ba-p/14501649) - _SAP Community - Technology blogs_ (rilevanza 88) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Business+ABAP+Cloud+Embedding+with+the+ABAP+SDK&sortBy=%22date_posted%22)
+- [Da monitorare] [It’s the beginning of better: al SAP NOW AI Tour Milan, l’Autonomous Enterprise prende vita](https://news.sap.com/italy/2026/10/its-the-beginning-of-better-al-sap-now-ai-tour-milan-lautonomous-enterprise-prende-vita) - _SAP News Italia_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=the+beginning+better+SAP+NOW+Tour+Milan+Autonomous+Enterprise&sortBy=%22date_posted%22)
+
+## Altro / Ecosistema
+
+-  [1,000 AI Agents by SAP TechEd: SAP and Partners Accelerate Together](https://news.sap.com/2026/10/1k-ai-agents-by-sap-teched-sap-and-partners-accelerate-together) - _SAP News Center_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=000+Agents+SAP+TechEd+SAP+and+Partners+Accelerate+Together&sortBy=%22date_posted%22)
+-  [KI-Agenten als Mitarbeiter: HR-Modell für die digitale Belegschaft](https://e3mag.com/de/ki-agenten-als-mitarbeiter-hr-modell-fuer-die-digitale-belegschaft) - _E-3 Magazine (EN)_ (rilevanza 22) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=KI-Agenten+als+Mitarbeiter+HR-Modell+f%C3%BCr+die+digitale+Belegschaft&sortBy=%22date_posted%22)
 
 ## Finance & Compliance
 
