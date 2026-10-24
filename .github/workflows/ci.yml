@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  # I commit di dati fatti dal workflow usano GITHUB_TOKEN, e GitHub non avvia
+  # workflow per quei push: l'head resta senza check. Questo permette di
+  # lanciare i test a mano su qualunque branch.
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt pytest
+      - name: Coerenza della configurazione
+        run: python -m sapnews validate
+      - name: Test
+        run: python -m pytest
