@@ -5,7 +5,6 @@ Ultime 24h: 4 notizie (42 da leggere) da 21/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
-- **[Da leggere]** [Changelog for SAP objects - Verify clean core level C compliance of your custom extensions](https://community.sap.com/t5/technology-blog-posts-by-sap/changelog-for-sap-objects-verify-clean-core-level-c-compliance-of-your/ba-p/14509473) - _SAP Community - Technology blogs_ (rilevanza 96) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Changelog+for+SAP+objects+Verify+clean+core+level+compliance&sortBy=%22date_posted%22)
 - **[Da leggere]** [Tired of "Clean Core" buzzword slides. Here is the technical decision tree we actually use on S/4HANA & BTP projects (and why most teams over-engineer this)](https://www.reddit.com/r/SAP/comments/1xesxa2/tired_of_clean_core_buzzword_slides_here_is_the) - _Reddit r/SAP_ (rilevanza 86) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Tired+Clean+Core+buzzword+slides.+Here+the+technical+decision&sortBy=%22date_posted%22)
 
 ## AI, Dati & Analytics
@@ -15,4 +14,8 @@ Ultime 24h: 4 notizie (42 da leggere) da 21/21 fonti attive.
 ## BTP & Integrazione
 
 - [Da monitorare] [iFlow Transport with Git and CI/CD – Setting Externalized Parameters with Automation Pilot](https://community.sap.com/t5/technology-blog-posts-by-members/iflow-transport-with-git-and-ci-cd-setting-externalized-parameters-with/ba-p/14510297) - _SAP Community - blog dei membri_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=iFlow+Transport+with+Git+and+CI%2FCD+Setting+Externalized+Parameters&sortBy=%22date_posted%22)
+
+## Altro / Ecosistema
+
+-  [SAP Cloud Strategy](https://www.reddit.com/r/SAP/comments/1xew5q0/sap_cloud_strategy) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Cloud+Strategy&sortBy=%22date_posted%22)
 
