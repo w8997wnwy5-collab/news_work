@@ -1,7 +1,12 @@
 # Radar SAP - 25/10/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 4 notizie (42 da leggere) da 21/21 fonti attive.
+Ultime 24h: 6 notizie (42 da leggere) da 21/21 fonti attive.
+
+## Altro / Ecosistema
+
+-  [Solution order billing with solution bundle](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/solution-order-billing-with-solution-bundle/ba-p/14510509) - _SAP Community - ERP blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Solution+order+billing+with+solution+bundle&sortBy=%22date_posted%22)
+-  [SAP Cloud Strategy](https://www.reddit.com/r/SAP/comments/1xew5q0/sap_cloud_strategy) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Cloud+Strategy&sortBy=%22date_posted%22)
 
 ## S/4HANA & Clean Core
 
@@ -11,11 +16,11 @@ Ultime 24h: 4 notizie (42 da leggere) da 21/21 fonti attive.
 
 - **[Da leggere]** [Hi everyone if anyone want to learn SAP security - Datasphere/BTP/BDC/SAC/CIS/GRC can ping me](https://www.reddit.com/r/SAP/comments/1xeukzh/hi_everyone_if_anyone_want_to_learn_sap_security) - _Reddit r/SAP_ (rilevanza 82) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=everyone+anyone+want+learn+SAP+security+Datasphere%2FBTP%2FBDC%2FSAC%2FCIS%2FGRC+can+ping&sortBy=%22date_posted%22)
 
+## Basis, HANA & Operations
+
+- [Da monitorare] [SAP BASIS HEALTH CHECK COCKPIT – ONE ABAP REPORT (NO SOLMAN / NO CALM)](https://community.sap.com/t5/technology-blog-posts-by-members/sap-basis-health-check-cockpit-one-abap-report-no-solman-no-calm/ba-p/14510469) - _SAP Community - blog dei membri_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+BASIS+HEALTH+CHECK+COCKPIT+ONE+ABAP+REPORT+SOLMAN&sortBy=%22date_posted%22)
+
 ## BTP & Integrazione
 
 - [Da monitorare] [iFlow Transport with Git and CI/CD – Setting Externalized Parameters with Automation Pilot](https://community.sap.com/t5/technology-blog-posts-by-members/iflow-transport-with-git-and-ci-cd-setting-externalized-parameters-with/ba-p/14510297) - _SAP Community - blog dei membri_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=iFlow+Transport+with+Git+and+CI%2FCD+Setting+Externalized+Parameters&sortBy=%22date_posted%22)
-
-## Altro / Ecosistema
-
--  [SAP Cloud Strategy](https://www.reddit.com/r/SAP/comments/1xew5q0/sap_cloud_strategy) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Cloud+Strategy&sortBy=%22date_posted%22)
 
