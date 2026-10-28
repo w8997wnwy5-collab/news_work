@@ -1,25 +1,26 @@
 # Radar SAP - 28/10/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 37 notizie (38 da leggere) da 21/21 fonti attive.
+Ultime 24h: 30 notizie (38 da leggere) da 21/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
 - **[Da leggere]** [[Architecture Blueprint] S/4HANA 3-Tier Extensibility & Clean Core Decision Model](https://www.reddit.com/r/SAP/comments/1xhbv75/architecture_blueprint_s4hana_3tier_extensibility) - _Reddit r/SAP_ (rilevanza 86) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Architecture+Blueprint+S%2F4HANA+3-Tier+Extensibility+Clean+Core+Decision+Model&sortBy=%22date_posted%22)
-- **[Da leggere]** [Has anyone used a single custom Material Type ("MAT") for all materials in SAP S/4HANA Public Cloud? What were the upgrade and scope item impacts?](https://www.reddit.com/r/SAP/comments/1xgqwxz/has_anyone_used_a_single_custom_material_type_mat) - _Reddit r/SAP_ (rilevanza 86) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Has+anyone+used+single+custom+Material+Type+MAT+for&sortBy=%22date_posted%22)
 - **[Da leggere]** [The depreciation results differ between the two currencies - SAP S/4HANA Cloud Public Edition](https://community.sap.com/t5/technology-blog-posts-by-sap/the-depreciation-results-differ-between-the-two-currencies-sap-s-4hana/ba-p/14512190) - _SAP Community - Technology blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+depreciation+results+differ+between+the+two+currencies+SAP&sortBy=%22date_posted%22)
 - **[Da leggere]** [How to modify the Legacy Data Transfer date - SAP S/4HANA Cloud Public Edition](https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-modify-the-legacy-data-transfer-date-sap-s-4hana-cloud-public/ba-p/14512153) - _SAP Community - Technology blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=How+modify+the+Legacy+Data+Transfer+date+SAP+S%2F4HANA&sortBy=%22date_posted%22)
 - **[Da leggere]** [SAP Managed Integration for SAP S/4HANA Cloud Private Edition -- adoption experience](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-managed-integration-for-sap-s-4hana-cloud-private-edition-adoption/ba-p/14500934) - _SAP Community - ERP blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Managed+Integration+for+SAP+S%2F4HANA+Cloud+Private+Edition&sortBy=%22date_posted%22)
 - [Da monitorare] [SAP/4HANA Migration HELP!](https://www.reddit.com/r/SAP/comments/1xguoy4/sap4hana_migration_help) - _Reddit r/SAP_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP%2F4HANA+Migration+HELP&sortBy=%22date_posted%22)
+-  [SAP TechEd 2026: What’s Rolling Out and What’s Planned Through 2027](https://erp.today/sap-teched-2026-whats-rolling-out-and-whats-planned-through-2027) - _ERP Today_ (rilevanza 36) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+TechEd+2026+What+Rolling+Out+and+What+Planned&sortBy=%22date_posted%22)
+-  [SAP Brings Migration and Modernization Assistants to Customers’ Cloud ERP Transformations](https://news.sap.com/2026/10/migration-and-modernization-assistants-sap-customer-cloud-erp-transformations) - _SAP News Center_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Brings+Migration+and+Modernization+Assistants+Customers+Cloud+ERP&sortBy=%22date_posted%22)
 
 ## AI, Dati & Analytics
 
 - [Da monitorare] [“People Don’t Want to Learn a Tool”: SAP’s Ted Way Explains the Thinking Behind TechEd 2026](https://sapinsider.org/articles/sap-joule-work-ted-way-teched-2026) - _SAPinsider_ (rilevanza 68) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=People+Don+Want+Learn+Tool+SAP+Ted+Way+Explains&sortBy=%22date_posted%22)
 - [Da monitorare] [SAP Joule Assistants Plug & Play: Available Today](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-joule-assistants-plug-amp-play-available-today/ba-p/14511969) - _SAP Community - Technology blogs_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Joule+Assistants+Plug+Play+Available+Today&sortBy=%22date_posted%22)
 - [Da monitorare] [SAP TechEd 2026 Continues to Push the Autonomous Enterprise Vision](https://erp.today/sap-teched-2026-continues-to-push-the-autonomous-enterprise-vision) - _ERP Today_ (rilevanza 58) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+TechEd+2026+Continues+Push+the+Autonomous+Enterprise+Vision&sortBy=%22date_posted%22)
-- [Da monitorare] [SAP TechEd - how Bosch's early exposure to an enhanced Joule Work is stacking up](https://diginomica.com/sap-teched-how-boschs-early-exposure-enhanced-joule-work-stacking) - _diginomica_ (rilevanza 58) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+TechEd+how+Bosch+early+exposure+enhanced+Joule+Work&sortBy=%22date_posted%22)
 - [Da monitorare] [Data Products in SAP Business Data Cloud: Closing the Governance Gap for AI Readiness](https://sapinsider.org/whitepapers/data-products-in-sap-business-data-cloud-closing-the-governance-gap-for-ai-readiness) - _SAPinsider_ (rilevanza 54) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Data+Products+SAP+Business+Data+Cloud+Closing+the+Governance&sortBy=%22date_posted%22)
 - [Da monitorare] [SAP and NTT to Cooperate on Delivering Trusted Sovereign Cloud and SAP Business AI Capabilities](https://news.sap.com/2026/10/sap-ntt-to-cooperate-deliver-trusted-sovereign-cloud-sap-business-ai-capabilities) - _SAP News Center_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+and+NTT+Cooperate+Delivering+Trusted+Sovereign+Cloud+and&sortBy=%22date_posted%22)
+- [Da monitorare] [SAP at the Agentic AI Foundation: Shaping the Rules of Standardized AI](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-at-the-agentic-ai-foundation-shaping-the-rules-of-standardized-ai/ba-p/14512407) - _SAP Community - Technology blogs_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+the+Agentic+Foundation+Shaping+the+Rules+Standardized&sortBy=%22date_posted%22)
 
 ## HR, Procurement & Travel
 
@@ -30,14 +31,13 @@ Ultime 24h: 37 notizie (38 da leggere) da 21/21 fonti attive.
 
 ## BTP & Integrazione
 
-- **[Da leggere]** [What's New in SAP Automation Pilot – Q3 2026](https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-sap-automation-pilot-q3-2026/ba-p/14509848) - _SAP Community - Technology blogs_ (rilevanza 96) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=What+New+SAP+Automation+Pilot+2026&sortBy=%22date_posted%22)
 - [Da monitorare] [BTPEA Is Now Available in China: Bringing Consumption-Based Flexibility to SAP BAIP Customers](https://community.sap.com/t5/technology-blog-posts-by-sap/btpea-is-now-available-in-china-bringing-consumption-based-flexibility-to/ba-p/14511437) - _SAP Community - Technology blogs_ (rilevanza 68) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=BTPEA+Now+Available+China+Bringing+Consumption-Based+Flexibility+SAP+BAIP&sortBy=%22date_posted%22)
-
-## Basis, HANA & Operations
-
-- [Da monitorare] [Before a UAT cycle, who actually gets the QA system ready: Basis, the project, or whoever gets blocked first?](https://www.reddit.com/r/SAP/comments/1xgrr0k/before_a_uat_cycle_who_actually_gets_the_qa) - _Reddit r/SAP_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Before+UAT+cycle+who+actually+gets+the+system+ready&sortBy=%22date_posted%22)
 
 ## Finance & Compliance
 
 - [Da monitorare] [How a 70-Year-Old Financial Services Company Met a Five-Day MFA Compliance Deadline with Datawiza](https://sapinsider.org/case-studies/how-a-70-year-old-financial-services-company-met-a-five-day-mfa-compliance-deadline-with-datawiza) - _SAPinsider_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=How+70-Year-Old+Financial+Services+Company+Met+Five-Day+MFA+Compliance&sortBy=%22date_posted%22)
+
+## Altro / Ecosistema
+
+-  [SAP TechEd 2026: What’s Rolling Out and What’s Planned Through 2027](https://sapinsider.org/blogs/sap-teched-2026-whats-rolling-out-and-whats-planned-through-2027) - _SAPinsider_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+TechEd+2026+What+Rolling+Out+and+What+Planned&sortBy=%22date_posted%22)
 
