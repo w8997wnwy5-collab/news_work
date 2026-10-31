@@ -1,7 +1,7 @@
 # Radar SAP - 31/10/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 28 notizie (34 da leggere) da 21/21 fonti attive.
+Ultime 24h: 21 notizie (34 da leggere) da 21/21 fonti attive.
 
 ## Basis, HANA & Operations
 
@@ -11,9 +11,16 @@ Ultime 24h: 28 notizie (34 da leggere) da 21/21 fonti attive.
 - [Da monitorare] [Can anyone share their experience with ECS after migrating to RISE with SAP? What are the major advantages and disadvantages, particularly from an SAP Basis perspective? I'd love to hear honest feedback from Basis professionals about the…](https://www.reddit.com/r/SAP/comments/1xjmikw/can_anyone_share_their_experience_with_ecs_after) - _Reddit r/SAP_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Can+anyone+share+their+experience+with+ECS+after+migrating&sortBy=%22date_posted%22)
 - [Da monitorare] [Unlocking the power of SAP data](https://sapinsider.org/whitepapers/unlocking-the-power-of-sap-data) - _SAPinsider_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Unlocking+the+power+SAP+data&sortBy=%22date_posted%22)
 -  [How SAP Customers Use Splunk for World-Class Observability and Security](https://sapinsider.org/articles/how-sap-customers-use-splunk-for-world-class-observability-and-security) - _SAPinsider_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=How+SAP+Customers+Use+Splunk+for+World-Class+Observability+and&sortBy=%22date_posted%22)
--  [CyberTech’s Microsoft Solutions Partner Designation: Expertise For SAP And ArcGIS On Azure](https://sapinsider.org/articles/cybertechs-microsoft-solutions-partner-designation-expertise-for-sap-and-arcgis-on-azure) - _SAPinsider_ (rilevanza 32) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=CyberTech+Microsoft+Solutions+Partner+Designation+Expertise+For+SAP+And&sortBy=%22date_posted%22)
--  [Infosys Basis SAP role](https://www.reddit.com/r/SAP/comments/1xjezwy/infosys_basis_sap_role) - _Reddit r/SAP_ (rilevanza 32) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Infosys+Basis+SAP+role&sortBy=%22date_posted%22)
 -  [Which companies hire SAP engineers?](https://www.reddit.com/r/SAP/comments/1xjtvul/which_companies_hire_sap_engineers) - _Reddit r/SAP_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Which+companies+hire+SAP+engineers&sortBy=%22date_posted%22)
+
+## Altro / Ecosistema
+
+-  [SAP Says Catalog Agents Clear Security Review Before Reaching Customers](https://sapinsider.org/blogs/sap-says-catalog-agents-clear-security-review-before-reaching-customers) - _SAPinsider_ (rilevanza 24) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Says+Catalog+Agents+Clear+Security+Review+Before+Reaching&sortBy=%22date_posted%22)
+-  [The AI Trust Deficit: A Enterprise AI Scales Only 39% Have Enforced Governance](https://sapinsider.org/articles/the-ai-trust-deficit-a-enterprise-ai-scales-only-39-have-enforced-governance) - _SAPinsider_ (rilevanza 24) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+Trust+Deficit+Enterprise+Scales+Only+Have+Enforced+Governance&sortBy=%22date_posted%22)
+-  [Automation ME21N](https://www.reddit.com/r/SAP/comments/1xjngov/automation_me21n) - _Reddit r/SAP_ (rilevanza 24) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Automation+ME21N&sortBy=%22date_posted%22)
+-  [Limiting What a Compromised SAP Account Can Do on the Server](https://sapinsider.org/map/limiting-what-a-compromised-sap-account-can-do-on-the-server) - _SAPinsider_ (rilevanza 24) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Limiting+What+Compromised+SAP+Account+Can+the+Server&sortBy=%22date_posted%22)
+-  [Argano übernimmt Salesforce-Spezialisten Oktana](https://e3mag.com/de/argano-uebernimmt-salesforce-spezialisten-oktana) - _E-3 Magazine (EN)_ (rilevanza 22) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Argano+%C3%BCbernimmt+Salesforce-Spezialisten+Oktana&sortBy=%22date_posted%22)
+-  [SAP Press should allow book reviews!](https://www.reddit.com/r/SAP/comments/1xjrlef/sap_press_should_allow_book_reviews) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Press+should+allow+book+reviews&sortBy=%22date_posted%22)
 
 ## AI, Dati & Analytics
 
@@ -25,17 +32,10 @@ Ultime 24h: 28 notizie (34 da leggere) da 21/21 fonti attive.
 
 - **[Da leggere]** [Company Code Assignments to Profit Centers — From Individual Maintenance to Mass Processing](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/company-code-assignments-to-profit-centers-from-individual-maintenance-to/ba-p/14513952) - _SAP Community - ERP blogs_ (rilevanza 80) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Company+Code+Assignments+Profit+Centers+From+Individual+Maintenance+Mass&sortBy=%22date_posted%22)
 - **[Da leggere]** [Universal Observability as the Key to Successful SAP Migration](https://sapinsider.org/whitepapers/universal-observability-as-the-key-to-successful-sap-migration) - _SAPinsider_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Universal+Observability+the+Key+Successful+SAP+Migration&sortBy=%22date_posted%22)
--  [SAP ArcGIS Integration Explained: How Unity Engine Bridges ERP and GIS](https://sapinsider.org/articles/sap-arcgis-integration-explained-how-unity-engine-bridges-erp-and-gis) - _SAPinsider_ (rilevanza 28) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+ArcGIS+Integration+Explained+How+Unity+Engine+Bridges+ERP&sortBy=%22date_posted%22)
 
 ## Supply Chain & Logistica
 
-- **[Da leggere]** [Stop MRP requirement transfer when sales order is in approval with supply block](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/stop-mrp-requirement-transfer-when-sales-order-is-in-approval-with-supply/ba-p/14513490) - _SAP Community - ERP blogs_ (rilevanza 80) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Stop+MRP+requirement+transfer+when+sales+order+approval+with&sortBy=%22date_posted%22)
 - [Da monitorare] [KNAPP’s Joule Studio Pilot Cuts SAP EWM Issue Resolution From Hours to Minutes](https://sapinsider.org/blogs/knapps-joule-studio-pilot-cuts-sap-ewm-issue-resolution-from-hours-to-minutes) - _SAPinsider_ (rilevanza 68) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=KNAPP+Joule+Studio+Pilot+Cuts+SAP+EWM+Issue+Resolution&sortBy=%22date_posted%22)
-
-## Altro / Ecosistema
-
--  [SAP Shows How to Lead with AI Governance at SAP TechEd](https://news.sap.com/2026/10/sap-teched-shows-how-to-lead-with-ai-governance) - _SAP News Center_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Shows+How+Lead+with+Governance+SAP+TechEd&sortBy=%22date_posted%22)
--  [SAP Says Catalog Agents Clear Security Review Before Reaching Customers](https://sapinsider.org/blogs/sap-says-catalog-agents-clear-security-review-before-reaching-customers) - _SAPinsider_ (rilevanza 24) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Says+Catalog+Agents+Clear+Security+Review+Before+Reaching&sortBy=%22date_posted%22)
 
 ## BTP & Integrazione
 
