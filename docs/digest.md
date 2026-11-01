@@ -18,13 +18,13 @@ Ultime 24h: 9 notizie (30 da leggere) da 21/21 fonti attive.
 -  [HCM Job Architecture Harmonization in M&A Projects](https://community.sap.com/t5/technology-blog-posts-by-members/hcm-job-architecture-harmonization-in-m-amp-a-projects/ba-p/14514296) - _SAP Community - blog dei membri_ (rilevanza 20) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=HCM+Job+Architecture+Harmonization+M%26A+Projects&sortBy=%22date_posted%22)
 -  [Associate Manager at Accenture](https://www.reddit.com/r/SAP/comments/1xkddd7/associate_manager_at_accenture) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Associate+Manager+Accenture&sortBy=%22date_posted%22)
 
+## S/4HANA & Clean Core
+
+- **[Da leggere]** [Company Code Assignments to Profit Centers — From Individual Maintenance to Mass Processing](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/company-code-assignments-to-profit-centers-from-individual-maintenance-to/ba-p/14513952) - _SAP Community - ERP blogs_ (rilevanza 80) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Company+Code+Assignments+Profit+Centers+From+Individual+Maintenance+Mass&sortBy=%22date_posted%22)
+
 ## AI, Dati & Analytics
 
 - [Da monitorare] [From CDS to A2A: Building a Production CAP Agent with @cap-js/agents and SAP AI Core](https://community.sap.com/t5/technology-blog-posts-by-sap/from-cds-to-a2a-building-a-production-cap-agent-with-cap-js-agents-and-sap/ba-p/14514274) - _SAP Community - Technology blogs_ (rilevanza 52) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+CDS+A2A+Building+Production+CAP+Agent+with+cap-js%2Fagents&sortBy=%22date_posted%22)
-
-## Supply Chain & Logistica
-
-- [Da monitorare] [Beyond Data Silos: Powering the Autonomous Enterprise with SAP's Next-Generation Data Fabric and AI](https://community.sap.com/t5/technology-blog-posts-by-members/beyond-data-silos-powering-the-autonomous-enterprise-with-sap-s-next/ba-p/14514265) - _SAP Community - blog dei membri_ (rilevanza 50) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Beyond+Data+Silos+Powering+the+Autonomous+Enterprise+with+SAP&sortBy=%22date_posted%22)
 
 ## Finance & Compliance
 
