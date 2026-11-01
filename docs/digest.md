@@ -1,12 +1,17 @@
 # Radar SAP - 01/11/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 8 notizie (30 da leggere) da 21/21 fonti attive.
+Ultime 24h: 9 notizie (30 da leggere) da 21/21 fonti attive.
 
 ## BTP & Integrazione
 
-- [Da monitorare] [Sap Community](https://www.reddit.com/r/SAP/comments/1xk71o6/sap_community) - _Reddit r/SAP_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Sap+Community&sortBy=%22date_posted%22)
+- [Da monitorare] [SAP BTP Cockpit now introduces Scripting and Automation Preview panel](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-cockpit-now-introduces-scripting-and-automation-preview-panel/ba-p/14514327) - _SAP Community - Technology blogs_ (rilevanza 68) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+BTP+Cockpit+now+introduces+Scripting+and+Automation+Preview&sortBy=%22date_posted%22)
 -  [Set up LeanIX' custom discovery connector just by talking to it](https://community.sap.com/t5/technology-blog-posts-by-sap/set-up-leanix-custom-discovery-connector-just-by-talking-to-it/ba-p/14514295) - _SAP Community - Technology blogs_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Set+LeanIX+custom+discovery+connector+just+talking&sortBy=%22date_posted%22)
+
+## Basis, HANA & Operations
+
+-  [Quereinstieg SAP S/4 HANA FI](https://www.reddit.com/r/SAP/comments/1xkzsrz/quereinstieg_sap_s4_hana_fi) - _Reddit r/SAP_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Quereinstieg+SAP+S%2F4+HANA&sortBy=%22date_posted%22)
+-  [SAP 4 Hana Public Cloud -TMS](https://www.reddit.com/r/SAP/comments/1xkbzrx/sap_4_hana_public_cloud_tms) - _Reddit r/SAP_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Hana+Public+Cloud+-TMS&sortBy=%22date_posted%22)
 
 ## Altro / Ecosistema
 
@@ -20,10 +25,6 @@ Ultime 24h: 8 notizie (30 da leggere) da 21/21 fonti attive.
 ## Supply Chain & Logistica
 
 - [Da monitorare] [Beyond Data Silos: Powering the Autonomous Enterprise with SAP's Next-Generation Data Fabric and AI](https://community.sap.com/t5/technology-blog-posts-by-members/beyond-data-silos-powering-the-autonomous-enterprise-with-sap-s-next/ba-p/14514265) - _SAP Community - blog dei membri_ (rilevanza 50) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Beyond+Data+Silos+Powering+the+Autonomous+Enterprise+with+SAP&sortBy=%22date_posted%22)
-
-## Basis, HANA & Operations
-
--  [SAP 4 Hana Public Cloud -TMS](https://www.reddit.com/r/SAP/comments/1xkbzrx/sap_4_hana_public_cloud_tms) - _Reddit r/SAP_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Hana+Public+Cloud+-TMS&sortBy=%22date_posted%22)
 
 ## Finance & Compliance
 
