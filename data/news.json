@@ -2,6 +2,361 @@
  "schema": 1,
  "items": [
   {
+   "id": "cf8dbb62e9e96c34",
+   "titolo": "Cortility transformiert Endica-EDM für SAP S/4 Hana",
+   "url": "https://e3mag.com/de/cortility-transformiert-endica-edm-fuer-sap-s-4-hana",
+   "fonte": "E-3 Magazine (EN)",
+   "fonte_id": "e3mag",
+   "tipo_fonte": "press",
+   "pubblicato": "2026-11-03T06:00:00+00:00",
+   "sommario": "Endica und Cortility setzen ihre Zusammenarbeit im Energiedatenmanagement fort. Cortility überführt die bewährten EDM-Lösungen für Strom und Gas in die künftige SAP-S/4-Hana-Utilities-Landschaft von Endica. Damit sollen Stadtwerke und Energieversorger bestehende Prozesse einfacher auf die neue Systemumgebung übertragen können. Im Fokus steht eine möglichst reibungslose Transition, bei der vorhandene Funktionen…",
+   "autore": "E3-Magazin",
+   "categorie": [
+    "tech_ops"
+   ],
+   "match": [
+    "hana"
+   ],
+   "score": 36,
+   "livello": "info",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Cortility+transformiert+Endica-EDM+f%C3%BCr+SAP+S%2F4+Hana&sortBy=%22date_posted%22",
+   "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "45764d5b4bc15d20",
+   "titolo": "Import TCMB Exchange Rates into SAP with a Single ABAP Report",
+   "url": "https://community.sap.com/t5/technology-blog-posts-by-members/import-tcmb-exchange-rates-into-sap-with-a-single-abap-report/ba-p/14515126",
+   "fonte": "SAP Community - blog dei membri",
+   "fonte_id": "sap_community_members",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-03T05:20:05+00:00",
+   "sommario": "Read daily exchange rates from the Central Bank of the Republic of Türkiye (TCMB) in SAP using a single ABAP report. This walkthrough covers installation in SE38, previewing rates without saving, writing and checking records in OB08, and scheduling daily execution.",
+   "autore": "Cheditte",
+   "categorie": [
+    "tech_ops"
+   ],
+   "match": [
+    "abap"
+   ],
+   "score": 30,
+   "livello": "info",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Import+TCMB+Exchange+Rates+into+SAP+with+Single+ABAP&sortBy=%22date_posted%22",
+   "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "bceb9fb5be9a7fd1",
+   "titolo": "SAP Business AI Enablement as an SAP Partner",
+   "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-business-ai-enablement-as-an-sap-partner/ba-p/14514115",
+   "fonte": "SAP Community - blog dei membri",
+   "fonte_id": "sap_community_members",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-03T05:14:37+00:00",
+   "sommario": "SAP Business AI enablement in seven steps: partner setup, a BTP enterprise global account, Cloud Identity Services, AI Units, verification in SAP for Me, product activation, and monitoring.",
+   "autore": "SatishMothukuru",
+   "categorie": [
+    "btp_integration",
+    "ai_data",
+    "tech_ops"
+   ],
+   "match": [
+    "btp",
+    "business ai",
+    "monitoring"
+   ],
+   "score": 72,
+   "livello": "must",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Business+Enablement+SAP+Partner&sortBy=%22date_posted%22",
+   "link_sap_help": "https://help.sap.com/docs/btp",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "0d152b117051d95f",
+   "titolo": "Dynamic Approval Routing in SAP MDG on S/4HANA Cloud Public Edition: An Alternative Approach",
+   "url": "https://community.sap.com/t5/technology-blog-posts-by-members/dynamic-approval-routing-in-sap-mdg-on-s-4hana-cloud-public-edition-an/ba-p/14514270",
+   "fonte": "SAP Community - blog dei membri",
+   "fonte_id": "sap_community_members",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-03T05:10:26+00:00",
+   "sommario": "Dynamic approval routing in SAP MDG Cloud-Ready Mode on SAP S/4HANA Cloud Public Edition can be challenging when proposed Business Partner attributes are not accessible to SAP Build Process Automation. In this blog, I share a practical, tested alternative using Process Description-based routing, a data quality validation rule, and a lightweight workflow script to dynamically assign Supplier and Customer approval…",
+   "autore": "Atif_Mohammed",
+   "categorie": [
+    "s4hana",
+    "btp_integration",
+    "ai_data"
+   ],
+   "match": [
+    "s/4hana",
+    "sap build",
+    "process automation"
+   ],
+   "score": 88,
+   "livello": "must",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Dynamic+Approval+Routing+SAP+MDG+S%2F4HANA+Cloud+Public+Edition&sortBy=%22date_posted%22",
+   "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "d41c5ce3aea8f1e3",
+   "titolo": "Migrating SAP PowerDesigner Areas to erwin ER Diagram Shapes: A Practical XML-Based Approach",
+   "url": "https://community.sap.com/t5/technology-blog-posts-by-members/migrating-sap-powerdesigner-areas-to-erwin-er-diagram-shapes-a-practical/ba-p/14506803",
+   "fonte": "SAP Community - blog dei membri",
+   "fonte_id": "sap_community_members",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-03T05:01:10+00:00",
+   "sommario": "When a model is migrated from SAP PowerDesigner to erwin Data Modeler through the Miti bridge, text boxes arrive as Shapes on the erwin ER Diagram . Areas do not. Both are used for the same purpose — that is, in visually grouping entities — so a diagram that looks organised in PowerDesigner can lose its grouping in erwin if the data architects in powerdesigner use areas in doing so and then use Miti bridge to import…",
+   "autore": "writabrata_chakraborti",
+   "categorie": [
+    "altro"
+   ],
+   "match": [],
+   "score": 20,
+   "livello": "info",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Migrating+SAP+PowerDesigner+Areas+erwin+Diagram+Shapes+Practical+XML-Based&sortBy=%22date_posted%22",
+   "link_sap_help": "https://www.sap.com/products.html",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "3b6f2f7ee0a76c1e",
+   "titolo": "SAP CPI Message Monitoring Report: Find Which iFlows Passed and Failed",
+   "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-cpi-message-monitoring-report-find-which-iflows-passed-and-failed/ba-p/14514782",
+   "fonte": "SAP Community - blog dei membri",
+   "fonte_id": "sap_community_members",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-03T04:44:15+00:00",
+   "sommario": "SAP CPI Message Monitoring Report Learn how to build a simple SAP CPI iFlow that reads your message processing logs and gives you a CSV report showing which iFlows completed and which failed",
+   "autore": "swapnil72",
+   "categorie": [
+    "btp_integration",
+    "tech_ops"
+   ],
+   "match": [
+    "cpi",
+    "iflow",
+    "monitoring"
+   ],
+   "score": 64,
+   "livello": "watch",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+CPI+Message+Monitoring+Report+Find+Which+iFlows+Passed&sortBy=%22date_posted%22",
+   "link_sap_help": "https://help.sap.com/docs/btp",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "529bb4b0b245a491",
+   "titolo": "SAP Business Data Cloud and SAP HANA Cloud: Enabling Analytics Continuity During Selective Data Tran",
+   "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-business-data-cloud-and-sap-hana-cloud-enabling-analytics-continuity/ba-p/14501599",
+   "fonte": "SAP Community - blog dei membri",
+   "fonte_id": "sap_community_members",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-03T04:40:37+00:00",
+   "sommario": "How we kept reporting consistent after a time-slice S/4HANA migration: a configuration-driven Soft Delete layer in SAP HANA Cloud, with SAP Business Data Cloud as the next phase.",
+   "autore": "Rupak",
+   "categorie": [
+    "tech_ops",
+    "s4hana",
+    "ai_data"
+   ],
+   "match": [
+    "s/4hana",
+    "business data cloud",
+    "hana",
+    "sap hana"
+   ],
+   "score": 74,
+   "livello": "must",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Business+Data+Cloud+and+SAP+HANA+Cloud+Enabling&sortBy=%22date_posted%22",
+   "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "36240689aefa855c",
+   "titolo": "S/4HANA Cloud Private Edition (009) - RISE環境から外部システムへHTTP(S)でアクセスする方法(Squid Proxy Allowlist)",
+   "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/s-4hana-cloud-private-edition-009-rise%E7%92%B0%E5%A2%83%E3%81%8B%E3%82%89%E5%A4%96%E9%83%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%B8http-s-%E3%81%A7%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95-squid/ba-p/14515242",
+   "fonte": "SAP Community - Technology blogs",
+   "fonte_id": "sap_community_tech",
+   "tipo_fonte": "official",
+   "pubblicato": "2026-11-03T04:35:49+00:00",
+   "sommario": "SAP S/4HANA Cloud Private Editionにおいて、RISE側のサーバからインターネット経由で外部システムへHTTP(S)方式でアクセスしたいケースがあるかと存じます。なお、本記事は、お客様が ご利用のPlatformがCloud(AWS/Azure/GCP)であることを前提 に記載しております。 その際に利用するのが、下記のService Request(以下、SR)です。 SRテンプレート: Allowlist Squid Proxy access HTTP/HTTPS(80/443): OUTBOUND to EXTERNAL 反対に、外部システムからインターネット経由でRISE側のサーバへアクセスしたい場合は、RISE側にLoadBalancerを設置し、システムをインターネットに公開する必要があります。LoadBalancerを作成する場合は、下記のSRテンプレートをご利用ください。…",
+   "autore": "KevinYin",
+   "categorie": [
+    "s4hana",
+    "tech_ops"
+   ],
+   "match": [
+    "s/4hana",
+    "aws",
+    "azure"
+   ],
+   "score": 80,
+   "livello": "must",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=S%2F4HANA+Cloud+Private+Edition+009+RISE%E7%92%B0%E5%A2%83%E3%81%8B%E3%82%89%E5%A4%96%E9%83%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%B8HTTP+%E3%81%A7%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95+Squid+Proxy&sortBy=%22date_posted%22",
+   "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "9709a846ca568562",
+   "titolo": "BTP Transports with CTMS & Content Agent | Part 7: The one-page cheat sheet",
+   "url": "https://community.sap.com/t5/technology-blog-posts-by-members/btp-transports-with-ctms-amp-content-agent-part-7-the-one-page-cheat-sheet/ba-p/14513999",
+   "fonte": "SAP Community - blog dei membri",
+   "fonte_id": "sap_community_members",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-03T04:33:14+00:00",
+   "sommario": "Part 7, the last one: every service, destination and role from the series on one page, the order I would build it again, and the import role that SAP Help explains best.",
+   "autore": "AkumaryafirAk",
+   "categorie": [
+    "btp_integration"
+   ],
+   "match": [
+    "btp"
+   ],
+   "score": 62,
+   "livello": "watch",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=BTP+Transports+with+CTMS+Content+Agent+Part+The+one-page&sortBy=%22date_posted%22",
+   "link_sap_help": "https://help.sap.com/docs/btp",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "a34f4f227fbb28df",
+   "titolo": "Why Enterprise AI Needs Business Context, Not Just Data",
+   "url": "https://community.sap.com/t5/technology-blog-posts-by-members/why-enterprise-ai-needs-business-context-not-just-data/ba-p/14514814",
+   "fonte": "SAP Community - blog dei membri",
+   "fonte_id": "sap_community_members",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-03T03:30:00+00:00",
+   "sommario": "The missing connection between LLMs, SAP business semantics, and enterprise knowledge.",
+   "autore": "suryacreatx",
+   "categorie": [
+    "altro"
+   ],
+   "match": [],
+   "score": 20,
+   "livello": "info",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Why+Enterprise+Needs+Business+Context+Not+Just+Data&sortBy=%22date_posted%22",
+   "link_sap_help": "https://www.sap.com/products.html",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "accbbcdc136d21f3",
+   "titolo": "Eursap’s European SAP Salary & Rate Guide 2026/2027",
+   "url": "https://www.reddit.com/r/SAP/comments/1xm57g9/eursaps_european_sap_salary_rate_guide_20262027",
+   "fonte": "Reddit r/SAP",
+   "fonte_id": "reddit_sap",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-02T18:28:16+00:00",
+   "sommario": "https://eursap.eu/sap-salary-and-rate-guide What do you think? How does your rate compare? submitted by /u/_hello__reddit_ [link] [comments]",
+   "autore": "/u/_hello__reddit_",
+   "categorie": [
+    "altro"
+   ],
+   "match": [
+    "2027"
+   ],
+   "score": 26,
+   "livello": "info",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Eursap+European+SAP+Salary+Rate+Guide+2026%2F2027&sortBy=%22date_posted%22",
+   "link_sap_help": "https://www.sap.com/products.html",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "c179081cd4ed1fe2",
+   "titolo": "SAP Introduces Joule Agent to Automate Monthly Patch Day Compliance Setup",
+   "url": "https://sapinsider.org/blogs/sap-introduces-joule-agent-to-automate-monthly-patch-day-compliance-setup",
+   "fonte": "SAPinsider",
+   "fonte_id": "sapinsider",
+   "tipo_fonte": "press",
+   "pubblicato": "2026-11-02T18:19:53+00:00",
+   "sommario": "SAP’s ALM Patch Day Policy Creation Agent sets up monthly Security Patch Day compliance checks in SAP Cloud ALM from a Joule instruction and activates only checks that pass testing. SAP currently limits access to eligible customers and prices the agent by consumption. The post SAP Introduces Joule Agent to Automate Monthly Patch Day Compliance Setup appeared first on SAPinsider .",
+   "autore": "SAPinsider Staff",
+   "categorie": [
+    "security",
+    "ai_data",
+    "tech_ops"
+   ],
+   "match": [
+    "joule",
+    "cloud alm",
+    "patch day"
+   ],
+   "score": 68,
+   "livello": "watch",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Introduces+Joule+Agent+Automate+Monthly+Patch+Day+Compliance&sortBy=%22date_posted%22",
+   "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "a225e7bf6bde2632",
+   "titolo": "What would you do if Joule becomes the only authorized consultant?",
+   "url": "https://www.reddit.com/r/SAP/comments/1xm4iqz/what_would_you_do_if_joule_becomes_the_only",
+   "fonte": "Reddit r/SAP",
+   "fonte_id": "reddit_sap",
+   "tipo_fonte": "community",
+   "pubblicato": "2026-11-02T18:04:14+00:00",
+   "sommario": "Hello consultants, today i was wondering what would I do if somewhere in the future, Joule becomes the one and only functional and technical consultant authorized by sap? this would mean that SAP offers it as the unique solution to all problems. It would identify the bussiness requeriments and implement it technically correct. Im not looking to enter in an argument wether AI could or could not reach this point im…",
+   "autore": "/u/Rabyol",
+   "categorie": [
+    "ai_data"
+   ],
+   "match": [
+    "joule"
+   ],
+   "score": 52,
+   "livello": "watch",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=What+would+you+Joule+becomes+the+only+authorized+consultant&sortBy=%22date_posted%22",
+   "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
+   "id": "f6da9929f9fc16e8",
+   "titolo": "SAP Security Has a Response Problem. RASP Is the Fix.",
+   "url": "https://sapinsider.org/expert-insights/sap-security-has-a-response-problem-rasp-is-the-fix",
+   "fonte": "SAPinsider",
+   "fonte_id": "sapinsider",
+   "tipo_fonte": "press",
+   "pubblicato": "2026-11-02T17:51:10+00:00",
+   "sommario": "Most SAP security tools detect threats and hand them to a person, which leaves a gap attackers can exploit. Runtime application self-protection (RASP) uses SAP's native controls to stop harmful actions as they happen. The post SAP Security Has a Response Problem. RASP Is the Fix. appeared first on SAPinsider .",
+   "autore": "SAPinsider Staff",
+   "categorie": [
+    "security"
+   ],
+   "match": [
+    "exploit"
+   ],
+   "score": 42,
+   "livello": "watch",
+   "vendor": null,
+   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Security+Has+Response+Problem.+RASP+the+Fix.&sortBy=%22date_posted%22",
+   "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
+   "visto_il": "2026-11-03T06:06:43+00:00",
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
+  },
+  {
    "id": "7ba89acf480fb743",
    "titolo": "Model company for SAP cloud solutions: Helping consultants make better Fit-to-Standard decisions",
    "url": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/model-company-for-sap-cloud-solutions-helping-consultants-make-better-fit/ba-p/14514995",
@@ -21,7 +376,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Model+company+for+SAP+cloud+solutions+Helping+consultants+make&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-11-02T17:25:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "0659dfe6bc126456",
@@ -43,7 +398,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=From+incident+insight+How+SAP+RootMap+transforms+RCA+creation&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-11-02T17:25:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "fa3f4eb8bded6b08",
@@ -67,7 +422,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Making+Real+Black+Horse+One+Galloping+Towards+New+Opportunities&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-11-02T17:25:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "09b30b164f26c59b",
@@ -122,7 +477,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Document+and+Reporting+Compliance+e-Invoice+Convergent+Invoice+using&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/finance",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "d7991e053caa4cfd",
@@ -149,7 +504,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Document+and+Reporting+Compliance+e-Invoice+Contract+Accounting+FI-CA&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/finance",
    "visto_il": "2026-11-02T17:25:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "e8ace8352bec676f",
@@ -175,7 +530,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+una+nuova+generazione+Supply+Chain+Collaboration+per+processi&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/supply-chain",
    "visto_il": "2026-11-02T17:25:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "886d4e98414b06b9",
@@ -197,7 +552,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=and+Transformation+Guidance+for+Every+Customer&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "d7c2ab1c726ff683",
@@ -224,7 +579,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=From+Knowing+Doing+Acting+Your+Side+the+SAP+BTP&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "542bd918fefaa112",
@@ -253,7 +608,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=there+CDS+view+for+that+table+Answered+SAP+Datasphere&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "af3a19cc8cd6e342",
@@ -280,7 +635,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Building+MCP+Server+with+SAP+CAP+SAP+BTP+Assistant&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "db63d5893469abcd",
@@ -302,7 +657,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Salary+progression+France&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "fc6f1ccd42e11d59",
@@ -326,7 +681,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Dienstreisemanagement+Digitale+Prozesse+ersetzen+papierbasierte+Abl%C3%A4ufe&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "c05c22f38a2f7f32",
@@ -348,7 +703,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=KI-Wertsch%C3%B6pfung+entsteht+dort+die+Arbeit+passiert&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "f6938da3ffe02fd5",
@@ -372,7 +727,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=How+should+communicate+with+SAP+department&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "30abd8c2e375ceba",
@@ -396,7 +751,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Workforce+Second+Brain+powered+MCC+CPR+Download+SAP&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "cd3c96340945dc08",
@@ -422,7 +777,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=FAQ+Understanding+the+Digital+Access+License+SAP+S%2F4HANA+Cloud&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "9dea4f9598e2561f",
@@ -444,7 +799,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Shape+the+Future+Multilingual+SAP+Partnering+with+SAP+Accelerate&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-11-02T13:25:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "c1cc29b6473c2d58",
@@ -469,7 +824,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=From+CDS+A2A+Building+Production+CAP+Agent+with+cap-js%2Fagents&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-11-01T06:06:28+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "111b3ff8812fe921",
@@ -485,13 +840,13 @@
     "altro"
    ],
    "match": [],
-   "score": 22,
+   "score": 18,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Interne+IT-Dienstleister+wachsen+trotz+Konjunkturkrise&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "94894f5c14071fe6",
@@ -509,13 +864,13 @@
    "match": [
     "s/4hana"
    ],
-   "score": 64,
+   "score": 60,
    "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Halloween+One+Extra+Zero+and+SAP+Tabular+Validating+Campaign&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "ecb7cb7c8b9ffe6b",
@@ -531,13 +886,13 @@
     "altro"
    ],
    "match": [],
-   "score": 30,
+   "score": 26,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=How+India+Drives+SAP+Future&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "a182ebac71812061",
@@ -555,13 +910,13 @@
    "match": [
     "btp"
    ],
-   "score": 66,
+   "score": 62,
    "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=BTP+Transports+with+CTMS+Content+Agent+Part+Transporting+destinations&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "52f0106f390045d1",
@@ -586,13 +941,13 @@
     "api management",
     "iflow"
    ],
-   "score": 90,
+   "score": 86,
    "livello": "must",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Protect+Your+iFlows+Add+Access+Control+OAuth+2.0+Spike&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "512bef39f4e081e2",
@@ -608,13 +963,13 @@
     "altro"
    ],
    "match": [],
-   "score": 26,
+   "score": 22,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP-RPT+vs.+SAP-RPT-TS+Beginner+Guide&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "043d882c4ea1c4b6",
@@ -632,13 +987,13 @@
    "match": [
     "s/4hana"
    ],
-   "score": 70,
-   "livello": "must",
+   "score": 66,
+   "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=E-learning+Available+Evaluating+SAP+Strategy+for+SAP+S%2F4HANA&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "e5bb970fc306cefc",
@@ -661,35 +1016,13 @@
     "s/4hana",
     "cds view"
    ],
-   "score": 96,
+   "score": 92,
    "livello": "must",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=CDS+View+Extensions+SAP+S%2F4HANA+Cloud+Private+Edition+Architecture&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
-  },
-  {
-   "id": "8eaafe8388cde5cc",
-   "titolo": "Where to find the Service key for AI launchPad to prototype for the Hackfest finals",
-   "url": "https://www.reddit.com/r/SAP/comments/1xlcame/where_to_find_the_service_key_for_ai_launchpad_to",
-   "fonte": "Reddit r/SAP",
-   "fonte_id": "reddit_sap",
-   "tipo_fonte": "community",
-   "pubblicato": "2026-11-01T19:39:38+00:00",
-   "sommario": "SAP has asked us to prototype our idea for the Hackfest finals which is happening coming wednesday. They provided a playground to build and prototype it. Now for our project we need access to the SAP Ai launch pad which asks for a Service key. Any idea of is it possible to find it or what has to be done ? Thanks. submitted by /u/Pretend-Meat653 [link] [comments]",
-   "autore": "/u/Pretend-Meat653",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 16,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Where+find+the+Service+key+for+launchPad+prototype+for&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
-   "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "3f97878c649f6fda",
@@ -708,13 +1041,13 @@
     "basis",
     "monitoring"
    ],
-   "score": 42,
-   "livello": "watch",
+   "score": 38,
+   "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Working+SAP+Monitoring+Basis&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "faf5a2f48f37f3fc",
@@ -732,35 +1065,13 @@
    "match": [
     "abap"
    ],
-   "score": 26,
+   "score": 22,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=How+working+PAPM&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
-  },
-  {
-   "id": "c4640a3937199709",
-   "titolo": "SAP Consultants – Is Work-Life Balance Better in Other Companies?",
-   "url": "https://www.reddit.com/r/SAP/comments/1xl9wi6/sap_consultants_is_worklife_balance_better_in",
-   "fonte": "Reddit r/SAP",
-   "fonte_id": "reddit_sap",
-   "tipo_fonte": "community",
-   "pubblicato": "2026-11-01T18:05:25+00:00",
-   "sommario": "I’m working as an SAP Consultant at Deloitte USI. My current project is very demanding. I work Monday to Sunday, usually from 10 AM to 11 PM or sometimes midnight. There is practically no weekend or personal time. I understand that project work can be stressful, but this routine is becoming exhausting. I want to ask fellow SAP consultants: Is this work culture common in every company? Do other MNCs offer better…",
-   "autore": "/u/sap_tax",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 16,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Consultants+Work-Life+Balance+Better+Other+Companies&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
-   "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "fee791000429312e",
@@ -791,7 +1102,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Looking+for+ways+put+SAP+experience+use+side+hustle&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "a16bc29a48312d91",
@@ -813,7 +1124,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Looking+for+SAP+Freelance+Consulting+Opportunity&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "a853fd31d10f4585",
@@ -840,7 +1151,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+BTP+Job+Scheduling+Service+Introducing+New+Job+Type&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "ea4b697da59f30b4",
@@ -864,7 +1175,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Joule+Work+SAP+TechEd+Berlin+2026+Redefining+the&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-11-02T06:10:03+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "741e8f7124b080c3",
@@ -889,7 +1200,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Company+Code+Assignments+Profit+Centers+From+Individual+Maintenance+Mass&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "efe6bda1c41c7866",
@@ -913,7 +1224,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Quereinstieg+SAP+S%2F4+HANA&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-11-01T11:47:22+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "76b7525f564df0cb",
@@ -937,7 +1248,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+BTP+Cockpit+now+introduces+Scripting+and+Automation+Preview&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-11-01T11:47:22+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "630ad84b3eccb3ac",
@@ -959,7 +1270,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Set+LeanIX+custom+discovery+connector+just+talking&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-11-01T06:06:28+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "c0eea58153c6555b",
@@ -981,7 +1292,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=HCM+Job+Architecture+Harmonization+M%26A+Projects&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-11-01T06:06:28+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "f3649e714158d013",
@@ -1005,7 +1316,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Carri%C3%A8re+chef+projet+SAP&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/finance",
    "visto_il": "2026-11-01T06:06:28+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "40cb16846e7bbb7c",
@@ -1029,7 +1340,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Hana+Public+Cloud+-TMS&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-11-01T06:06:28+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "6d02c7e1a66968bf",
@@ -1057,7 +1368,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Beyond+Data+Silos+Powering+the+Autonomous+Enterprise+with+SAP&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/supply-chain",
    "visto_il": "2026-11-01T06:06:28+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "7c745def3135f2be",
@@ -1081,7 +1392,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Sap+Community&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-10-31T10:52:52+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "ed27dd0404387b84",
@@ -1102,13 +1413,13 @@
     "hana",
     "sap hana"
    ],
-   "score": 64,
+   "score": 60,
    "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=HANA+Data+Lake&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "09655044c8d827e8",
@@ -1126,7 +1437,7 @@
    "match": [
     "abap"
    ],
-   "score": 22,
+   "score": 18,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Which+companies+hire+SAP+engineers&sortBy=%22date_posted%22",
@@ -1148,13 +1459,13 @@
     "altro"
    ],
    "match": [],
-   "score": 20,
+   "score": 16,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Says+Catalog+Agents+Clear+Security+Review+Before+Reaching&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "5266cea430958c8b",
@@ -1173,13 +1484,13 @@
     "2027",
     "joule"
    ],
-   "score": 66,
+   "score": 62,
    "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Details+How+Joule+Studio+Builds+and+Deploys+Agents&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "69ef7d7d6d7cd8c9",
@@ -1201,13 +1512,13 @@
     "monitoring",
     "performance"
    ],
-   "score": 74,
+   "score": 70,
    "livello": "must",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Accelerate+and+De-Risk+SAP+Migrations+the+Cloud+with+Splunk&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "8068b1000db7d568",
@@ -1227,13 +1538,13 @@
     "monitoring",
     "threat"
    ],
-   "score": 40,
-   "livello": "watch",
+   "score": 36,
+   "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Unlocking+the+power+SAP+data&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "6e921c84f2948301",
@@ -1254,13 +1565,13 @@
     "azure",
     "performance"
    ],
-   "score": 74,
+   "score": 70,
    "livello": "must",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Universal+Observability+the+Key+Successful+SAP+Migration&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "4fa915553960a8e4",
@@ -1276,13 +1587,13 @@
     "altro"
    ],
    "match": [],
-   "score": 20,
+   "score": 16,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+Trust+Deficit+Enterprise+Scales+Only+Have+Enforced+Governance&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "af1bcb16feb978ac",
@@ -1300,7 +1611,7 @@
    "match": [
     "sap gui"
    ],
-   "score": 20,
+   "score": 16,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Automation+ME21N&sortBy=%22date_posted%22",
@@ -1324,13 +1635,13 @@
    "match": [
     "monitoring"
    ],
-   "score": 30,
+   "score": 26,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=How+SAP+Customers+Use+Splunk+for+World-Class+Observability+and&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "dcec659bd1c86fdd",
@@ -1352,13 +1663,13 @@
     "ai core",
     "cloud foundry"
    ],
-   "score": 88,
+   "score": 84,
    "livello": "must",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Building+and+Deploying+AI-Powered+Applications+SAP+BTP+Using+Claude&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "4d2213e06cedeb11",
@@ -1379,13 +1690,13 @@
     "azure",
     "monitoring"
    ],
-   "score": 68,
+   "score": 64,
    "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Splunk+for+RISE+with+SAP+Accelerates+.conf25&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "3deffcfdb021494b",
@@ -1405,13 +1716,13 @@
     "rise with sap",
     "basis"
    ],
-   "score": 60,
+   "score": 56,
    "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Can+anyone+share+their+experience+with+ECS+after+migrating&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "6766101797328611",
@@ -1487,7 +1798,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+TechEd+2026+Berlin+Key+Innovations+Breakthroughs+and+What&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-31T06:06:41+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "759289bee72ba58d",
@@ -1607,7 +1918,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Stop+MRP+requirement+transfer+when+sales+order+approval+with&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/supply-chain",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "87ccee99e86612c3",
@@ -1629,7 +1940,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Shows+How+Lead+with+Governance+SAP+TechEd&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "cb7c754f5cf662cc",
@@ -1654,7 +1965,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Agent+Memory+S%2F4HANA+Why+Store+Open+Knowledge+Format+Tables&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "fb6397e89157e08d",
@@ -1683,7 +1994,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Building+ABAP+Agent+From+Configuration+Question+Live+SAP+Evidence&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "b36df2d5e7849d11",
@@ -1734,7 +2045,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Joule+Studio+empowers+teams+build+trusted+custom+agentic+solutions&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "997fbd0082f8a627",
@@ -1758,7 +2069,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=How+set+external+documents+via+API+for+Singapore+eInvoices&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/finance",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "b8703f7b99f06040",
@@ -1782,7 +2093,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=What+New+SAP+Integrated+Product+Development+Sep+Update&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/supply-chain",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "760dc1eb668a0e04",
@@ -1905,7 +2216,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=MCP+A2A+SAP+CAP+Start+with+the+responsibility+you&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-30T06:10:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "59f72cb1a28a501f",
@@ -1930,7 +2241,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=When+Meets+SAP+Integration+Exploring+the+New+Possibilities+API&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-10-30T06:10:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "8bcc32e2ae9ec873",
@@ -2101,7 +2412,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Enterprise+Gateway+Governing+Agents+Integration+Suite+TechEd+2026&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-10-30T11:20:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "098e61b8b23763e4",
@@ -2125,7 +2436,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+Hidden+Bottleneck+SAP+Delivery+Why+System+Refresh+Deserves&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-30T14:30:25+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "fd182e44d231ea60",
@@ -2199,7 +2510,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Days+Zero+How+Ransomware+and+Accelerated+Exploitation+are+Reshaping&sortBy=%22date_posted%22",
    "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
    "visto_il": "2026-10-30T06:10:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "3f59f5f812dac29e",
@@ -2225,7 +2536,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Days+Zero+How+Ransomware+and+Accelerated+Exploitation+are+Reshaping&sortBy=%22date_posted%22",
    "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
    "visto_il": "2026-10-30T06:10:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "ceac62de879cadd1",
@@ -2345,7 +2656,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Commerce+Cloud+Vercel+percorso+pi%C3%B9+rapido+per+risultati&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-30T06:10:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "514fa9c7dd89f85e",
@@ -2395,7 +2706,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=What+New+SAP+S%2F4HANA+Cloud+Public+Edition+2608.3+Two&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-29T14:38:29+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "24201029ff647363",
@@ -2421,7 +2732,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=GISA+entwickelt+SAP-S%2F4+Hana+bei+Forschungseinrichtung+weiter&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-29T14:38:29+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "594f25f787fa9754",
@@ -2447,7 +2758,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=RWE+automatisiert+HR-Pr%C3%BCfprozesse+mit+Aemplic&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM",
    "visto_il": "2026-10-29T14:38:29+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "a157da60dac80618",
@@ -2497,7 +2808,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Hana-Power-Engines+Graph+und+Vektor&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-29T14:38:29+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "dac1a80138eefaf5",
@@ -2525,7 +2836,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=S%2F4HANA+Public+Cloud+Delivers+Industry-Leading+Upgrade+Performance&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-29T11:31:36+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "01639b53136d5c87",
@@ -2571,7 +2882,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Advancing+SAP+Lakehouse+and+New+Data+Fabric+Innovations+SAP&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-29T11:31:36+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "004db7313dbc8a04",
@@ -2617,7 +2928,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Extensibility+Options+for+Third-Party+Payments&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-29T11:31:36+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "613d956831ed1cd5",
@@ -2691,7 +3002,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Preliminary+What+New+Information+for+SAP+S%2F4HANA+Cloud+Public&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-29T11:31:36+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "932c335e3f3835d2",
@@ -2715,7 +3026,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP-Sicherheit+erfordert+kontinuierliche+Kontrollen&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-29T06:09:35+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "be0934048f2cf52c",
@@ -2742,7 +3053,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Secure+Your+Cloud+Integration+iFlows+with+OAuth+2.0+Using&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-10-29T06:09:35+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "866618a12f780ddc",
@@ -2898,7 +3209,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Identity+Management+and+BTP+Unexpected+Requirement&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-10-30T06:10:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "f62c969fc5fded64",
@@ -3083,7 +3394,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=New+E-Learning+Mastering+Plan+Fulfill+SAP+S%2F4HANA+Cloud+Public&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/supply-chain",
    "visto_il": "2026-10-29T06:09:35+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "d655e596e7dbb6ea",
@@ -3134,7 +3445,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+TechEd+2026+SAP+Tells+Developers+You+Can+Build&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-29T06:09:35+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "de1689715efec69b",
@@ -3513,7 +3824,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Brings+Migration+and+Modernization+Assistants+Customers+Cloud+ERP&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-28T11:17:08+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "eb946349ab3d9978",
@@ -3562,7 +3873,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Days+Zero+How+Ransomware+and+Accelerated+Exploitation+are+Reshaping&sortBy=%22date_posted%22",
    "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
    "visto_il": "2026-10-30T06:10:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "521683ce535bb42b",
@@ -3656,7 +3967,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+and+NTT+Cooperate+Delivering+Trusted+Sovereign+Cloud+and&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-28T11:17:08+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "38c25f01d2df1fed",
@@ -3731,7 +4042,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Managed+Integration+for+SAP+S%2F4HANA+Cloud+Private+Edition&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-28T06:06:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "2734a6e13d5ec15c",
@@ -3829,7 +4140,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+TechEd+2026+What+Rolling+Out+and+What+Planned&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-28T06:06:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "b61e15a2ec4cbc3a",
@@ -4218,7 +4529,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+potenzia+gli+sviluppatori+per+costruire+ci%C3%B2+che+conta&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-27T14:04:48+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "12ef0ab7d0a05048",
@@ -4435,7 +4746,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=New+E-learning+Navigating+Cloud+ERP+Private+Upgrades+Value+Tools&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-27T10:27:58+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "629b96617aa735ae",
@@ -4485,7 +4796,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Auftrag+der+Security+Wie+SAP-Basis-Automatisierung+hilft+Effizienz+und+Resilienz&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-27T10:27:58+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "359d47dfef4f6ccb",
@@ -4507,7 +4818,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Empowers+Developers+Build+What+Matters+and+Turn+Intent&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-27T10:27:58+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "16e4f9768dbccf75",
@@ -4529,7 +4840,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Innovation+News+Guide+The+Autonomous+Enterprise+Becomes+Reality&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-27T10:27:58+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "743a1ae9953a8b11",
@@ -4551,7 +4862,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=From+Orbit+Enterprise+The+Next+Tabular+Frontier+for+SAP&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-27T10:27:58+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "1020c9619640112a",
@@ -4573,7 +4884,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Unveils+Physical+and+Extends+the+Autonomous+Enterprise+into&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-27T10:27:58+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "9a32f9add5981c37",
@@ -4699,7 +5010,7 @@
     "sap gui",
     "ariba"
    ],
-   "score": 46,
+   "score": 44,
    "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Coupa+what+happens+when+leadership+outsources+judgment&sortBy=%22date_posted%22",
@@ -4724,7 +5035,7 @@
     "hana",
     "sap hana"
    ],
-   "score": 38,
+   "score": 36,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Iniciante+SAP+IS-U+precisando+ajuda.&sortBy=%22date_posted%22",
@@ -4748,13 +5059,13 @@
    "match": [
     "aws"
    ],
-   "score": 18,
+   "score": 16,
    "livello": "info",
    "vendor": "redwood",
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=How+Redwood+Software+integration+capabilities+connect+your+workflows+across&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-28T06:06:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "3526387891d37745",
@@ -4774,7 +5085,7 @@
     "ecc",
     "maintenance"
    ],
-   "score": 44,
+   "score": 42,
    "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+ECC+Retirement+What+Happens+the+Data+Left+Behind&sortBy=%22date_posted%22",
@@ -4796,13 +5107,13 @@
     "s4hana"
    ],
    "match": [],
-   "score": 28,
+   "score": 26,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Release+Highlights+2026&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-27T06:07:51+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "5da674c09ccbb961",
@@ -4820,35 +5131,13 @@
    "match": [
     "business ai"
    ],
-   "score": 34,
+   "score": 32,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Prepare+for+SAP+TechEd+2026+with+SAP+Business+Platform&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-27T06:07:51+00:00",
    "aggiornato_il": "2026-10-27T06:07:51+00:00"
-  },
-  {
-   "id": "284f5045f4542bd6",
-   "titolo": "Why Digital Transformations Fail Before Go-Live",
-   "url": "https://sapinsider.org/expert-insights/why-digital-transformations-fail-before-go-live",
-   "fonte": "SAPinsider",
-   "fonte_id": "sapinsider",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-10-26T20:12:58+00:00",
-   "sommario": "Digital transformations often stall because organizations are not ready to make the business decisions the technology depends on. Process alignment, active executive sponsorship, and governed master data determine whether go-live leads to measurable value. The post Why Digital Transformations Fail Before Go-Live appeared first on SAPinsider .",
-   "autore": "SAPinsider Staff",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 16,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Why+Digital+Transformations+Fail+Before+Go-Live&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
-   "visto_il": "2026-10-27T06:07:51+00:00",
-   "aggiornato_il": "2026-10-28T14:29:19+00:00"
   },
   {
    "id": "d2dd3812b1210cbe",
@@ -4866,7 +5155,7 @@
    "match": [
     "btp"
    ],
-   "score": 60,
+   "score": 58,
    "livello": "watch",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Translation+Hub+Rolls+Out+Two+New+Languages+Filipino&sortBy=%22date_posted%22",
@@ -4893,13 +5182,13 @@
     "rise with sap",
     "upgrade"
    ],
-   "score": 80,
+   "score": 78,
    "livello": "must",
    "vendor": "redwood",
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Managed+File+Transfer+Redwood+Bringing+Native+MFT+SAP&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-10-28T06:06:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "bd01ecce071304c8",
@@ -4917,7 +5206,7 @@
    "match": [
     "copilot"
    ],
-   "score": 26,
+   "score": 24,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=What+SAP+Teams+Should+Settle+Before+Giving+Agents+Operational&sortBy=%22date_posted%22",
@@ -4941,33 +5230,11 @@
    "match": [
     "performance"
    ],
-   "score": 24,
+   "score": 22,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Spring+Boot+Performance+Workshop+with+Lightrun&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
-   "visto_il": "2026-10-27T06:07:51+00:00",
-   "aggiornato_il": "2026-10-28T14:29:19+00:00"
-  },
-  {
-   "id": "d08ac593dcf9a32c",
-   "titolo": "Lightrun – Getting started from IntelliJ",
-   "url": "https://sapinsider.org/videos/lightrun-getting-started-from-intellij",
-   "fonte": "SAPinsider",
-   "fonte_id": "sapinsider",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-10-26T18:16:58+00:00",
-   "sommario": "This video assumes you've already added an agent to your running application and you've already installed the plugin in IntelliJ. The post Lightrun – Getting started from IntelliJ appeared first on SAPinsider .",
-   "autore": "Adriaan Wakefield",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 16,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Lightrun+Getting+started+from+IntelliJ&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-27T06:07:51+00:00",
    "aggiornato_il": "2026-10-28T14:29:19+00:00"
   },
@@ -4987,33 +5254,11 @@
    "match": [
     "basis"
    ],
-   "score": 32,
+   "score": 30,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+Hidden+Costs+Logging+and+What+can+Developers+About&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
-   "visto_il": "2026-10-27T06:07:51+00:00",
-   "aggiornato_il": "2026-10-27T14:04:48+00:00"
-  },
-  {
-   "id": "9456775dc1bf424e",
-   "titolo": "What Is AI Autonomous Debugging? A Deep Dive into the Future of Software Troubleshooting",
-   "url": "https://sapinsider.org/articles/what-is-ai-autonomous-debugging-a-deep-dive-into-the-future-of-software-troubleshooting",
-   "fonte": "SAPinsider",
-   "fonte_id": "sapinsider",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-10-26T18:16:19+00:00",
-   "sommario": "AI autonomous debugging guide. Discover how AI debuggers automate RCA and streamline troubleshooting in the IDE. The post What Is AI Autonomous Debugging? A Deep Dive into the Future of Software Troubleshooting appeared first on SAPinsider .",
-   "autore": "Adriaan Wakefield",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 16,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=What+Autonomous+Debugging+Deep+Dive+into+the+Future+Software&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-27T06:07:51+00:00",
    "aggiornato_il": "2026-10-27T14:04:48+00:00"
   },
@@ -5033,79 +5278,13 @@
    "match": [
     "aws"
    ],
-   "score": 24,
+   "score": 22,
    "livello": "info",
    "vendor": null,
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=How+Taboola+slashed+MTTR+saved+260+debugging+hours+month&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-27T06:07:51+00:00",
    "aggiornato_il": "2026-10-27T14:04:48+00:00"
-  },
-  {
-   "id": "33d9535ec0490105",
-   "titolo": "How Inditex reduced MTTR for critical incidents with Lightrun",
-   "url": "https://sapinsider.org/articles/how-inditex-reduced-mttr-for-critical-incidents-with-lightrun",
-   "fonte": "SAPinsider",
-   "fonte_id": "sapinsider",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-10-26T18:15:58+00:00",
-   "sommario": "Learn how Inditex reduced MTTR for critical production incidents using Lightrun to gain live runtime insights. The post How Inditex reduced MTTR for critical incidents with Lightrun appeared first on SAPinsider .",
-   "autore": "Adriaan Wakefield",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 16,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=How+Inditex+reduced+MTTR+for+critical+incidents+with+Lightrun&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
-   "visto_il": "2026-10-27T06:07:51+00:00",
-   "aggiornato_il": "2026-10-27T14:04:48+00:00"
-  },
-  {
-   "id": "433b77f3a3789edc",
-   "titolo": "Modernize Legacy Code in Production – Rebuild your Airplane Midflight without Crashing",
-   "url": "https://sapinsider.org/blogs/modernize-legacy-code-in-production-rebuild-your-airplane-midflight-without-crashing",
-   "fonte": "SAPinsider",
-   "fonte_id": "sapinsider",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-10-26T18:15:49+00:00",
-   "sommario": "The article discusses how Lightrun enhances debugging of Java one-liners and lambda expressions, simplifying the development process. The post Modernize Legacy Code in Production – Rebuild your Airplane Midflight without Crashing appeared first on SAPinsider .",
-   "autore": "Adriaan Wakefield",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 16,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Modernize+Legacy+Code+Production+Rebuild+your+Airplane+Midflight+without&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
-   "visto_il": "2026-10-27T06:07:51+00:00",
-   "aggiornato_il": "2026-10-27T14:04:48+00:00"
-  },
-  {
-   "id": "91b7223b62a7e111",
-   "titolo": "The Essential Guide to Docker Containers",
-   "url": "https://sapinsider.org/blogs/the-essential-guide-to-docker-containers",
-   "fonte": "SAPinsider",
-   "fonte_id": "sapinsider",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-10-26T18:15:39+00:00",
-   "sommario": "The article discusses how Lightrun enhances the debugging process of Java one-liners and lambda expressions, simplifying development workflows. The post The Essential Guide to Docker Containers appeared first on SAPinsider .",
-   "autore": "Adriaan Wakefield",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 16,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+Essential+Guide+Docker+Containers&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
-   "visto_il": "2026-10-27T06:07:51+00:00",
-   "aggiornato_il": "2026-10-27T06:07:51+00:00"
   },
   {
    "id": "5f7ec0d82ee376cb",
@@ -5252,7 +5431,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Boost+SAP+Fiori+Adoption+Cloud+ERP+Private+November+2026&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-26T14:33:24+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "88039187151433d4",
@@ -5300,7 +5479,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=PHP+Vulnerabilities+CVE-2026-109618+CVE-2026-109619+What+SAP+Customers+Need+Know&sortBy=%22date_posted%22",
    "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
    "visto_il": "2026-10-26T14:33:24+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "35a5b907877f49d7",
@@ -5327,7 +5506,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Accelerating+Business+Adoption+Cloud+ERP+Private+November+2026+EGI&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-26T14:33:24+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "4390ffe35e26e06d",
@@ -5351,7 +5530,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Lockheed+Martin+accelera+trasformazione+della+propria+forza+lavoro+con&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM",
    "visto_il": "2026-10-26T14:33:24+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "e2934552235afa90",
@@ -5421,7 +5600,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Stuck+Sales+Orders+ONE+Approval+DONE+Consultant+Take+Sales&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-26T11:00:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "13b8d1681cc41da9",
@@ -5520,7 +5699,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=One+Quote+for+Service+In-House+Repair+and+Advanced+Execution&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-26T11:00:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "7fc0ebbedd3306ed",
@@ -6367,7 +6546,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=For+the+12th+Time+SAP+Named+Leader+Gartner+Magic&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-23T12:51:33+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "93b2270fe60b6614",
@@ -6804,7 +6983,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=smooth+move+from+SAP+TPM+Integration+Suite+with+Figaf&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-10-23T12:51:33+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "1c951240b1e1fbec",
@@ -7889,7 +8068,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=What+the+Gartner+2030+prediction+means+for+enterprise+automation&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-23T05:06:42+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "388326ab5ec64a19",
@@ -7911,7 +8090,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Announces+2026+Results&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-22T05:06:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "5d50d03b15b81dca",
@@ -7984,7 +8163,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Serrala+named+Leader+2026+IDC+MarketScape+for+Accounts+Receivable&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/finance",
    "visto_il": "2026-10-22T05:06:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "fd0f5286bcfbe7eb",
@@ -8079,7 +8258,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+LeanIX+Six-Time+Leader+Gartner+Magic+Quadrant+for+Enterprise&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-21T13:12:59+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "7d1e8c4db774a2c2",
@@ -8101,7 +8280,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Autonomous+Arrives+What+New+SAP+Customer+Experience+2026&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-21T13:12:59+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "f88e6c9d24468f60",
@@ -8855,7 +9034,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Architecting+What+Next+Cloud+Transformation+Agentic+Security+and+Cyber&sortBy=%22date_posted%22",
    "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
    "visto_il": "2026-10-21T05:06:26+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "76dcc329e018c21b",
@@ -8879,7 +9058,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Architecting+What+Next+Cloud+Transformation+Agentic+Security+and+Cyber&sortBy=%22date_posted%22",
    "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
    "visto_il": "2026-10-21T05:06:26+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "de19873832502ad9",
@@ -8974,7 +9153,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Introduces+AI-Powered+Roleplays+Help+Learners+Stay+Certified&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-20T12:57:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "2f8d476ace23c402",
@@ -9045,7 +9224,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+Suite+Advantage+Why+Enterprises+Don+Evaluate+CRM+Isolation&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-20T12:57:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "04282be6889139b7",
@@ -9067,7 +9246,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Back+the+Future+Years+SAP+TechEd&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-20T12:57:50+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "b667e915e0ddbae9",
@@ -9358,7 +9537,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=New+agentic+capabilities+and+AWS+connector+updates+RunMyJobs+2026.4&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-22T05:06:30+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "92266c3d0ed6750e",
@@ -9802,7 +9981,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Recognized+Leader+the+2026+Gartner+Magic+Quadrant+for&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/finance",
    "visto_il": "2026-10-19T14:57:45+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "02a6d99d1ca15ad4",
@@ -9826,7 +10005,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+Gap+That+LLM+Can+Close&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-19T14:57:45+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "56d85f41ee17cb17",
@@ -9874,7 +10053,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=the+beginning+better+SAP+NOW+Tour+Milan+Autonomous+Enterprise&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-19T10:42:01+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "0ca45e0ed38df002",
@@ -10827,7 +11006,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+Next+Leap+Public+Services+Starts+Behind+the+Scenes&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-16T12:43:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "88d102ea3ae45515",
@@ -11019,7 +11198,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Figaf+Weekly+Put+your+B2B+migration+real+calendar&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-10-16T09:42:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "aca64ccd104c7a40",
@@ -11115,7 +11294,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Quality+Award+2026+agentica+protagonista+dei+progetti+premiati&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-16T05:07:28+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "ff486a279e6465d8",
@@ -11358,7 +11537,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Questions+Board+Members+Should+Asking+About+Security+and+Compliance&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-15T12:51:33+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "b1442332a4f4f8a4",
@@ -11380,7 +11559,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=From+Two+Weeks+Seconds+How+Ericsson+Reimagining+B2B+Commerce&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-15T12:51:33+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "d90053ab13658afe",
@@ -11778,7 +11957,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Angelini+Technologies+Fameccanica+sceglie+RISE+with+SAP+per+accelerare&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-15T05:06:45+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "731bf93bd0b646af",
@@ -11937,7 +12116,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=DACHSER+Migrates+HCM+SAP+S%2F4HANA+Cloud+Using+RISE+with&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-14T13:04:33+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "9bbe2143cfc1e379",
@@ -12398,7 +12577,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+SAP+Automation+Advantage+What+High-Performing+SAP+Teams+Have&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-15T05:06:45+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "27e0e1a0cd808a1b",
@@ -12550,7 +12729,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=RISE+with+SAP+Shared+Responsibility+Security+Monitoring+Guide&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-13T15:16:19+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "f5a6f0af51df6bb2",
@@ -12576,7 +12755,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Security+Patch+and+Vulnerability+Monitoring+Guide&sortBy=%22date_posted%22",
    "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
    "visto_il": "2026-10-13T15:16:19+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "95c15ccd3ccc46e7",
@@ -12836,7 +13015,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Security+Patch+Day+October+2026&sortBy=%22date_posted%22",
    "link_sap_help": "https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html",
    "visto_il": "2026-10-13T12:39:08+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "f396f9e1e858a0c0",
@@ -15843,7 +16022,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+annuncia+acquisizione+TechWolf+per+offrire+alle+aziende+una&sortBy=%22date_posted%22",
    "link_sap_help": "https://www.sap.com/products.html",
    "visto_il": "2026-10-07T11:43:55+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "00506c27ca8431ae",
@@ -16503,7 +16682,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Restoring+Compliance+After+Missed+SAP+Patch+Cycles&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-06T14:27:54+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "6d80031d697b6b34",
@@ -16528,7 +16707,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+porta+Autonomous+Enterprise+azione&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-10-06T14:27:54+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "5b60d8551534c11a",
@@ -16701,7 +16880,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Serrala+named+Leader+IDC+MarketScape+Worldwide+Embedded+Payment+Applications&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/finance",
    "visto_il": "2026-10-06T09:29:24+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "3d6ccdba92cbbfd0",
@@ -16951,7 +17130,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=What+new+Avantra+and+why&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-06T09:29:24+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "315ff3c6ebda0f47",
@@ -17147,7 +17326,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=What+happens+the+edges+your+AWS+workflows+ways+extend&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
    "visto_il": "2026-10-05T16:22:17+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "a6fe665b170a784e",
@@ -18114,7 +18293,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Figaf+Weekly+Your+landscape+our+experts+two+ways+get&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-10-02T11:03:33+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "6cd48e7c2e763064",
@@ -18460,7 +18639,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=connessione+che+abilita+crescita+Italian+Cable+Company+accelera+trasformazione&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-01T11:34:12+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "167eb4120849cefa",
@@ -18720,7 +18899,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Release+2609+stronger+foundation+plus+clearer+view+your+B2B&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
    "visto_il": "2026-10-21T10:03:18+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "1dc45310c206fe63",
@@ -19209,7 +19388,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Govern+the+action+Deterministic+rails+for+agents+across+hybrid&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
    "visto_il": "2026-09-30T11:07:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "893cadff85537ea2",
@@ -19475,7 +19654,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Faster+message+mappings+SAP+Integration+Suite+meet+the+Mapping&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-09-30T11:07:34+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "ec37c382c7a8f99e",
@@ -20144,7 +20323,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+migration+step+the+easy+part&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-09-29T11:19:21+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "cafb51a22dd501a6",
@@ -21491,7 +21670,7 @@
    "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Figaf+Weekly+Mastering+complex+SAP+Cloud+Integration+mappings&sortBy=%22date_posted%22",
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-09-26T05:20:40+00:00",
-   "aggiornato_il": "2026-11-02T17:25:18+00:00"
+   "aggiornato_il": "2026-11-03T06:06:43+00:00"
   },
   {
    "id": "d6b64610f919e696",
@@ -21806,326 +21985,6 @@
    "link_sap_help": "https://help.sap.com/docs/btp",
    "visto_il": "2026-09-25T05:21:24+00:00",
    "aggiornato_il": "2026-09-27T13:17:33+00:00"
-  },
-  {
-   "id": "4233a11a59726687",
-   "titolo": "SAP Named a Leader in the 2026 IDC MarketScape for AI-Enabled Direct Spend",
-   "url": "https://news.sap.com/2026/09/sap-a-leader-2026-idc-marketscape-ai-enabled-direct-spend",
-   "fonte": "SAP News Center",
-   "fonte_id": "sap_news_center",
-   "tipo_fonte": "official",
-   "pubblicato": "2026-09-24T13:15:00+00:00",
-   "sommario": "SAP is invested in helping manufacturers connect sourcing, engineering, planning, and supplier collaboration on a single foundation.",
-   "autore": "Baber Farooq",
-   "categorie": [
-    "hr_procurement"
-   ],
-   "match": [
-    "supplier"
-   ],
-   "score": 28,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Named+Leader+the+2026+IDC+MarketScape+for+AI-Enabled&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-10-16T09:42:18+00:00"
-  },
-  {
-   "id": "0c8c78081537b24c",
-   "titolo": "Using SAP HANA Native Storage Extension (NSE) with SAP BW 7.5 - Part 1",
-   "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/using-sap-hana-native-storage-extension-nse-with-sap-bw-7-5-part-1/ba-p/14489810",
-   "fonte": "SAP Community - Technology blogs",
-   "fonte_id": "sap_community_tech",
-   "tipo_fonte": "official",
-   "pubblicato": "2026-09-24T12:58:49+00:00",
-   "sommario": "Looking to reduce the HANA memory footprint and infrastructure cost of your SAP BW 7.5 environment? SAP HANA Native Storage Extension (NSE) provides a warm-data tier within HANA, allowing selected BW data to remain on disk while being loaded into memory when required. With NSE support extended to BW 7.5, it offers another option for customers exploring BW modernization, BDC adoption, or HANA footprint optimization .…",
-   "autore": "Tanuj_G",
-   "categorie": [
-    "tech_ops"
-   ],
-   "match": [
-    "hana",
-    "sap hana"
-   ],
-   "score": 46,
-   "livello": "watch",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Using+SAP+HANA+Native+Storage+Extension+NSE+with+SAP&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
-   "visto_il": "2026-09-23T05:20:51+00:00",
-   "aggiornato_il": "2026-09-25T05:21:24+00:00"
-  },
-  {
-   "id": "b53c31ee6b034049",
-   "titolo": "What Implementation Teams Wish Organizations Knew About Enterprise RFPs",
-   "url": "https://news.sap.com/2026/09/rfps-what-implementation-teams-wish-organizations-knew",
-   "fonte": "SAP News Center",
-   "fonte_id": "sap_news_center",
-   "tipo_fonte": "official",
-   "pubblicato": "2026-09-24T12:15:00+00:00",
-   "sommario": "RFPs are common in the world of enterprise software. Truly successful ones, less so.",
-   "autore": "Drew Messinger-Michaels",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 20,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=What+Implementation+Teams+Wish+Organizations+Knew+About+Enterprise+RFPs&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-10-15T09:49:03+00:00"
-  },
-  {
-   "id": "1dfcb0da1aecbfa4",
-   "titolo": "SAP AppHaus Network Partner Bluestonex Builds the Bridge: From Inspiration to Hands-On AI Innovation",
-   "url": "https://news.sap.com/2026/09/sap-apphaus-network-partner-bluestonex-builds-the-bridge",
-   "fonte": "SAP News Center",
-   "fonte_id": "sap_news_center",
-   "tipo_fonte": "official",
-   "pubblicato": "2026-09-24T11:15:00+00:00",
-   "sommario": "Two different showcases shed light on different applications and scenarios from the retail and supply chain industries.",
-   "autore": "Imke Vierjahn",
-   "categorie": [
-    "logistics"
-   ],
-   "match": [
-    "supply chain"
-   ],
-   "score": 34,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+AppHaus+Network+Partner+Bluestonex+Builds+the+Bridge+From&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/supply-chain",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-10-15T09:49:03+00:00"
-  },
-  {
-   "id": "df768a052a5b99f2",
-   "titolo": "Auf der Suche nach der eigenen Roadmap",
-   "url": "https://e3mag.com/de/auf-der-suche-nach-der-eigenen-roadmap",
-   "fonte": "E-3 Magazine (EN)",
-   "fonte_id": "e3mag",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-09-24T11:00:00+00:00",
-   "sommario": "Der Jahreskongress 2026 der Deutschsprachigen SAP-Anwendergruppe (DSAG) in der Kölnmesse steht unter dem Motto: Claim Your Ground. Lead Your Business. Der Autonomieanspruch der DSAG. Der Beitrag Auf der Suche nach der eigenen Roadmap erschien zuerst auf E3-Magazin .",
-   "autore": "Peter M. Färbinger, E3-Magazin",
-   "categorie": [
-    "s4hana"
-   ],
-   "match": [
-    "roadmap"
-   ],
-   "score": 20,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Auf+der+Suche+nach+der+eigenen+Roadmap&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
-   "visto_il": "2026-09-30T14:13:41+00:00",
-   "aggiornato_il": "2026-10-08T05:07:29+00:00"
-  },
-  {
-   "id": "eaa9ebe6fa27ea37",
-   "titolo": "SAP Business Data Cloud aiuta Team Liquid a ottimizzare le prestazioni dei giocatori",
-   "url": "https://news.sap.com/italy/2026/09/sap-business-data-cloud-aiuta-team-liquid-a-ottimizzare-le-prestazioni-dei-giocatori",
-   "fonte": "SAP News Italia",
-   "fonte_id": "sap_news_italia",
-   "tipo_fonte": "official",
-   "pubblicato": "2026-09-24T10:16:33+00:00",
-   "sommario": "Milano, 24 settembre 2026 — SAP SE (NYSE: SAP) ha annunciato che Team Liquid utilizza SAP Business Data Cloud (BDC) per connettere dati di gioco,... The post SAP Business Data Cloud aiuta Team Liquid a ottimizzare le prestazioni dei giocatori appeared first on SAP News Center Italy .",
-   "autore": "SAP News",
-   "categorie": [
-    "ai_data"
-   ],
-   "match": [
-    "business data cloud"
-   ],
-   "score": 40,
-   "livello": "watch",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=SAP+Business+Data+Cloud+aiuta+Team+Liquid+ottimizzare+prestazioni&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/sap-business-technology-platform/sap-ai-core",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-10-29T14:38:29+00:00"
-  },
-  {
-   "id": "30807073cb0b4dfc",
-   "titolo": "The Autonomous Enterprise, Unfiltered: Lessons From 16 Executive Conversations",
-   "url": "https://news.sap.com/2026/09/autonomous-enterprise-podcast-lesssons-16-executive-conversations",
-   "fonte": "SAP News Center",
-   "fonte_id": "sap_news_center",
-   "tipo_fonte": "official",
-   "pubblicato": "2026-09-24T10:15:00+00:00",
-   "sommario": "The Autonomous Enterprise podcast set out to close the gap between strategic ambition and operational reality.",
-   "autore": "Benedikt Gieger",
-   "categorie": [
-    "altro"
-   ],
-   "match": [],
-   "score": 20,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=The+Autonomous+Enterprise+Unfiltered+Lessons+From+Executive+Conversations&sortBy=%22date_posted%22",
-   "link_sap_help": "https://www.sap.com/products.html",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-10-14T10:06:28+00:00"
-  },
-  {
-   "id": "05e057d1195b00fa",
-   "titolo": "Accelerate your Transformation in Fast Lane with Enterprise Management Layer for SAP S/4HANA",
-   "url": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/accelerate-your-transformation-in-fast-lane-with-enterprise-management/ba-p/14487577",
-   "fonte": "SAP Community - ERP blogs",
-   "fonte_id": "sap_community_erp",
-   "tipo_fonte": "official",
-   "pubblicato": "2026-09-24T09:55:24+00:00",
-   "sommario": "Global transformation. Forty plus countries. One SAP S/4HANA system. The investment is approved. The team is assembled. The business is ready. What if the system was ready too — from Day One? SAP S/4HANA Cloud Private Edition and On-Premise systems are built to be fully flexible — designed to fit the exact organizational structure, accounting framework, and country requirements of each enterprise. That flexibility…",
-   "autore": "Deepak_Grover1",
-   "categorie": [
-    "s4hana"
-   ],
-   "match": [
-    "on-premise",
-    "s/4hana"
-   ],
-   "score": 74,
-   "livello": "must",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Accelerate+your+Transformation+Fast+Lane+with+Enterprise+Management+Layer&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-10-04T13:27:39+00:00"
-  },
-  {
-   "id": "531f1c3f1bd4e911",
-   "titolo": "From SAP RAP & OData to AI-Powered Dashboards with Joule Desktop and MCP",
-   "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-sap-rap-amp-odata-to-ai-powered-dashboards-with-joule-desktop-and-mcp/ba-p/14491244",
-   "fonte": "SAP Community - Technology blogs",
-   "fonte_id": "sap_community_tech",
-   "tipo_fonte": "official",
-   "pubblicato": "2026-09-24T09:54:46+00:00",
-   "sommario": "What if you could simply ask Joule Desktop: \"Show me all the fruits that are going to expire within the next 7 days.\" …and instead of manually opening a Fiori application, navigating through tables, filtering dates, and creating charts, Joule could directly retrieve the relevant business data from SAP BTP , understand it, and generate an interactive dashboard with KPIs, charts, cards, and insights ? That is exactly…",
-   "autore": "chitrakshawSAP",
-   "categorie": [
-    "btp_integration",
-    "ai_data",
-    "tech_ops"
-   ],
-   "match": [
-    "btp",
-    "fiori",
-    "joule",
-    "odata"
-   ],
-   "score": 86,
-   "livello": "must",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=From+SAP+RAP+OData+AI-Powered+Dashboards+with+Joule+Desktop&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/btp",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-09-27T13:17:33+00:00"
-  },
-  {
-   "id": "0107053977d44441",
-   "titolo": "Wie der KI-Assistant die Supply Chain intelligenter macht",
-   "url": "https://e3mag.com/de/wie-der-ki-assistant-die-supply-chain-intelligenter-macht",
-   "fonte": "E-3 Magazine (EN)",
-   "fonte_id": "e3mag",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-09-24T09:42:18+00:00",
-   "sommario": "Weniger suchen, schneller entscheiden, früher handeln: KI könnte im Supply-Chain-Alltag vor allem dort zum Gamechanger werden, wo Zeit und Erfahrung heute noch Engpässe sind. Der neue KI-Assistant von GIB zeigt, wie aus künstlicher Intelligenz ein praktischer Begleiter werden soll. Der Beitrag Wie der KI-Assistant die Supply Chain intelligenter macht erschien zuerst auf E3-Magazin .",
-   "autore": "E3-Magazin",
-   "categorie": [
-    "logistics"
-   ],
-   "match": [
-    "supply chain"
-   ],
-   "score": 26,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Wie+der+KI-Assistant+die+Supply+Chain+intelligenter+macht&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/supply-chain",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-10-05T16:22:17+00:00"
-  },
-  {
-   "id": "c9a4ac33d2e9f6a0",
-   "titolo": "Weniger Bestand, mehr Service",
-   "url": "https://e3mag.com/de/weniger-bestand-mehr-service",
-   "fonte": "E-3 Magazine (EN)",
-   "fonte_id": "e3mag",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-09-24T09:41:46+00:00",
-   "sommario": "160.000 aktive Ersatzteile, weltweite Lieferfähigkeit und steigende Serviceansprüche: Wacker Neuson zeigt, wie sich komplexe Aftermarket-Prozesse datenbasiert beherrschen lassen – mit präziseren Prognosen, effizienteren Abläufen und einer Supply Chain, die zunehmend automatisiert arbeitet. Der Beitrag Weniger Bestand, mehr Service erschien zuerst auf E3-Magazin .",
-   "autore": "E3-Magazin",
-   "categorie": [
-    "logistics"
-   ],
-   "match": [
-    "supply chain"
-   ],
-   "score": 26,
-   "livello": "info",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Weniger+Bestand+mehr+Service&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/supply-chain",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-10-05T16:22:17+00:00"
-  },
-  {
-   "id": "d1c1061b618f6b00",
-   "titolo": "Warum Clean Core zur strategischen Leitplanke für die digitale Supply Chain wird",
-   "url": "https://e3mag.com/de/warum-clean-core-zur-strategischen-leitplanke-fuer-die-digitale-supply-chain-wird",
-   "fonte": "E-3 Magazine (EN)",
-   "fonte_id": "e3mag",
-   "tipo_fonte": "press",
-   "pubblicato": "2026-09-24T09:40:09+00:00",
-   "sommario": "Standardisieren, ohne an Profil zu verlieren: Mit S/4 Hana müssen Unternehmen neu entscheiden, wo Individualität echten Mehrwert schafft – und wo sie zum Ballast wird. Gerade in der Supply Chain wird Clean Core damit zur strategischen Architekturfrage mit weitreichenden Folgen. Der Beitrag Warum Clean Core zur strategischen Leitplanke für die digitale Supply Chain wird erschien zuerst auf E3-Magazin .",
-   "autore": "E3-Magazin",
-   "categorie": [
-    "s4hana",
-    "logistics",
-    "tech_ops"
-   ],
-   "match": [
-    "clean core",
-    "hana",
-    "supply chain"
-   ],
-   "score": 64,
-   "livello": "watch",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=Warum+Clean+Core+zur+strategischen+Leitplanke+f%C3%BCr+die+digitale&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
-   "visto_il": "2026-09-25T05:21:24+00:00",
-   "aggiornato_il": "2026-10-05T12:13:47+00:00"
-  },
-  {
-   "id": "7a9050737e070d4d",
-   "titolo": "October 2026 EGI Schedule for Greenfield Implementation of Cloud ERP Private Now Available!",
-   "url": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/october-2026-egi-schedule-for-greenfield-implementation-of-cloud-erp/ba-p/14490975",
-   "fonte": "SAP Community - ERP blogs",
-   "fonte_id": "sap_community_erp",
-   "tipo_fonte": "official",
-   "pubblicato": "2026-09-24T08:39:37+00:00",
-   "sommario": "If you are planning an greenfield implementation of SAP S/4HANA Cloud Private Edition, join us for our upcoming live sessions this October to accelerate your transformation journey. Explore the tailored Expert-guided Implementation (EGI) schedule below and register today to secure your spot. Expert-guided Implementations (EGIs) are multi-day, remote, workshop-style sessions where participants work directly in their…",
-   "autore": "IcyHuang",
-   "categorie": [
-    "s4hana"
-   ],
-   "match": [
-    "s/4hana",
-    "greenfield"
-   ],
-   "score": 70,
-   "livello": "must",
-   "vendor": null,
-   "link_linkedin": "https://www.linkedin.com/search/results/content/?keywords=October+2026+EGI+Schedule+for+Greenfield+Implementation+Cloud+ERP&sortBy=%22date_posted%22",
-   "link_sap_help": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE",
-   "visto_il": "2026-09-24T05:20:58+00:00",
-   "aggiornato_il": "2026-10-02T14:07:41+00:00"
   }
  ],
  "fonti": {
@@ -22140,8 +21999,8 @@
    "scartati": 0,
    "url_usato": "https://news.sap.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "sap_news_italia": {
    "id": "sap_news_italia",
@@ -22154,8 +22013,8 @@
    "scartati": 0,
    "url_usato": "https://news.sap.com/italy/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "sap_community_tech": {
    "id": "sap_community_tech",
@@ -22168,8 +22027,8 @@
    "scartati": 0,
    "url_usato": "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-sap",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "sap_community_erp": {
    "id": "sap_community_erp",
@@ -22182,8 +22041,8 @@
    "scartati": 0,
    "url_usato": "https://community.sap.com/khhcw49343/rss/board?board.id=erp-blog-sap",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "sap_community_members": {
    "id": "sap_community_members",
@@ -22196,8 +22055,8 @@
    "scartati": 0,
    "url_usato": "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-members",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "erp_today": {
    "id": "erp_today",
@@ -22206,12 +22065,12 @@
    "url": "https://erp.today/feed/",
    "ok": true,
    "stato": "HTTP 200",
-   "elementi": 2,
-   "scartati": 8,
+   "elementi": 1,
+   "scartati": 9,
    "url_usato": "https://erp.today/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "sapinsider": {
    "id": "sapinsider",
@@ -22224,8 +22083,8 @@
    "scartati": 0,
    "url_usato": "https://sapinsider.org/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "e3mag": {
    "id": "e3mag",
@@ -22238,8 +22097,8 @@
    "scartati": 0,
    "url_usato": "https://e3mag.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "diginomica": {
    "id": "diginomica",
@@ -22252,8 +22111,8 @@
    "scartati": 10,
    "url_usato": "https://diginomica.com/feed",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "theregister_erp": {
    "id": "theregister_erp",
@@ -22266,8 +22125,8 @@
    "scartati": 50,
    "url_usato": "https://www.theregister.com/headlines.atom",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "reddit_sap": {
    "id": "reddit_sap",
@@ -22280,8 +22139,8 @@
    "scartati": 0,
    "url_usato": "https://www.reddit.com/r/SAP/.rss",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "onapsis_blog": {
    "id": "onapsis_blog",
@@ -22294,8 +22153,8 @@
    "scartati": 0,
    "url_usato": "https://onapsis.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:13+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:13+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "securitybridge_blog": {
    "id": "securitybridge_blog",
@@ -22308,8 +22167,8 @@
    "scartati": 0,
    "url_usato": "https://securitybridge.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:14+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:14+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "pathlock_blog": {
    "id": "pathlock_blog",
@@ -22322,8 +22181,8 @@
    "scartati": 0,
    "url_usato": "https://pathlock.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:14+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:14+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "figaf_blog": {
    "id": "figaf_blog",
@@ -22336,8 +22195,8 @@
    "scartati": 0,
    "url_usato": "https://figaf.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:14+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:14+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "int4_blog": {
    "id": "int4_blog",
@@ -22350,8 +22209,8 @@
    "scartati": 0,
    "url_usato": "https://int4.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:14+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:14+00:00"
+   "ultimo_ok": "2026-11-03T06:06:39+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:39+00:00"
   },
   "avantra_blog": {
    "id": "avantra_blog",
@@ -22364,8 +22223,8 @@
    "scartati": 0,
    "url_usato": "https://www.avantra.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:14+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:14+00:00"
+   "ultimo_ok": "2026-11-03T06:06:40+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:40+00:00"
   },
   "redwood_blog": {
    "id": "redwood_blog",
@@ -22378,8 +22237,8 @@
    "scartati": 3,
    "url_usato": "https://www.redwood.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:14+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:14+00:00"
+   "ultimo_ok": "2026-11-03T06:06:40+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:40+00:00"
   },
   "serrala_blog": {
    "id": "serrala_blog",
@@ -22392,8 +22251,8 @@
    "scartati": 7,
    "url_usato": "https://www.serrala.com/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:14+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:14+00:00"
+   "ultimo_ok": "2026-11-03T06:06:40+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:40+00:00"
   },
   "fivetran_blog": {
    "id": "fivetran_blog",
@@ -22406,8 +22265,8 @@
    "scartati": 72,
    "url_usato": "https://www.fivetran.com/blog/rss.xml",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:14+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:14+00:00"
+   "ultimo_ok": "2026-11-03T06:06:40+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:40+00:00"
   },
   "whatfix_blog": {
    "id": "whatfix_blog",
@@ -22420,8 +22279,8 @@
    "scartati": 2,
    "url_usato": "https://whatfix.com/blog/feed/",
    "suggerimento": "",
-   "ultimo_ok": "2026-11-02T17:25:14+00:00",
-   "ultimo_tentativo": "2026-11-02T17:25:14+00:00"
+   "ultimo_ok": "2026-11-03T06:06:40+00:00",
+   "ultimo_tentativo": "2026-11-03T06:06:40+00:00"
   }
  },
  "link_health": {
@@ -23059,5 +22918,5 @@
    }
   }
  },
- "aggiornato_il": "2026-11-02T17:25:18+00:00"
+ "aggiornato_il": "2026-11-03T06:06:43+00:00"
 }
