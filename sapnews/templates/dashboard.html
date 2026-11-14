@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="it" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar SAP</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a78d6'/%3E%3Cpath d='M7 21l5-10 4 7 3-4 6 7z' fill='white'/%3E%3C/svg%3E">
+<meta name="description" content="Notizie SAP e tool di ecosistema, aggiornate ogni giorno e filtrate sul nostro stack.">
+<style>
+/* ---------------------------------------------------------------------------
+   Token di colore. Palette validata per daltonismo e contrasto: i valori dark
+   sono passi scelti per la superficie scura, non un'inversione automatica.
+   --------------------------------------------------------------------------- */
+:root{
+  color-scheme: light;
+  --plane:#f9f9f7; --surface:#fcfcfb; --surface-2:#f2f1ed;
+  --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --line:#c3c2b7; --border:rgba(11,11,11,.10);
+  --accent:#2a78d6; --accent-soft:rgba(42,120,214,.10);
+  --good:#0ca30c; --warning:#fab219; --serious:#ec835a; --critical:#d03b3b;
+  --radius:10px; --gap:16px;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:where(:not([data-theme="light"])){
+    color-scheme: dark;
+    --plane:#0d0d0d; --surface:#1a1a19; --surface-2:#232321;
+    --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --line:#383835; --border:rgba(255,255,255,.10);
+    --accent:#3987e5; --accent-soft:rgba(57,135,229,.16);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --plane:#0d0d0d; --surface:#1a1a19; --surface-2:#232321;
+  --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --line:#383835; --border:rgba(255,255,255,.10);
+  --accent:#3987e5; --accent-soft:rgba(57,135,229,.16);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--plane); color:var(--ink); font-family:var(--font);
+  font-size:14px; line-height:1.5; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent)}
+button{font:inherit; color:inherit}
+.wrap{max-width:1180px; margin:0 auto; padding-inline:16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ------------------------------- intestazione ---------------------------- */
+header{background:var(--surface); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:20}
+.head{display:flex; align-items:flex-start; gap:var(--gap); padding-block:14px; flex-wrap:wrap}
+.brand{display:flex; align-items:center; gap:10px; min-width:0}
+.logo{width:30px;height:30px;border-radius:8px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700;font-size:12px;flex:none}
+h1{font-size:17px; margin:0; line-height:1.25}
+.sub{color:var(--ink-2); font-size:12.5px; margin-top:2px}
+.head-right{margin-left:auto; display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);background:var(--surface-2);
+  border-radius:999px;padding:4px 10px;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.icon-btn{border:1px solid var(--border);background:var(--surface);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:12.5px}
+.icon-btn:hover{background:var(--surface-2)}
+
+/* --------------------------------- schede -------------------------------- */
+nav.tabs{display:flex;gap:4px;border-bottom:1px solid var(--border);background:var(--surface);overflow-x:auto}
+nav.tabs .wrap{display:flex;gap:4px}
+.tab{border:0;background:none;padding:10px 14px;cursor:pointer;font-size:13.5px;color:var(--ink-2);
+  border-bottom:2px solid transparent;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+.tab .count{color:var(--muted);font-size:12px}
+
+main{padding-block:20px 56px}
+section[hidden]{display:none!important}
+
+/* ------------------------------- riquadri KPI ---------------------------- */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px}
+.kpi .v{font-size:26px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.kpi .k{color:var(--ink-2);font-size:12px;margin-top:2px}
+.kpi .n{color:var(--muted);font-size:11.5px;margin-top:4px}
+
+/* -------------------------- grafico distribuzione ------------------------ */
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-bottom:16px}
+.panel h2{font-size:13px;margin:0 0 2px;font-weight:650}
+.panel .hint{color:var(--muted);font-size:12px;margin:0 0 12px}
+.bars{display:flex;flex-direction:column;gap:2px}
+.bar-row{display:grid;grid-template-columns:minmax(120px,190px) 1fr auto;gap:10px;align-items:center;
+  border:0;background:none;padding:4px 6px;border-radius:6px;cursor:pointer;text-align:left;width:100%}
+.bar-row:hover{background:var(--surface-2)}
+.bar-row[aria-pressed="true"]{background:var(--accent-soft)}
+.bar-label{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-2);min-width:0}
+.bar-label span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-track{display:block;height:14px;background:var(--grid);border-radius:4px;overflow:hidden}
+.bar-fill{display:block;height:100%;background:var(--accent);border-radius:0 4px 4px 0;min-width:3px}
+.bar-val{font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums;min-width:28px;text-align:right}
+
+/* --------------------------------- filtri -------------------------------- */
+.filters{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;margin-bottom:14px}
+.f-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.f-row + .f-row{margin-top:10px}
+.search{flex:1 1 240px;display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--plane);
+  border-radius:8px;padding:7px 10px}
+.search input{border:0;background:none;outline:none;flex:1;min-width:0;color:var(--ink);font-size:13.5px}
+select{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 9px;font-size:13px;cursor:pointer}
+.chip{border:1px solid var(--border);background:var(--surface-2);border-radius:999px;padding:5px 11px;font-size:12.5px;
+  cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--ink);font-weight:600}
+.chip .dot{width:9px;height:9px}
+.f-label{font-size:12px;color:var(--muted);margin-right:2px}
+.toggle{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-2);cursor:pointer;
+  border:1px solid var(--border);background:var(--surface-2);border-radius:999px;padding:5px 11px}
+.toggle input{accent-color:var(--accent);margin:0}
+.result-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 12px;color:var(--ink-2);font-size:12.5px}
+.result-bar .spacer{margin-left:auto}
+
+/* --------------------------------- schede notizia ------------------------ */
+.cards{display:flex;flex-direction:column;gap:10px}
+.card{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--cat,var(--muted));
+  border-radius:var(--radius);padding:13px 15px;position:relative}
+.card.letto{opacity:.55}
+.card-top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:5px}
+.card h3{font-size:15px;margin:0;line-height:1.35;flex:1 1 320px;font-weight:620}
+.card h3 a{color:inherit;text-decoration:none}
+.card h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent)}
+.meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:12px}
+.meta .sep{color:var(--grid)}
+.summary{color:var(--ink-2);font-size:13px;margin:7px 0 9px}
+.badges{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:9px}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;padding:3px 9px;border-radius:999px;
+  border:1px solid var(--border);background:var(--surface-2);color:var(--ink-2)}
+.badge.livello-must{border-color:var(--accent);color:var(--ink);background:var(--accent-soft);font-weight:600}
+.match{font-size:11.5px;color:var(--muted)}
+.match b{color:var(--ink-2);font-weight:600}
+.score{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.score .track{display:block;width:44px;height:5px;border-radius:3px;background:var(--grid);overflow:hidden}
+.score .fill{display:block;height:100%;background:var(--accent);border-radius:0 3px 3px 0}
+.actions{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.act{border:1px solid var(--border);background:var(--surface);border-radius:7px;padding:5px 10px;font-size:12px;
+  cursor:pointer;text-decoration:none;color:var(--ink-2);display:inline-flex;align-items:center;gap:5px}
+.act:hover{background:var(--surface-2);color:var(--ink)}
+.act.primary{border-color:var(--accent);color:var(--accent);font-weight:600}
+.act.on{background:var(--accent-soft);border-color:var(--accent);color:var(--ink);font-weight:600}
+.act.vendor{border-color:var(--line)}
+
+/* --------------------------------- vendor -------------------------------- */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.vcard{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--cat,var(--muted));
+  border-radius:var(--radius);padding:14px 15px;display:flex;flex-direction:column;gap:8px}
+.vcard h3{margin:0;font-size:15px;font-weight:620}
+.vcard .claim{color:var(--ink-2);font-size:12.5px;margin:-4px 0 0}
+.vcard dl{margin:0;font-size:12.5px;color:var(--ink-2)}
+.vcard dt{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-top:7px}
+.vcard dd{margin:2px 0 0}
+.tags{display:flex;gap:5px;flex-wrap:wrap}
+.tag{font-size:11px;border:1px solid var(--border);border-radius:5px;padding:2px 7px;color:var(--muted)}
+.vcard .actions{margin-top:auto;padding-top:9px}
+
+/* -------------------------------- controllo ------------------------------ */
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
+td.num{font-variant-numeric:tabular-nums;text-align:right}
+.status{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
+code{background:var(--surface-2);border:1px solid var(--border);border-radius:5px;padding:1px 5px;font-size:12px}
+
+.empty{text-align:center;color:var(--muted);padding:48px 16px;background:var(--surface);
+  border:1px dashed var(--line);border-radius:var(--radius)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--plane);
+  padding:9px 16px;border-radius:999px;font-size:13px;z-index:60;opacity:0;pointer-events:none;transition:opacity .18s}
+.toast.on{opacity:1}
+.tip{position:fixed;z-index:50;background:var(--surface);border:1px solid var(--line);border-radius:8px;
+  padding:6px 9px;font-size:12px;color:var(--ink);pointer-events:none;opacity:0;transition:opacity .12s;
+  box-shadow:0 4px 14px rgba(0,0,0,.14)}
+.tip.on{opacity:1}
+
+@media (max-width:820px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .bar-row{grid-template-columns:minmax(96px,130px) 1fr auto}
+}
+@media (max-width:520px){
+  h1{font-size:16px}
+  .card{padding:12px 13px}
+  .bar-row{grid-template-columns:1fr auto;grid-template-areas:"label val" "track track";gap:4px 8px}
+  .bar-label{grid-area:label} .bar-val{grid-area:val} .bar-track{grid-area:track}
+}
+@media print{ header,nav.tabs,.filters,.actions,.kpis{display:none!important} .card{break-inside:avoid} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap head">
+    <div class="brand">
+      <div class="logo">SAP</div>
+      <div>
+        <h1>Radar SAP</h1>
+        <div class="sub" id="profilo">Notizie SAP e tool di ecosistema, filtrate sul nostro stack.</div>
+      </div>
+    </div>
+    <div class="head-right">
+      <span class="pill" id="pill-agg" title="Ultimo aggiornamento dei dati">&mdash;</span>
+      <span class="pill" id="pill-fonti">&mdash;</span>
+      <button class="icon-btn" id="btn-tema" title="Cambia tema">Tema</button>
+      <button class="icon-btn" id="btn-reload" title="Ricarica i dati">Aggiorna</button>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="wrap">
+    <button class="tab" id="tab-notizie" role="tab" aria-selected="true" aria-controls="sec-notizie">
+      Notizie <span class="count" id="c-notizie"></span>
+    </button>
+    <button class="tab" id="tab-vendor" role="tab" aria-selected="false" aria-controls="sec-vendor">
+      Vendor &amp; Tool <span class="count" id="c-vendor"></span>
+    </button>
+    <button class="tab" id="tab-controllo" role="tab" aria-selected="false" aria-controls="sec-controllo">
+      Controllo <span class="count" id="c-controllo"></span>
+    </button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- =========================== NOTIZIE ================================ -->
+  <section id="sec-notizie" role="tabpanel" aria-labelledby="tab-notizie">
+    <div class="kpis">
+      <div class="kpi"><div class="v" id="kpi-24">&mdash;</div><div class="k">Novità ultime 24h</div><div class="n" id="kpi-24-n"></div></div>
+      <div class="kpi"><div class="v" id="kpi-must">&mdash;</div><div class="k">Da leggere (7 giorni)</div><div class="n">Rilevanza alta sul nostro stack</div></div>
+      <div class="kpi"><div class="v" id="kpi-salvati">&mdash;</div><div class="k">Salvate da te</div><div class="n" id="kpi-letti-n"></div></div>
+      <div class="kpi"><div class="v" id="kpi-fonti">&mdash;</div><div class="k">Fonti attive</div><div class="n" id="kpi-fonti-n"></div></div>
+    </div>
+
+    <div class="panel">
+      <h2>Distribuzione per categoria</h2>
+      <p class="hint">Notizie nel periodo selezionato. Clicca una barra per filtrare.</p>
+      <div class="bars" id="bars"></div>
+    </div>
+
+    <div class="filters">
+      <div class="f-row">
+        <label class="search">
+          <span class="sr">Cerca</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Cerca per titolo, fonte, parola chiave&hellip;  (tasto /)" autocomplete="off">
+        </label>
+        <select id="periodo" aria-label="Periodo">
+          <option value="1">Ultime 24 ore</option>
+          <option value="7" selected>Ultimi 7 giorni</option>
+          <option value="30">Ultimi 30 giorni</option>
+          <option value="0">Tutto lo storico</option>
+        </select>
+        <select id="ordine" aria-label="Ordinamento">
+          <option value="rilevanza" selected>Più rilevanti</option>
+          <option value="recenti">Più recenti</option>
+        </select>
+      </div>
+      <div class="f-row"><span class="f-label">Categorie</span><span id="chips-cat" class="f-row" style="gap:6px"></span></div>
+      <div class="f-row"><span class="f-label">Fonti</span><span id="chips-tipo" class="f-row" style="gap:6px"></span></div>
+      <div class="f-row">
+        <label class="toggle"><input type="checkbox" id="t-must"> Solo "da leggere"</label>
+        <label class="toggle"><input type="checkbox" id="t-letti"> Nascondi già lette</label>
+        <label class="toggle"><input type="checkbox" id="t-salvati"> Solo salvate</label>
+      </div>
+    </div>
+
+    <div class="result-bar">
+      <span id="conteggio">&mdash;</span>
+      <span class="spacer"></span>
+      <button class="icon-btn" id="btn-digest">Copia digest</button>
+      <button class="icon-btn" id="btn-segna">Segna tutte come lette</button>
+      <button class="icon-btn" id="btn-reset">Azzera filtri</button>
+    </div>
+
+    <div class="cards" id="lista"></div>
+  </section>
+
+  <!-- ============================ VENDOR =============================== -->
+  <section id="sec-vendor" role="tabpanel" aria-labelledby="tab-vendor" hidden>
+    <div class="panel">
+      <h2>Tool esterni che funzionano bene sul nostro stack</h2>
+      <p class="hint" id="vendor-intro">
+        Catalogo curato in <code>config/vendors.yaml</code>. Ogni scheda spiega a cosa serve il tool e
+        perché ha senso sulla nostra soluzione, con il link diretto a demo o contatto commerciale.
+      </p>
+      <div class="f-row" id="vendor-hub"></div>
+    </div>
+
+    <div class="filters">
+      <div class="f-row">
+        <label class="search">
+          <span class="sr">Cerca vendor</span>
+          <input id="vq" type="search" placeholder="Cerca tool, vendor, ambito&hellip;" autocomplete="off">
+        </label>
+      </div>
+      <div class="f-row"><span class="f-label">Ambito</span><span id="vchips" class="f-row" style="gap:6px"></span></div>
+    </div>
+
+    <div class="vgrid" id="vlista"></div>
+  </section>
+
+  <!-- =========================== CONTROLLO ============================= -->
+  <section id="sec-controllo" role="tabpanel" aria-labelledby="tab-controllo" hidden>
+    <div class="panel">
+      <h2>Come è tarato il radar</h2>
+      <p class="hint">Tutto quello che vedi nasce dai file in <code>config/</code>. Nessuna modifica richiede codice.</p>
+      <dl id="config-riassunto" style="margin:0;font-size:13px"></dl>
+    </div>
+
+    <div class="panel">
+      <h2>Stato delle fonti</h2>
+      <p class="hint">Se una fonte resta rossa per più giorni, aggiorna il suo <code>url</code> in <code>config/sources.yaml</code>.</p>
+      <div class="scroll-x"><table id="tab-fonti"></table></div>
+    </div>
+
+    <div class="panel">
+      <h2>Stato dei link vendor</h2>
+      <p class="hint">Controllo settimanale delle pagine di demo e contatto. I link rotti vengono sostituiti in automatico dal sito ufficiale del vendor.</p>
+      <div id="link-health"></div>
+    </div>
+  </section>
+
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="tip" id="tip" role="presentation"></div>
+
+<script>
+"use strict";
+/* ===========================================================================
+   Stato applicativo. I dati arrivano da data/news.json (rigenerato ogni
+   giorno dal workflow); le preferenze restano nel browser di chi legge.
+   =========================================================================== */
+var DATI = null;
+var CAT = {};            // id categoria -> metadati
+var VIS = [];            // notizie attualmente visibili
+var LS = "sapnews.v1.";
+
+var stato = {
+  q: "", periodo: "7", ordine: "rilevanza",
+  cat: new Set(), tipo: new Set(),
+  soloMust: false, nascondiLetti: false, soloSalvati: false,
+  vq: "", vcat: new Set(), tab: "notizie"
+};
+
+function lsGet(k, def){ try{ var v = localStorage.getItem(LS+k); return v===null?def:JSON.parse(v); }catch(e){ return def; } }
+function lsSet(k, v){ try{ localStorage.setItem(LS+k, JSON.stringify(v)); }catch(e){} }
+
+var letti = new Set(lsGet("letti", []));
+var salvati = new Set(lsGet("salvati", []));
+
+/* ------------------------------- utilità -------------------------------- */
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+
+function quando(item){ return new Date(item.pubblicato || item.visto_il || Date.now()); }
+
+function daQuanto(d){
+  var s = (Date.now() - d.getTime())/1000;
+  if (isNaN(s)) return "";
+  if (s < 90) return "adesso";
+  if (s < 3600) return Math.round(s/60) + " min fa";
+  if (s < 86400) return Math.round(s/3600) + " h fa";
+  var g = Math.round(s/86400);
+  if (g < 31) return g + (g===1 ? " giorno fa" : " giorni fa");
+  return d.toLocaleDateString("it-IT", {day:"2-digit", month:"short", year:"numeric"});
+}
+
+function toast(msg){
+  var t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("on");
+  clearTimeout(toast._t); toast._t = setTimeout(function(){ t.classList.remove("on"); }, 2000);
+}
+
+function temaScuro(){
+  var esplicito = document.documentElement.getAttribute("data-theme");
+  if (esplicito === "dark") return true;
+  if (esplicito === "light") return false;
+  return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+
+function coloreCat(id){
+  var c = CAT[id];
+  if (!c) return "var(--muted)";
+  return temaScuro() ? c.colore_dark : c.colore;
+}
+
+/* Un link vendor va usato solo se il controllo settimanale non lo ha bocciato.
+   Un link "bloccato" (LinkedIn risponde 999 ai non-browser, alcuni siti 403)
+   resta valido: lo vede bene chi ci clicca, siamo noi a non poterlo sondare. */
+function linkSano(url, fallback){
+  if (!url) return fallback;
+  var salute = (DATI && DATI.link_health && DATI.link_health.link) || {};
+  var v = salute[url];
+  if (v && (v.esito === "rotto" || (v.esito === undefined && v.ok === false))) {
+    return fallback || url;
+  }
+  return url;
+}
+
+/* ------------------------------ caricamento ------------------------------ */
+function carica(){
+  var url = "data/news.json?ts=" + Date.now();
+  return fetch(url, {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function(d){ DATI = d; inizializza(); })
+    .catch(function(err){
+      document.getElementById("lista").innerHTML =
+        '<div class="empty"><p><b>Dati non caricati</b> (' + esc(err.message) + ')</p>' +
+        '<p>Se stai aprendo il file con doppio clic, il browser blocca la lettura di <code>data/news.json</code>.<br>' +
+        'Avvia invece <code>python -m sapnews serve</code> e apri <code>http://localhost:8000</code>.</p></div>';
+    });
+}
+
+function inizializza(){
+  (DATI.categorie || []).forEach(function(c){ CAT[c.id] = c; });
+
+  var p = DATI.profilo || {};
+  document.getElementById("profilo").textContent = p.nome || "";
+  document.title = "Radar SAP - " + (DATI.stats.ultime_24h || 0) + " novità oggi";
+
+  var agg = new Date(DATI.generato_il);
+  var pill = document.getElementById("pill-agg");
+  pill.innerHTML = '<span class="dot" style="background:' +
+    (Date.now() - agg.getTime() < 36*3600*1000 ? "var(--good)" : "var(--warning)") + '"></span>Aggiornato ' + esc(daQuanto(agg));
+  pill.title = "Ultimo aggiornamento: " + agg.toLocaleString("it-IT");
+
+  var ok = DATI.stats.fonti_ok, tot = DATI.stats.fonti_totali;
+  document.getElementById("pill-fonti").innerHTML =
+    '<span class="dot" style="background:' + (ok === tot ? "var(--good)" : (ok > tot*0.6 ? "var(--warning)" : "var(--critical)")) +
+    '"></span>' + ok + "/" + tot + " fonti";
+
+  ripristinaPreferenze();
+  costruisciChips();
+  costruisciVendor();
+  costruisciControllo();
+  document.getElementById("c-vendor").textContent = "(" + (DATI.vendor||[]).length + ")";
+  aggiorna();
+}
+
+/* ------------------------------ preferenze ------------------------------- */
+function ripristinaPreferenze(){
+  var pref = lsGet("filtri", null);
+  if (pref){
+    stato.periodo = pref.periodo || stato.periodo;
+    stato.ordine = pref.ordine || stato.ordine;
+    stato.cat = new Set(pref.cat || []);
+    stato.tipo = new Set(pref.tipo || []);
+    stato.soloMust = !!pref.soloMust;
+    stato.nascondiLetti = !!pref.nascondiLetti;
+    stato.soloSalvati = !!pref.soloSalvati;
+  }
+  document.getElementById("periodo").value = stato.periodo;
+  document.getElementById("ordine").value = stato.ordine;
+  document.getElementById("t-must").checked = stato.soloMust;
+  document.getElementById("t-letti").checked = stato.nascondiLetti;
+  document.getElementById("t-salvati").checked = stato.soloSalvati;
+  var tema = lsGet("tema", "auto");
+  if (tema !== "auto") document.documentElement.setAttribute("data-theme", tema);
+}
+
+function salvaPreferenze(){
+  lsSet("filtri", {periodo:stato.periodo, ordine:stato.ordine, cat:[].concat(Array.from(stato.cat)),
+    tipo:[].concat(Array.from(stato.tipo)), soloMust:stato.soloMust,
+    nascondiLetti:stato.nascondiLetti, soloSalvati:stato.soloSalvati});
+}
+
+/* --------------------------------- chips --------------------------------- */
+function costruisciChips(){
+  var cc = document.getElementById("chips-cat");
+  cc.innerHTML = "";
+  (DATI.categorie || []).forEach(function(c){
+    var b = document.createElement("button");
+    b.className = "chip"; b.type = "button";
+    b.setAttribute("aria-pressed", stato.cat.has(c.id) ? "true" : "false");
+    b.title = c.descrizione || "";
+    b.innerHTML = '<span class="dot" style="background:' + coloreCat(c.id) + '"></span>' + esc(c.nome);
+    b.onclick = function(){ toggleSet(stato.cat, c.id); b.setAttribute("aria-pressed", stato.cat.has(c.id)?"true":"false"); aggiorna(); };
+    cc.appendChild(b);
+  });
+
+  var ct = document.getElementById("chips-tipo");
+  ct.innerHTML = "";
+  Object.keys(DATI.tipi_fonte || {}).forEach(function(k){
+    var b = document.createElement("button");
+    b.className = "chip"; b.type = "button";
+    b.setAttribute("aria-pressed", stato.tipo.has(k) ? "true" : "false");
+    b.textContent = DATI.tipi_fonte[k];
+    b.onclick = function(){ toggleSet(stato.tipo, k); b.setAttribute("aria-pressed", stato.tipo.has(k)?"true":"false"); aggiorna(); };
+    ct.appendChild(b);
+  });
+}
+
+function toggleSet(s, v){ if (s.has(v)) s.delete(v); else s.add(v); }
+
+/* -------------------------------- filtro --------------------------------- */
+function filtra(){
+  var giorni = parseInt(stato.periodo, 10);
+  var limite = giorni > 0 ? Date.now() - giorni*86400000 : 0;
+  var q = stato.q.trim().toLowerCase();
+  var termini = q ? q.split(/\s+/) : [];
+
+  return (DATI.items || []).filter(function(i){
+    if (limite && quando(i).getTime() < limite) return false;
+    if (stato.cat.size && !(i.categorie || []).some(function(c){ return stato.cat.has(c); })) return false;
+    if (stato.tipo.size && !stato.tipo.has(i.tipo_fonte)) return false;
+    if (stato.soloMust && i.livello !== "must") return false;
+    if (stato.nascondiLetti && letti.has(i.id)) return false;
+    if (stato.soloSalvati && !salvati.has(i.id)) return false;
+    if (termini.length){
+      var testo = (i.titolo + " " + i.sommario + " " + i.fonte + " " + (i.match||[]).join(" ")).toLowerCase();
+      for (var k = 0; k < termini.length; k++) if (testo.indexOf(termini[k]) === -1) return false;
+    }
+    return true;
+  });
+}
+
+function ordina(lista){
+  var copia = lista.slice();
+  if (stato.ordine === "recenti") copia.sort(function(a,b){ return quando(b) - quando(a); });
+  else copia.sort(function(a,b){ return (b.score - a.score) || (quando(b) - quando(a)); });
+  return copia;
+}
+
+/* -------------------------------- rendering ------------------------------ */
+function aggiorna(){
+  VIS = ordina(filtra());
+  salvaPreferenze();
+  disegnaKpi();
+  disegnaBarre();
+  disegnaLista();
+  document.getElementById("c-notizie").textContent = "(" + VIS.length + ")";
+}
+
+function disegnaKpi(){
+  var s = DATI.stats || {};
+  document.getElementById("kpi-24").textContent = s.ultime_24h || 0;
+  document.getElementById("kpi-24-n").textContent = "su " + (s.totale || 0) + " nello storico";
+  document.getElementById("kpi-must").textContent = s.da_leggere || 0;
+  document.getElementById("kpi-salvati").textContent = salvati.size;
+  document.getElementById("kpi-letti-n").textContent = letti.size + " già lette";
+  document.getElementById("kpi-fonti").textContent = (s.fonti_ok || 0) + "/" + (s.fonti_totali || 0);
+  var rotti = s.link_rotti || 0;
+  document.getElementById("kpi-fonti-n").textContent = rotti ? (rotti + " link vendor da rivedere") : "tutti i link vendor validi";
+}
+
+/* Distribuzione per categoria: è una misura di quantità, quindi una sola
+   tinta; l'identità della categoria la porta l'etichetta, non il colore. */
+function disegnaBarre(){
+  var conteggi = {};
+  VIS.forEach(function(i){ (i.categorie||[]).forEach(function(c){ conteggi[c] = (conteggi[c]||0)+1; }); });
+  var righe = (DATI.categorie || []).map(function(c){ return {id:c.id, nome:c.nome, n:conteggi[c.id]||0}; })
+                                     .filter(function(r){ return r.n > 0; })
+                                     .sort(function(a,b){ return b.n - a.n; });
+  var max = righe.reduce(function(m,r){ return Math.max(m, r.n); }, 1);
+  var box = document.getElementById("bars");
+  box.innerHTML = "";
+
+  if (!righe.length){ box.innerHTML = '<p class="hint" style="margin:0">Nessuna notizia nel periodo selezionato.</p>'; return; }
+
+  righe.forEach(function(r){
+    var b = document.createElement("button");
+    b.className = "bar-row"; b.type = "button";
+    b.setAttribute("aria-pressed", stato.cat.has(r.id) ? "true" : "false");
+    b.setAttribute("aria-label", r.nome + ": " + r.n + " notizie. Filtra.");
+    b.innerHTML =
+      '<span class="bar-label"><span class="dot" style="background:' + coloreCat(r.id) + '"></span><span>' + esc(r.nome) + '</span></span>' +
+      '<span class="bar-track"><span class="bar-fill" style="width:' + Math.max(2, Math.round(r.n/max*100)) + '%"></span></span>' +
+      '<span class="bar-val">' + r.n + '</span>';
+    b.onclick = function(){
+      toggleSet(stato.cat, r.id);
+      costruisciChips();
+      aggiorna();
+    };
+    b.onmousemove = function(e){ mostraTip(e, r.nome + ": " + r.n + (r.n===1?" notizia":" notizie")); };
+    b.onmouseleave = nascondiTip;
+    box.appendChild(b);
+  });
+}
+
+function mostraTip(e, testo){
+  var t = document.getElementById("tip");
+  t.textContent = testo; t.classList.add("on");
+  var x = Math.min(e.clientX + 14, window.innerWidth - t.offsetWidth - 10);
+  t.style.left = x + "px";
+  t.style.top = (e.clientY - t.offsetHeight - 10) + "px";
+}
+function nascondiTip(){ document.getElementById("tip").classList.remove("on"); }
+
+function disegnaLista(){
+  var box = document.getElementById("lista");
+  var totale = (DATI.items || []).length;
+  document.getElementById("conteggio").textContent =
+    VIS.length + (VIS.length === 1 ? " notizia" : " notizie") + " su " + totale + " nello storico";
+
+  if (!VIS.length){
+    box.innerHTML = '<div class="empty"><p><b>Nessun risultato con questi filtri.</b></p>' +
+      '<p>Prova ad allargare il periodo o ad azzerare i filtri.</p></div>';
+    return;
+  }
+
+  var frag = document.createDocumentFragment();
+  VIS.slice(0, 300).forEach(function(i){ frag.appendChild(cardNotizia(i)); });
+  box.innerHTML = "";
+  box.appendChild(frag);
+
+  if (VIS.length > 300){
+    var p = document.createElement("p");
+    p.className = "hint";
+    p.textContent = "Mostrate le prime 300 notizie: restringi il periodo o i filtri per vedere le altre.";
+    box.appendChild(p);
+  }
+}
+
+function cardNotizia(i){
+  var el = document.createElement("article");
+  var catPrinc = (i.categorie && i.categorie[0]) || "altro";
+  el.className = "card" + (letti.has(i.id) ? " letto" : "");
+  el.style.setProperty("--cat", coloreCat(catPrinc));
+
+  var badges = (i.categorie || []).map(function(c){
+    return '<span class="badge"><span class="dot" style="background:' + coloreCat(c) + '"></span>' +
+           esc((CAT[c] || {}).nome || c) + '</span>';
+  }).join("");
+
+  if (i.livello === "must") badges = '<span class="badge livello-must">Da leggere</span>' + badges;
+  else if (i.livello === "watch") badges = '<span class="badge">Da monitorare</span>' + badges;
+
+  var match = (i.match || []).length
+    ? '<div class="match">Agganciata su: <b>' + esc((i.match || []).join(", ")) + '</b></div>' : "";
+
+  var vendor = (DATI.vendor || []).filter(function(v){ return v.id === i.vendor; })[0];
+  var azioniVendor = "";
+  if (vendor){
+    var l = vendor.link || {};
+    azioniVendor =
+      '<a class="act vendor" target="_blank" rel="noopener" href="' + esc(linkSano(l.demo, l.sito)) + '">Demo / contatto</a>';
+  }
+
+  el.innerHTML =
+    '<div class="card-top">' +
+      '<h3><a href="' + esc(i.url) + '" target="_blank" rel="noopener">' + esc(i.titolo) + '</a></h3>' +
+      '<span class="score" title="Rilevanza sul nostro stack: ' + i.score + '/100">' +
+        '<span class="track"><span class="fill" style="width:' + i.score + '%"></span></span>' + i.score +
+      '</span>' +
+    '</div>' +
+    '<div class="meta">' +
+      '<span>' + esc(i.fonte) + '</span><span class="sep">&bull;</span>' +
+      '<span>' + esc((DATI.tipi_fonte || {})[i.tipo_fonte] || i.tipo_fonte) + '</span><span class="sep">&bull;</span>' +
+      '<span title="' + esc(quando(i).toLocaleString("it-IT")) + '">' + esc(daQuanto(quando(i))) + '</span>' +
+    '</div>' +
+    (i.sommario ? '<p class="summary">' + esc(i.sommario) + '</p>' : "") +
+    '<div class="badges">' + badges + '</div>' + match +
+    '<div class="actions" style="margin-top:9px">' +
+      '<a class="act primary" href="' + esc(i.url) + '" target="_blank" rel="noopener">Apri l\'articolo</a>' +
+      '<a class="act" href="' + esc(i.link_linkedin) + '" target="_blank" rel="noopener" ' +
+        'title="Cerca su LinkedIn i post che ne parlano">Post LinkedIn</a>' +
+      '<a class="act" href="' + esc(i.link_sap_help) + '" target="_blank" rel="noopener" ' +
+        'title="Documentazione SAP dell\'area">Documentazione SAP</a>' +
+      azioniVendor +
+      '<button class="act' + (letti.has(i.id) ? " on" : "") + '" data-azione="letto">' +
+        (letti.has(i.id) ? "Letta" : "Segna come letta") + '</button>' +
+      '<button class="act' + (salvati.has(i.id) ? " on" : "") + '" data-azione="salva">' +
+        (salvati.has(i.id) ? "Salvata" : "Salva") + '</button>' +
+    '</div>';
+
+  el.querySelector('[data-azione="letto"]').onclick = function(){
+    toggleSet(letti, i.id); lsSet("letti", Array.from(letti)); aggiorna();
+  };
+  el.querySelector('[data-azione="salva"]').onclick = function(){
+    toggleSet(salvati, i.id); lsSet("salvati", Array.from(salvati)); aggiorna();
+  };
+  return el;
+}
+
+/* --------------------------------- vendor -------------------------------- */
+function costruisciVendor(){
+  var hub = DATI.hub || {};
+  var etichette = {sap_store:"SAP Store", partner_finder:"SAP Partner Finder", certified_solutions:"Soluzioni certificate"};
+  document.getElementById("vendor-hub").innerHTML = Object.keys(hub).map(function(k){
+    return '<a class="act" target="_blank" rel="noopener" href="' + esc(hub[k]) + '">' + esc(etichette[k] || k) + '</a>';
+  }).join("");
+
+  var box = document.getElementById("vchips");
+  box.innerHTML = "";
+  var usate = {};
+  (DATI.vendor || []).forEach(function(v){ usate[v.categoria] = true; });
+  (DATI.categorie || []).filter(function(c){ return usate[c.id]; }).forEach(function(c){
+    var b = document.createElement("button");
+    b.className = "chip"; b.type = "button";
+    b.setAttribute("aria-pressed", "false");
+    b.innerHTML = '<span class="dot" style="background:' + coloreCat(c.id) + '"></span>' + esc(c.nome);
+    b.onclick = function(){ toggleSet(stato.vcat, c.id); b.setAttribute("aria-pressed", stato.vcat.has(c.id)?"true":"false"); disegnaVendor(); };
+    box.appendChild(b);
+  });
+  disegnaVendor();
+}
+
+function disegnaVendor(){
+  var q = stato.vq.trim().toLowerCase();
+  var lista = (DATI.vendor || []).filter(function(v){
+    if (stato.vcat.size && !stato.vcat.has(v.categoria)) return false;
+    if (!q) return true;
+    var testo = [v.nome, v.claim, v.cosa_fa, v.perche_ci_serve, v.maturita,
+                 (v.integrazione||[]).join(" ")].join(" ").toLowerCase();
+    return testo.indexOf(q) !== -1;
+  });
+
+  var box = document.getElementById("vlista");
+  if (!lista.length){ box.innerHTML = '<div class="empty">Nessun tool corrisponde alla ricerca.</div>'; return; }
+
+  box.innerHTML = lista.map(function(v){
+    var l = v.link || {};
+    var cerca = "https://www.linkedin.com/search/results/content/?keywords=" +
+                encodeURIComponent(v.nome + " SAP");
+    return '<article class="vcard" style="--cat:' + coloreCat(v.categoria) + '">' +
+      '<h3>' + esc(v.nome) + '</h3>' +
+      '<p class="claim">' + esc(v.claim || "") + '</p>' +
+      '<div class="badges"><span class="badge"><span class="dot" style="background:' + coloreCat(v.categoria) + '"></span>' +
+        esc((CAT[v.categoria]||{}).nome || v.categoria) + '</span>' +
+        (v.maturita ? '<span class="badge">' + esc(v.maturita) + '</span>' : "") + '</div>' +
+      '<dl>' +
+        '<dt>Cosa fa</dt><dd>' + esc(v.cosa_fa || "") + '</dd>' +
+        '<dt>Perché ci serve</dt><dd>' + esc(v.perche_ci_serve || "") + '</dd>' +
+      '</dl>' +
+      '<div class="tags">' + (v.integrazione||[]).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join("") + '</div>' +
+      '<div class="actions">' +
+        '<a class="act primary" target="_blank" rel="noopener" href="' + esc(linkSano(l.demo, l.sito)) + '">Demo / prenota call</a>' +
+        '<a class="act" target="_blank" rel="noopener" href="' + esc(l.sito) + '">Sito</a>' +
+        (l.docs ? '<a class="act" target="_blank" rel="noopener" href="' + esc(linkSano(l.docs, l.sito)) + '">Documentazione</a>' : "") +
+        (l.linkedin ? '<a class="act" target="_blank" rel="noopener" href="' + esc(l.linkedin) + '">LinkedIn</a>' : "") +
+        '<a class="act" target="_blank" rel="noopener" href="' + esc(cerca) + '">Cosa se ne dice</a>' +
+      '</div>' +
+    '</article>';
+  }).join("");
+}
+
+/* -------------------------------- controllo ------------------------------ */
+function costruisciControllo(){
+  var p = DATI.profilo || {}, s = p.soglie || {};
+  document.getElementById("config-riassunto").innerHTML =
+    '<dt style="color:var(--muted);font-size:11px;text-transform:uppercase">Profilo della soluzione</dt>' +
+    '<dd style="margin:2px 0 8px">' + esc(p.nome || "") + '</dd>' +
+    '<dt style="color:var(--muted);font-size:11px;text-transform:uppercase">Cosa consideriamo rilevante</dt>' +
+    '<dd style="margin:2px 0 8px">' + esc(p.descrizione || "") + '</dd>' +
+    '<dt style="color:var(--muted);font-size:11px;text-transform:uppercase">Soglie</dt>' +
+    '<dd style="margin:2px 0 0">Da leggere da <b>' + esc(s.must) + '</b> punti, da monitorare da <b>' +
+      esc(s.watch) + '</b>. Sotto, la notizia resta come informazione.</dd>';
+
+  var fonti = (DATI.fonti || []).slice().sort(function(a,b){
+    return (a.ok === b.ok) ? a.nome.localeCompare(b.nome) : (a.ok ? 1 : -1);
+  });
+  var righe = fonti.map(function(f){
+    var cambiata = f.ok && f.suggerimento;
+    var colore = f.ok ? (cambiata ? "var(--warning)" : "var(--good)") : "var(--critical)";
+    var etichetta = f.ok ? (cambiata ? "OK, feed cambiato" : "OK") : "Non raggiungibile";
+    var nota = cambiata
+      ? '<div style="color:var(--warning);font-size:11.5px;margin-top:3px">' +
+        'Il sito ha spostato il feed: ricopia questo url in <code>config/sources.yaml</code>.</div>'
+      : "";
+    return '<tr>' +
+      '<td><span class="status"><span class="dot" style="background:' + colore + '"></span>' + etichetta + '</span></td>' +
+      '<td>' + esc(f.nome) + '<div style="color:var(--muted);font-size:11.5px">' +
+        esc((DATI.tipi_fonte||{})[f.tipo] || f.tipo) + '</div>' + nota + '</td>' +
+      '<td class="num">' + (f.elementi || 0) + '</td>' +
+      '<td>' + esc(f.stato || "") + '</td>' +
+      '<td>' + (f.ultimo_ok ? esc(daQuanto(new Date(f.ultimo_ok))) : "mai") + '</td>' +
+      '<td style="max-width:260px;word-break:break-all"><a href="' + esc(f.url_usato || f.url) +
+        '" target="_blank" rel="noopener">' + esc(f.url_usato || f.url) + '</a></td>' +
+    '</tr>';
+  }).join("");
+
+  document.getElementById("tab-fonti").innerHTML =
+    '<thead><tr><th>Stato</th><th>Fonte</th><th class="num">Elementi</th><th>Esito</th><th>Ultimo successo</th><th>Feed usato</th></tr></thead>' +
+    '<tbody>' + righe + '</tbody>';
+
+  var lh = DATI.link_health || {};
+  var link = lh.link || {};
+  var chiavi = Object.keys(link);
+  var rotti = chiavi.filter(function(k){ return link[k].esito === "rotto"; });
+  var bloccati = chiavi.filter(function(k){ return link[k].esito === "bloccato"; });
+  var box = document.getElementById("link-health");
+  if (!chiavi.length){
+    box.innerHTML = '<p class="hint" style="margin:0">Nessun controllo ancora eseguito. Lancia <code>python -m sapnews check-links</code> ' +
+      'oppure attendi il controllo settimanale automatico.</p>';
+  } else {
+    box.innerHTML = '<p class="hint" style="margin:0 0 10px">' + chiavi.length + ' link controllati il ' +
+      esc(new Date(lh.controllato_il).toLocaleDateString("it-IT")) + ' &mdash; ' +
+      (rotti.length ? '<b>' + rotti.length + ' da rivedere</b>' : "nessun problema") + '.' +
+      (bloccati.length ? ' ' + bloccati.length + ' non sono verificabili da uno script ' +
+        '(LinkedIn e alcuni siti rispondono solo ai browser): restano invariati.' : "") + '</p>' +
+      (rotti.length ? '<div class="scroll-x"><table><thead><tr><th>Esito</th><th>Link</th></tr></thead><tbody>' +
+        rotti.map(function(k){
+          return '<tr><td><span class="status"><span class="dot" style="background:var(--critical)"></span>' +
+            esc(link[k].stato || link[k].errore || "errore") + '</span></td>' +
+            '<td style="word-break:break-all">' + esc(k) + '</td></tr>';
+        }).join("") + '</tbody></table></div>' : "");
+  }
+  var spostate = (DATI.fonti || []).filter(function(f){ return f.ok && f.suggerimento; }).length;
+  document.getElementById("c-controllo").textContent =
+    (DATI.stats.fonti_ok === DATI.stats.fonti_totali && !rotti.length && !spostate) ? "" : "(!)";
+}
+
+/* --------------------------------- digest -------------------------------- */
+function digest(){
+  var nomi = {};
+  (DATI.categorie||[]).forEach(function(c){ nomi[c.id] = c.nome; });
+  var righe = ["# Radar SAP - " + new Date().toLocaleDateString("it-IT"), ""];
+  var gruppi = {};
+  VIS.slice(0, 25).forEach(function(i){
+    var c = (i.categorie && i.categorie[0]) || "altro";
+    (gruppi[c] = gruppi[c] || []).push(i);
+  });
+  Object.keys(gruppi).forEach(function(c){
+    righe.push("## " + (nomi[c] || c), "");
+    gruppi[c].forEach(function(i){
+      righe.push("- " + (i.livello === "must" ? "[Da leggere] " : "") + i.titolo +
+                 " (" + i.fonte + ") - " + i.url);
+    });
+    righe.push("");
+  });
+  return righe.join("\n");
+}
+
+function copia(testo){
+  if (navigator.clipboard && window.isSecureContext){
+    return navigator.clipboard.writeText(testo);
+  }
+  return new Promise(function(res, rej){
+    var ta = document.createElement("textarea");
+    ta.value = testo; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); res(); } catch(e){ rej(e); }
+    document.body.removeChild(ta);
+  });
+}
+
+/* --------------------------------- eventi -------------------------------- */
+function mostraTab(nome){
+  stato.tab = nome;
+  ["notizie","vendor","controllo"].forEach(function(t){
+    document.getElementById("sec-" + t).hidden = (t !== nome);
+    document.getElementById("tab-" + t).setAttribute("aria-selected", t === nome ? "true" : "false");
+  });
+}
+
+document.getElementById("tab-notizie").onclick = function(){ mostraTab("notizie"); };
+document.getElementById("tab-vendor").onclick = function(){ mostraTab("vendor"); };
+document.getElementById("tab-controllo").onclick = function(){ mostraTab("controllo"); };
+
+var tq;
+document.getElementById("q").addEventListener("input", function(e){
+  clearTimeout(tq); var v = e.target.value;
+  tq = setTimeout(function(){ stato.q = v; aggiorna(); }, 160);
+});
+document.getElementById("vq").addEventListener("input", function(e){
+  stato.vq = e.target.value; disegnaVendor();
+});
+document.getElementById("periodo").onchange = function(e){ stato.periodo = e.target.value; aggiorna(); };
+document.getElementById("ordine").onchange = function(e){ stato.ordine = e.target.value; aggiorna(); };
+document.getElementById("t-must").onchange = function(e){ stato.soloMust = e.target.checked; aggiorna(); };
+document.getElementById("t-letti").onchange = function(e){ stato.nascondiLetti = e.target.checked; aggiorna(); };
+document.getElementById("t-salvati").onchange = function(e){ stato.soloSalvati = e.target.checked; aggiorna(); };
+
+document.getElementById("btn-reset").onclick = function(){
+  stato.q = ""; stato.cat.clear(); stato.tipo.clear();
+  stato.soloMust = stato.nascondiLetti = stato.soloSalvati = false;
+  stato.periodo = "7"; stato.ordine = "rilevanza";
+  document.getElementById("q").value = "";
+  document.getElementById("periodo").value = "7";
+  document.getElementById("ordine").value = "rilevanza";
+  document.getElementById("t-must").checked = false;
+  document.getElementById("t-letti").checked = false;
+  document.getElementById("t-salvati").checked = false;
+  costruisciChips(); aggiorna(); toast("Filtri azzerati");
+};
+
+document.getElementById("btn-segna").onclick = function(){
+  VIS.forEach(function(i){ letti.add(i.id); });
+  lsSet("letti", Array.from(letti)); aggiorna();
+  toast("Segnate come lette le notizie visibili");
+};
+
+document.getElementById("btn-digest").onclick = function(){
+  copia(digest()).then(function(){ toast("Digest copiato negli appunti"); })
+                 .catch(function(){ toast("Copia non riuscita"); });
+};
+
+document.getElementById("btn-reload").onclick = function(){
+  carica().then(function(){ toast("Dati ricaricati"); });
+};
+
+document.getElementById("btn-tema").onclick = function(){
+  var attuale = document.documentElement.getAttribute("data-theme");
+  var nuovo = (attuale === "dark") ? "light" : (attuale === "light" ? "auto" : "dark");
+  if (nuovo === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", nuovo);
+  lsSet("tema", nuovo);
+  costruisciChips(); costruisciVendor(); aggiorna();
+  toast("Tema: " + (nuovo === "auto" ? "come il sistema" : (nuovo === "dark" ? "scuro" : "chiaro")));
+};
+
+document.addEventListener("keydown", function(e){
+  if (e.key === "/" && document.activeElement.tagName !== "INPUT"){
+    e.preventDefault();
+    mostraTab("notizie");
+    document.getElementById("q").focus();
+  }
+  if (e.key === "Escape" && document.activeElement.tagName === "INPUT") document.activeElement.blur();
+});
+
+if (window.matchMedia){
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function(){
+    if (!document.documentElement.getAttribute("data-theme")){
+      costruisciChips(); costruisciVendor(); aggiorna();
+    }
+  });
+}
+
+carica();
+</script>
+</body>
+</html>
