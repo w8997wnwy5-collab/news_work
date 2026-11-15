@@ -1,7 +1,7 @@
 # Radar SAP - 15/11/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 11 notizie (23 da leggere) da 21/21 fonti attive.
+Ultime 24h: 10 notizie (23 da leggere) da 21/21 fonti attive.
 
 ## Altro / Ecosistema
 
@@ -12,14 +12,13 @@ Ultime 24h: 11 notizie (23 da leggere) da 21/21 fonti attive.
 -  [Looking for pre-seed investors or pilots](https://www.reddit.com/r/SAP/comments/1xw5gkm/looking_for_preseed_investors_or_pilots) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Looking+for+pre-seed+investors+pilots&sortBy=%22date_posted%22)
 -  [Future of SAP in AI Era. Any thoughts?](https://www.reddit.com/r/SAP/comments/1xw4y0b/future_of_sap_in_ai_era_any_thoughts) - _Reddit r/SAP_ (rilevanza 16) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Future+SAP+Era.+Any+thoughts&sortBy=%22date_posted%22)
 
-## Basis, HANA & Operations
-
-- [Da monitorare] [Restoring an Encrypted SAP HANA Backup to Another System](https://community.sap.com/t5/technology-blog-posts-by-members/restoring-an-encrypted-sap-hana-backup-to-another-system/ba-p/14522442) - _SAP Community - blog dei membri_ (rilevanza 50) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Restoring+Encrypted+SAP+HANA+Backup+Another+System&sortBy=%22date_posted%22)
--  [J00 not coming up](https://www.reddit.com/r/SAP/comments/1xwqqtg/j00_not_coming_up) - _Reddit r/SAP_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=J00+not+coming&sortBy=%22date_posted%22)
--  [SAP FICO Consultant in Bangalore](https://www.reddit.com/r/SAP/comments/1xw6l99/sap_fico_consultant_in_bangalore) - _Reddit r/SAP_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+FICO+Consultant+Bangalore&sortBy=%22date_posted%22)
-
 ## AI, Dati & Analytics
 
 - [Da monitorare] [5 things I learned facilitating SAP's Agentic AI training in 2026](https://community.sap.com/t5/technology-blog-posts-by-sap/5-things-i-learned-facilitating-sap-s-agentic-ai-training-in-2026/ba-p/14522545) - _SAP Community - Technology blogs_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=things+learned+facilitating+SAP+Agentic+training+2026&sortBy=%22date_posted%22)
 - [Da monitorare] [Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production](https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540) - _SAP Community - blog dei membri_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Why+OData%2FRAP+Service+Changes+Often+Require+Metadata+Cache+Clean&sortBy=%22date_posted%22)
+
+## Basis, HANA & Operations
+
+-  [J00 not coming up](https://www.reddit.com/r/SAP/comments/1xwqqtg/j00_not_coming_up) - _Reddit r/SAP_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=J00+not+coming&sortBy=%22date_posted%22)
+-  [SAP FICO Consultant in Bangalore](https://www.reddit.com/r/SAP/comments/1xw6l99/sap_fico_consultant_in_bangalore) - _Reddit r/SAP_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+FICO+Consultant+Bangalore&sortBy=%22date_posted%22)
 
