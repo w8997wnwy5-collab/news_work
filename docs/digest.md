@@ -1,7 +1,7 @@
 # Radar SAP - 18/11/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 45 notizie (28 da leggere) da 20/21 fonti attive.
+Ultime 24h: 47 notizie (28 da leggere) da 20/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
@@ -14,6 +14,7 @@ Ultime 24h: 45 notizie (28 da leggere) da 20/21 fonti attive.
 
 ## AI, Dati & Analytics
 
+- [Da monitorare] [SAP Business AI Platform, ABAP environment - Release 2611](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-platform-abap-environment-release-2611/ba-p/14523181) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Business+Platform+ABAP+environment+Release+2611&sortBy=%22date_posted%22)
 - [Da monitorare] [SAP Cloud Connector (SCC) Configuration for HANA Cloud in SAP Business Data Cloud (BDC)](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-cloud-connector-scc-configuration-for-hana-cloud-in-sap-business-data/ba-p/14524456) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Cloud+Connector+SCC+Configuration+for+HANA+Cloud+SAP&sortBy=%22date_posted%22)
 - [Da monitorare] [The AI Perfect Storm: How Mythos-Like AI Models Can Hack SAP Applications](https://sapinsider.org/videos/the-ai-perfect-storm-how-mythos-like-ai-models-can-hack-sap-applications) - _SAPinsider_ (rilevanza 48) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+Perfect+Storm+How+Mythos-Like+Models+Can+Hack+SAP&sortBy=%22date_posted%22)
 - [Da monitorare] [Accelerating BW Query Migration to SAP Business Data Cloud with the Query Template Generator](https://community.sap.com/t5/technology-blog-posts-by-sap/accelerating-bw-query-migration-to-sap-business-data-cloud-with-the-query/ba-p/14524549) - _SAP Community - Technology blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Accelerating+Query+Migration+SAP+Business+Data+Cloud+with+the&sortBy=%22date_posted%22)
@@ -21,20 +22,15 @@ Ultime 24h: 45 notizie (28 da leggere) da 20/21 fonti attive.
 
 ## Security & GRC
 
+- [Da monitorare] [Prove It: Reviewing SAP CAP Security with the AI OWASP Scanner — Part 2](https://community.sap.com/t5/technology-blog-posts-by-sap/prove-it-reviewing-sap-cap-security-with-the-ai-owasp-scanner-part-2/ba-p/14516397) - _SAP Community - Technology blogs_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Prove+Reviewing+SAP+CAP+Security+with+the+OWASP+Scanner&sortBy=%22date_posted%22)
 - [Da monitorare] [The Accelerating Threat to Luxury SAP Landscapes: Ransomware and Zero-Days](https://sapinsider.org/articles/the-accelerating-threat-to-luxury-sap-landscapes-ransomware-and-zero-days) - _SAPinsider_ (rilevanza 54) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+Accelerating+Threat+Luxury+SAP+Landscapes+Ransomware+and+Zero-Days&sortBy=%22date_posted%22)
 - [Da monitorare] [How Mandiant and Google Cloud Are Transforming SAP Cybersecurity Collaboration](https://sapinsider.org/articles/how-mandiant-and-google-cloud-are-transforming-sap-cybersecurity-collaboration) - _SAPinsider_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=How+Mandiant+and+Google+Cloud+Are+Transforming+SAP+Cybersecurity&sortBy=%22date_posted%22)
 -  [Review and Approval: Authorization Checks](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/review-and-approval-authorization-checks/ba-p/14525157) - _SAP Community - ERP blogs_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Review+and+Approval+Authorization+Checks&sortBy=%22date_posted%22)
--  [Trying out IPS transformations faster: a free, open-source playground](https://community.sap.com/t5/technology-blog-posts-by-members/trying-out-ips-transformations-faster-a-free-open-source-playground/ba-p/14518806) - _SAP Community - blog dei membri_ (rilevanza 36) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Trying+out+IPS+transformations+faster+free+open-source+playground&sortBy=%22date_posted%22)
 
 ## BTP & Integrazione
 
 - **[Da leggere]** [Integrating Northwind OData with SAP CAP](https://community.sap.com/t5/technology-blog-posts-by-members/integrating-northwind-odata-with-sap-cap/ba-p/14524021) - _SAP Community - blog dei membri_ (rilevanza 90) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Integrating+Northwind+OData+with+SAP+CAP&sortBy=%22date_posted%22)
-- [Da monitorare] [CPI AI chrome extension for free- CPI AutoPilot.](https://www.reddit.com/r/SAP/comments/1xylj91/cpi_ai_chrome_extension_for_free_cpi_autopilot) - _Reddit r/SAP_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=CPI+chrome+extension+for+free-+CPI+AutoPilot.&sortBy=%22date_posted%22)
-
-## Altro / Ecosistema
-
--  [SAP BusinessObjects BI 2027 preview](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-businessobjects-bi-2027-preview/ba-p/14521506) - _SAP Community - Technology blogs_ (rilevanza 36) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+BusinessObjects+2027+preview&sortBy=%22date_posted%22)
--  [Thomas Saueressig to Depart SAP Executive Board](https://sapinsider.org/blogs/thomas-saueressig-to-depart-sap-executive-board) - _SAPinsider_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Thomas+Saueressig+Depart+SAP+Executive+Board&sortBy=%22date_posted%22)
+- **[Da leggere]** [How to get notified for SAP Cloud Connector for newer version whenever released by Automation script](https://community.sap.com/t5/technology-blog-posts-by-members/how-to-get-notified-for-sap-cloud-connector-for-newer-version-whenever/ba-p/14524152) - _SAP Community - blog dei membri_ (rilevanza 72) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=How+get+notified+for+SAP+Cloud+Connector+for+newer&sortBy=%22date_posted%22)
 
 ## HR, Procurement & Travel
 
@@ -43,4 +39,8 @@ Ultime 24h: 45 notizie (28 da leggere) da 20/21 fonti attive.
 ## Basis, HANA & Operations
 
 -  [Souveräne Cloud- und KI-Lösungen](https://e3mag.com/de/souveraene-cloud-und-ki-loesungen) - _E-3 Magazine (EN)_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Souver%C3%A4ne+Cloud-+und+KI-L%C3%B6sungen&sortBy=%22date_posted%22)
+
+## Altro / Ecosistema
+
+-  [SAP BusinessObjects BI 2027 preview](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-businessobjects-bi-2027-preview/ba-p/14521506) - _SAP Community - Technology blogs_ (rilevanza 36) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+BusinessObjects+2027+preview&sortBy=%22date_posted%22)
 
