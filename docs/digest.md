@@ -1,46 +1,52 @@
-# Radar SAP - 18/11/2026
+# Radar SAP - 19/11/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 47 notizie (28 da leggere) da 20/21 fonti attive.
+Ultime 24h: 23 notizie (21 da leggere) da 20/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
-- **[Da leggere]** [Your SAP ECC System Can Already Speak SAP S/4 Data Products - Here's How - Stop waiting for RISE](https://community.sap.com/t5/technology-blog-posts-by-sap/your-sap-ecc-system-can-already-speak-sap-s-4-data-products-here-s-how-stop/ba-p/14525111) - _SAP Community - Technology blogs_ (rilevanza 94) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Your+SAP+ECC+System+Can+Already+Speak+SAP+S%2F4&sortBy=%22date_posted%22)
-- **[Da leggere]** [Quantity-Based Accrual Calculation and Review](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/quantity-based-accrual-calculation-and-review/ba-p/14525088) - _SAP Community - ERP blogs_ (rilevanza 88) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Quantity-Based+Accrual+Calculation+and+Review&sortBy=%22date_posted%22)
-- **[Da leggere]** [Understanding SAP Datasphere Data Extraction from S/4HANA](https://community.sap.com/t5/technology-blog-posts-by-members/understanding-sap-datasphere-data-extraction-from-s-4hana/ba-p/14448919) - _SAP Community - blog dei membri_ (rilevanza 88) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Understanding+SAP+Datasphere+Data+Extraction+from+S%2F4HANA&sortBy=%22date_posted%22)
+- **[Da leggere]** [From Document to Configuration: AVC's Generative AI Input Feature Is in Beta](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/from-document-to-configuration-avc-s-generative-ai-input-feature-is-in-beta/ba-p/14526035) - _SAP Community - ERP blogs_ (rilevanza 80) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+Document+Configuration+AVC+Generative+Input+Feature+Beta&sortBy=%22date_posted%22)
 - **[Da leggere]** [Introducing Joule Work - the new UI for AI from SAP](https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-joule-work-the-new-ui-for-ai-from-sap/ba-p/14523416) - _SAP Community - Technology blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Introducing+Joule+Work+the+new+for+from+SAP&sortBy=%22date_posted%22)
-- **[Da leggere]** [Configuring Budget Availability Control for Cost Centers in SAP S/4HANA Cloud Public Edition](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/configuring-budget-availability-control-for-cost-centers-in-sap-s-4hana/ba-p/14523040) - _SAP Community - ERP blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Configuring+Budget+Availability+Control+for+Cost+Centers+SAP+S%2F4HANA&sortBy=%22date_posted%22)
-- [Da monitorare] [The RISE with SAP Reality Check: Navigating Shared Security Challenges for Luxury Brands](https://sapinsider.org/articles/the-rise-with-sap-reality-check-navigating-shared-security-challenges-for-luxury-brands) - _SAPinsider_ (rilevanza 66) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+RISE+with+SAP+Reality+Check+Navigating+Shared+Security&sortBy=%22date_posted%22)
-
-## AI, Dati & Analytics
-
-- [Da monitorare] [SAP Business AI Platform, ABAP environment - Release 2611](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-platform-abap-environment-release-2611/ba-p/14523181) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Business+Platform+ABAP+environment+Release+2611&sortBy=%22date_posted%22)
-- [Da monitorare] [SAP Cloud Connector (SCC) Configuration for HANA Cloud in SAP Business Data Cloud (BDC)](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-cloud-connector-scc-configuration-for-hana-cloud-in-sap-business-data/ba-p/14524456) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Cloud+Connector+SCC+Configuration+for+HANA+Cloud+SAP&sortBy=%22date_posted%22)
-- [Da monitorare] [The AI Perfect Storm: How Mythos-Like AI Models Can Hack SAP Applications](https://sapinsider.org/videos/the-ai-perfect-storm-how-mythos-like-ai-models-can-hack-sap-applications) - _SAPinsider_ (rilevanza 48) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+Perfect+Storm+How+Mythos-Like+Models+Can+Hack+SAP&sortBy=%22date_posted%22)
-- [Da monitorare] [Accelerating BW Query Migration to SAP Business Data Cloud with the Query Template Generator](https://community.sap.com/t5/technology-blog-posts-by-sap/accelerating-bw-query-migration-to-sap-business-data-cloud-with-the-query/ba-p/14524549) - _SAP Community - Technology blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Accelerating+Query+Migration+SAP+Business+Data+Cloud+with+the&sortBy=%22date_posted%22)
--  [Enterprise data warehouse: Meaning, architecture, and steps](https://wf.fivetran.com/blog/enterprise-data-warehouse) - _Fivetran Blog_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Enterprise+data+warehouse+Meaning+architecture+and+steps&sortBy=%22date_posted%22)
-
-## Security & GRC
-
-- [Da monitorare] [Prove It: Reviewing SAP CAP Security with the AI OWASP Scanner — Part 2](https://community.sap.com/t5/technology-blog-posts-by-sap/prove-it-reviewing-sap-cap-security-with-the-ai-owasp-scanner-part-2/ba-p/14516397) - _SAP Community - Technology blogs_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Prove+Reviewing+SAP+CAP+Security+with+the+OWASP+Scanner&sortBy=%22date_posted%22)
-- [Da monitorare] [The Accelerating Threat to Luxury SAP Landscapes: Ransomware and Zero-Days](https://sapinsider.org/articles/the-accelerating-threat-to-luxury-sap-landscapes-ransomware-and-zero-days) - _SAPinsider_ (rilevanza 54) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+Accelerating+Threat+Luxury+SAP+Landscapes+Ransomware+and+Zero-Days&sortBy=%22date_posted%22)
-- [Da monitorare] [How Mandiant and Google Cloud Are Transforming SAP Cybersecurity Collaboration](https://sapinsider.org/articles/how-mandiant-and-google-cloud-are-transforming-sap-cybersecurity-collaboration) - _SAPinsider_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=How+Mandiant+and+Google+Cloud+Are+Transforming+SAP+Cybersecurity&sortBy=%22date_posted%22)
--  [Review and Approval: Authorization Checks](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/review-and-approval-authorization-checks/ba-p/14525157) - _SAP Community - ERP blogs_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Review+and+Approval+Authorization+Checks&sortBy=%22date_posted%22)
-
-## BTP & Integrazione
-
-- **[Da leggere]** [Integrating Northwind OData with SAP CAP](https://community.sap.com/t5/technology-blog-posts-by-members/integrating-northwind-odata-with-sap-cap/ba-p/14524021) - _SAP Community - blog dei membri_ (rilevanza 90) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Integrating+Northwind+OData+with+SAP+CAP&sortBy=%22date_posted%22)
-- **[Da leggere]** [How to get notified for SAP Cloud Connector for newer version whenever released by Automation script](https://community.sap.com/t5/technology-blog-posts-by-members/how-to-get-notified-for-sap-cloud-connector-for-newer-version-whenever/ba-p/14524152) - _SAP Community - blog dei membri_ (rilevanza 72) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=How+get+notified+for+SAP+Cloud+Connector+for+newer&sortBy=%22date_posted%22)
-
-## HR, Procurement & Travel
-
-- [Da monitorare] [SAP Recognized as a Customers’ Choice in the 2026 Gartner Peer Insights™ Voice of the Customer for Talent Acquisition (Recruiting) Suites](https://news.sap.com/2026/11/sap-recognized-gartner-peer-insights-talent-acquisition) - _SAP News Center_ (rilevanza 48) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Recognized+Customers+Choice+the+2026+Gartner+Peer+Insights&sortBy=%22date_posted%22)
-
-## Basis, HANA & Operations
-
--  [Souveräne Cloud- und KI-Lösungen](https://e3mag.com/de/souveraene-cloud-und-ki-loesungen) - _E-3 Magazine (EN)_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Souver%C3%A4ne+Cloud-+und+KI-L%C3%B6sungen&sortBy=%22date_posted%22)
+-  [Frontier SAP Pairs Migration With Agentic AI: Microsoft’s Johan Torfs](https://erp.today/frontier-sap-agentic-ai-migration) - _ERP Today_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Frontier+SAP+Pairs+Migration+With+Agentic+Microsoft+Johan+Torfs&sortBy=%22date_posted%22)
+-  [Frontier SAP Pairs Migration With Agentic AI: Microsoft’s Johan Torfs](https://sapinsider.org/articles/frontier-sap-agentic-ai-migration) - _SAPinsider_ (rilevanza 32) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Frontier+SAP+Pairs+Migration+With+Agentic+Microsoft+Johan+Torfs&sortBy=%22date_posted%22)
+-  [KI-Agenten mit Revisionssicherheit und Compliance](https://e3mag.com/de/ki-agenten-mit-revisionssicherheit-und-compliance) - _E-3 Magazine (EN)_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=KI-Agenten+mit+Revisionssicherheit+und+Compliance&sortBy=%22date_posted%22)
+-  [Bounded Autonomy Is the Best Enterprise AI Can Achieve, Says SAP’s Jesper Schleimann](https://erp.today/bounded-autonomy-enterprise-ai) - _ERP Today_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Bounded+Autonomy+the+Best+Enterprise+Can+Achieve+Says+SAP&sortBy=%22date_posted%22)
 
 ## Altro / Ecosistema
 
 -  [SAP BusinessObjects BI 2027 preview](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-businessobjects-bi-2027-preview/ba-p/14521506) - _SAP Community - Technology blogs_ (rilevanza 36) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+BusinessObjects+2027+preview&sortBy=%22date_posted%22)
+-  [Thomas Saueressig wechselt von SAP an die Ionos-Spitze](https://e3mag.com/de/thomas-saueressig-wechselt-von-sap-an-die-ionos-spitze) - _E-3 Magazine (EN)_ (rilevanza 32) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Thomas+Saueressig+wechselt+von+SAP+die+Ionos-Spitze&sortBy=%22date_posted%22)
+-  [Apache Tomcat9 version upgrade automation for SAP DS/IS application](https://community.sap.com/t5/technology-blog-posts-by-members/apache-tomcat9-version-upgrade-automation-for-sap-ds-is-application/ba-p/14525428) - _SAP Community - blog dei membri_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Apache+Tomcat9+version+upgrade+automation+for+SAP+DS%2FIS+application&sortBy=%22date_posted%22)
+-  [Upcoming Expert-guided Implementation (EGI) sessions SAP Data & Analytics December 2026](https://community.sap.com/t5/technology-blog-posts-by-sap/upcoming-expert-guided-implementation-egi-sessions-sap-data-amp-analytics/ba-p/14525694) - _SAP Community - Technology blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Upcoming+Expert-guided+Implementation+EGI+sessions+SAP+Data+Analytics+December&sortBy=%22date_posted%22)
+-  [...](https://community.sap.com/t5/technology-blog-posts-by-sap/unreadable-title/ba-p/14525111) - _SAP Community - Technology blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=...&sortBy=%22date_posted%22)
+
+## Security & GRC
+
+- [Da monitorare] [Prove It: Reviewing SAP CAP Security with the AI OWASP Scanner — Part 2](https://community.sap.com/t5/technology-blog-posts-by-sap/prove-it-reviewing-sap-cap-security-with-the-ai-owasp-scanner-part-2/ba-p/14516397) - _SAP Community - Technology blogs_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Prove+Reviewing+SAP+CAP+Security+with+the+OWASP+Scanner&sortBy=%22date_posted%22)
+-  [Strengthening the Quality of Risk Information in SAP GRC Risk Management](https://community.sap.com/t5/technology-blog-posts-by-members/strengthening-the-quality-of-risk-information-in-sap-grc-risk-management/ba-p/14526054) - _SAP Community - blog dei membri_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Strengthening+the+Quality+Risk+Information+SAP+GRC+Risk+Management&sortBy=%22date_posted%22)
+
+## Basis, HANA & Operations
+
+- [Da monitorare] [From Vision to Practice: Composing Fine-Granular Authorizations in SAP Cloud ALM](https://community.sap.com/t5/technology-blog-posts-by-sap/from-vision-to-practice-composing-fine-granular-authorizations-in-sap-cloud/ba-p/14525033) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+Vision+Practice+Composing+Fine-Granular+Authorizations+SAP+Cloud+ALM&sortBy=%22date_posted%22)
+- [Da monitorare] [BeNeering automatisiert Dienstleistungsbeschaffung](https://e3mag.com/de/beneering-automatisiert-dienstleistungsbeschaffung) - _E-3 Magazine (EN)_ (rilevanza 52) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=BeNeering+automatisiert+Dienstleistungsbeschaffung&sortBy=%22date_posted%22)
+
+## BTP & Integrazione
+
+- [Da monitorare] [Handling Unnamed CSV Columns in SAP CPI: A Practical Groovy-to-OData Integration Scenario](https://community.sap.com/t5/technology-blog-posts-by-members/handling-unnamed-csv-columns-in-sap-cpi-a-practical-groovy-to-odata/ba-p/14525352) - _SAP Community - blog dei membri_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Handling+Unnamed+CSV+Columns+SAP+CPI+Practical+Groovy-to-OData+Integration&sortBy=%22date_posted%22)
+
+## AI, Dati & Analytics
+
+- [Da monitorare] [SAP Business AI Platform, ABAP environment - Release 2611](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-platform-abap-environment-release-2611/ba-p/14523181) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Business+Platform+ABAP+environment+Release+2611&sortBy=%22date_posted%22)
+
+## Supply Chain & Logistica
+
+- [Da monitorare] [Who Wins the Next Disruption: Five Rules for Creating Supply Chains that Can Take a Hit](https://news.sap.com/2026/11/five-rules-creating-supply-chains-that-can-take-a-hit) - _SAP News Center_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Who+Wins+the+Next+Disruption+Five+Rules+for+Creating&sortBy=%22date_posted%22)
+
+## HR, Procurement & Travel
+
+-  [Building an Enterprise Data & AI Ecosystem – Part 2: Connecting SAP BDC with Snowflake by Zero-Copy](https://community.sap.com/t5/technology-blog-posts-by-members/building-an-enterprise-data-amp-ai-ecosystem-part-2-connecting-sap-bdc-with/ba-p/14518054) - _SAP Community - blog dei membri_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Building+Enterprise+Data+Ecosystem+Part+Connecting+SAP+BDC+with&sortBy=%22date_posted%22)
+
+## Finance & Compliance
+
+-  [KI-gestützte Finanzprozesse: BlackLine erweitert seine agentische Finance Operations Platform](https://e3mag.com/de/ki-gestuetzte-finanzprozesse-blackline-erweitert-seine-agentische-finance-operations-platform) - _E-3 Magazine (EN)_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=KI-gest%C3%BCtzte+Finanzprozesse+BlackLine+erweitert+seine+agentische+Finance+Operations+Platform&sortBy=%22date_posted%22)
 
