@@ -1,52 +1,46 @@
-# Radar SAP - 19/11/2026
+# Radar SAP - 20/11/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 28 notizie (21 da leggere) da 20/21 fonti attive.
+Ultime 24h: 32 notizie (18 da leggere) da 20/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
 - **[Da leggere]** [Why Stop Asking ECC Customers to "Migrate" to SAP BTP and Started Talking About Business Value](https://community.sap.com/t5/technology-blog-posts-by-members/why-stop-asking-ecc-customers-to-quot-migrate-quot-to-sap-btp-and-started/ba-p/14526410) - _SAP Community - blog dei membri_ (rilevanza 90) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Why+Stop+Asking+ECC+Customers+Migrate+SAP+BTP+and&sortBy=%22date_posted%22)
-- **[Da leggere]** [From Document to Configuration: AVC's Generative AI Input Feature Is in Beta](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/from-document-to-configuration-avc-s-generative-ai-input-feature-is-in-beta/ba-p/14526035) - _SAP Community - ERP blogs_ (rilevanza 80) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+Document+Configuration+AVC+Generative+Input+Feature+Beta&sortBy=%22date_posted%22)
-- **[Da leggere]** [Introducing Joule Work - the new UI for AI from SAP](https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-joule-work-the-new-ui-for-ai-from-sap/ba-p/14523416) - _SAP Community - Technology blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Introducing+Joule+Work+the+new+for+from+SAP&sortBy=%22date_posted%22)
--  [Frontier SAP Pairs Migration With Agentic AI: Microsoft’s Johan Torfs](https://erp.today/frontier-sap-agentic-ai-migration) - _ERP Today_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Frontier+SAP+Pairs+Migration+With+Agentic+Microsoft+Johan+Torfs&sortBy=%22date_posted%22)
--  [Frontier SAP Pairs Migration With Agentic AI: Microsoft’s Johan Torfs](https://sapinsider.org/articles/frontier-sap-agentic-ai-migration) - _SAPinsider_ (rilevanza 32) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Frontier+SAP+Pairs+Migration+With+Agentic+Microsoft+Johan+Torfs&sortBy=%22date_posted%22)
+- **[Da leggere]** [From Document to Configuration: AVC's Generative AI Input Feature Is in Beta Testing](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/from-document-to-configuration-avc-s-generative-ai-input-feature-is-in-beta/ba-p/14526035) - _SAP Community - ERP blogs_ (rilevanza 80) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+Document+Configuration+AVC+Generative+Input+Feature+Beta+Testing&sortBy=%22date_posted%22)
+- **[Da leggere]** [Takeda Turns to SAP S/4HANA to Support Digital Transformation](https://news.sap.com/2026/11/takeda-turns-to-sap-erp-digital-transformation) - _SAP News Center_ (rilevanza 74) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Takeda+Turns+SAP+S%2F4HANA+Support+Digital+Transformation&sortBy=%22date_posted%22)
+- [Da monitorare] [EEE :Custom Business Event for Billing Document Creation with Custom Payload and Context Filters](https://community.sap.com/t5/technology-blog-posts-by-members/eee-custom-business-event-for-billing-document-creation-with-custom-payload/ba-p/14524516) - _SAP Community - blog dei membri_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=EEE+Custom+Business+Event+for+Billing+Document+Creation+with&sortBy=%22date_posted%22)
+- [Da monitorare] [AstraZeneca migriert mit RISE with SAP in die Cloud](https://e3mag.com/de/astrazeneca-migriert-mit-rise-with-sap-in-die-cloud) - _E-3 Magazine (EN)_ (rilevanza 58) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=AstraZeneca+migriert+mit+RISE+with+SAP+die+Cloud&sortBy=%22date_posted%22)
+
+## AI, Dati & Analytics
+
+- [Da monitorare] [From Excel to Joule: How SAP’s internal IT uses NextTables to accelerate data democratization](https://sapinsider.org/videos/from-excel-to-joule-how-saps-internal-it-uses-nexttables-to-accelerate-data-democratization) - _SAPinsider_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+Excel+Joule+How+SAP+internal+uses+NextTables+accelerate&sortBy=%22date_posted%22)
+- [Da monitorare] [Doxee integriert SAP Joule in KI-gestützte Kommunikationsplattform](https://e3mag.com/de/doxee-integriert-sap-joule-in-ki-gestuetzte-kommunikationsplattform) - _E-3 Magazine (EN)_ (rilevanza 58) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Doxee+integriert+SAP+Joule+KI-gest%C3%BCtzte+Kommunikationsplattform&sortBy=%22date_posted%22)
+- [Da monitorare] [The Autonomous Enterprise: When AI Moves from Insight to Action](https://community.sap.com/t5/technology-blog-posts-by-members/the-autonomous-enterprise-when-ai-moves-from-insight-to-action/ba-p/14523177) - _SAP Community - blog dei membri_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=The+Autonomous+Enterprise+When+Moves+from+Insight+Action&sortBy=%22date_posted%22)
+- [Da monitorare] [SAP Cloud Connector (SCC) Configuration for HANA Cloud in SAP Business Data Cloud (BDC)](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-cloud-connector-scc-configuration-for-hana-cloud-in-sap-business-data/ba-p/14524456) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Cloud+Connector+SCC+Configuration+for+HANA+Cloud+SAP&sortBy=%22date_posted%22)
+-  [Retailsolutions bringt PromoSuite in den SAP Store](https://e3mag.com/de/retailsolutions-bringt-promosuite-in-den-sap-store) - _E-3 Magazine (EN)_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Retailsolutions+bringt+PromoSuite+den+SAP+Store&sortBy=%22date_posted%22)
 
 ## Basis, HANA & Operations
 
-- [Da monitorare] [From Vision to Practice: Composing Fine-Granular Authorizations in SAP Cloud ALM](https://community.sap.com/t5/technology-blog-posts-by-sap/from-vision-to-practice-composing-fine-granular-authorizations-in-sap-cloud/ba-p/14525033) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+Vision+Practice+Composing+Fine-Granular+Authorizations+SAP+Cloud+ALM&sortBy=%22date_posted%22)
+- [Da monitorare] [EssilorLuxottica testet SAP Joule in intelligenten Brillen](https://e3mag.com/de/essilorluxottica-testet-sap-joule-in-intelligenten-brillen) - _E-3 Magazine (EN)_ (rilevanza 66) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=EssilorLuxottica+testet+SAP+Joule+intelligenten+Brillen&sortBy=%22date_posted%22)
 - [Da monitorare] [Consilio zeigt KI-Potenzial bei der S/4 Hana-Transformation](https://e3mag.com/de/consilio-zeigt-ki-potenzial-bei-der-s-4-hana-transformation) - _E-3 Magazine (EN)_ (rilevanza 52) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Consilio+zeigt+KI-Potenzial+bei+der+S%2F4+Hana-Transformation&sortBy=%22date_posted%22)
-- [Da monitorare] [BeNeering automatisiert Dienstleistungsbeschaffung](https://e3mag.com/de/beneering-automatisiert-dienstleistungsbeschaffung) - _E-3 Magazine (EN)_ (rilevanza 52) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=BeNeering+automatisiert+Dienstleistungsbeschaffung&sortBy=%22date_posted%22)
+- [Da monitorare] [Der Röntgenblick auf SAP-Systeme: So hilft Process Mining](https://e3mag.com/de/der-roentgenblick-auf-sap-systeme-so-hilft-process-mining) - _E-3 Magazine (EN)_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Der+R%C3%B6ntgenblick+auf+SAP-Systeme+hilft+Process+Mining&sortBy=%22date_posted%22)
+- [Da monitorare] [SAP Cloud ALM als Cut-Over-Tool – Vom Excel-Chaos zur zentralen Go-Live-Steuerung](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-cloud-alm-als-cut-over-tool-vom-excel-chaos-zur-zentralen-go-live/ba-p/14525239) - _SAP Community - Technology blogs_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Cloud+ALM+als+Cut-Over-Tool+Vom+Excel-Chaos+zur+zentralen&sortBy=%22date_posted%22)
 
 ## Supply Chain & Logistica
 
 - [Da monitorare] [Descartes integriert Seefracht-Tracking in SAP-Transportplattformen](https://e3mag.com/de/descartes-integriert-seefracht-tracking-in-sap-transportplattformen) - _E-3 Magazine (EN)_ (rilevanza 52) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Descartes+integriert+Seefracht-Tracking+SAP-Transportplattformen&sortBy=%22date_posted%22)
 - [Da monitorare] [Make Sustainability a Strength of Your Transformation — From Day One](https://community.sap.com/t5/technology-blog-posts-by-sap/make-sustainability-a-strength-of-your-transformation-from-day-one/ba-p/14526344) - _SAP Community - Technology blogs_ (rilevanza 48) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Make+Sustainability+Strength+Your+Transformation+From+Day+One&sortBy=%22date_posted%22)
-- [Da monitorare] [Who Wins the Next Disruption: Five Rules for Creating Supply Chains that Can Take a Hit](https://news.sap.com/2026/11/five-rules-creating-supply-chains-that-can-take-a-hit) - _SAP News Center_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Who+Wins+the+Next+Disruption+Five+Rules+for+Creating&sortBy=%22date_posted%22)
 
-## BTP & Integrazione
+## HR, Procurement & Travel
 
-- [Da monitorare] [Handling Unnamed CSV Columns in SAP CPI: A Practical Groovy-to-OData Integration Scenario](https://community.sap.com/t5/technology-blog-posts-by-members/handling-unnamed-csv-columns-in-sap-cpi-a-practical-groovy-to-odata/ba-p/14525352) - _SAP Community - blog dei membri_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Handling+Unnamed+CSV+Columns+SAP+CPI+Practical+Groovy-to-OData+Integration&sortBy=%22date_posted%22)
--  [NetApp plant engere Integration in SAP Cloud Infrastructure](https://e3mag.com/de/netapp-plant-engere-integration-in-sap-cloud-infrastructure) - _E-3 Magazine (EN)_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=NetApp+plant+engere+Integration+SAP+Cloud+Infrastructure&sortBy=%22date_posted%22)
+- [Da monitorare] [From Melbourne to Mexico: How SAP Concur and AI Help the San Francisco 49ers Take Their Game Global](https://news.sap.com/2026/11/how-sap-concur-helps-san-francisco-49ers-take-game-global) - _SAP News Center_ (rilevanza 50) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+Melbourne+Mexico+How+SAP+Concur+and+Help+the&sortBy=%22date_posted%22)
+- [Da monitorare] [AI in HR Is Now Judged on Workforce Outcomes: SAP’s Maryann Abbajay](https://sapinsider.org/articles/ai-in-hr-is-now-judged-on-workforce-outcomes-saps-maryann-abbajay) - _SAPinsider_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Now+Judged+Workforce+Outcomes+SAP+Maryann+Abbajay&sortBy=%22date_posted%22)
 
-## AI, Dati & Analytics
+## Security & GRC
 
-- [Da monitorare] [From Excel to Joule: How SAP’s internal IT uses NextTables to accelerate data democratization](https://sapinsider.org/videos/from-excel-to-joule-how-saps-internal-it-uses-nexttables-to-accelerate-data-democratization) - _SAPinsider_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=From+Excel+Joule+How+SAP+internal+uses+NextTables+accelerate&sortBy=%22date_posted%22)
-- [Da monitorare] [SAP Business AI Platform, ABAP environment - Release 2611](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-platform-abap-environment-release-2611/ba-p/14523181) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Business+Platform+ABAP+environment+Release+2611&sortBy=%22date_posted%22)
+- [Da monitorare] [Getting Started with SAP Web Dispatcher — Routing, SSL Certificate Management and Access Control](https://community.sap.com/t5/technology-blog-posts-by-sap/getting-started-with-sap-web-dispatcher-routing-ssl-certificate-management/ba-p/14524203) - _SAP Community - Technology blogs_ (rilevanza 40) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Getting+Started+with+SAP+Web+Dispatcher+Routing+SSL+Certificate&sortBy=%22date_posted%22)
 
 ## Finance & Compliance
 
 -  [RTC bringt Agentic Finance Operations in den SAP Store](https://e3mag.com/de/rtc-bringt-agentic-finance-operations-in-den-sap-store) - _E-3 Magazine (EN)_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=RTC+bringt+Agentic+Finance+Operations+den+SAP+Store&sortBy=%22date_posted%22)
--  [KI-gestützte Finanzprozesse: BlackLine erweitert seine agentische Finance Operations Platform](https://e3mag.com/de/ki-gestuetzte-finanzprozesse-blackline-erweitert-seine-agentische-finance-operations-platform) - _E-3 Magazine (EN)_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=KI-gest%C3%BCtzte+Finanzprozesse+BlackLine+erweitert+seine+agentische+Finance+Operations+Platform&sortBy=%22date_posted%22)
-
-## HR, Procurement & Travel
-
--  [Building an Enterprise Data & AI Ecosystem – Part 2: Connecting SAP BDC with Snowflake by Zero-Copy](https://community.sap.com/t5/technology-blog-posts-by-members/building-an-enterprise-data-amp-ai-ecosystem-part-2-connecting-sap-bdc-with/ba-p/14518054) - _SAP Community - blog dei membri_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Building+Enterprise+Data+Ecosystem+Part+Connecting+SAP+BDC+with&sortBy=%22date_posted%22)
-
-## Security & GRC
-
--  [Strengthening the Quality of Risk Information in SAP GRC Risk Management](https://community.sap.com/t5/technology-blog-posts-by-members/strengthening-the-quality-of-risk-information-in-sap-grc-risk-management/ba-p/14526054) - _SAP Community - blog dei membri_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Strengthening+the+Quality+Risk+Information+SAP+GRC+Risk+Management&sortBy=%22date_posted%22)
-
-## Altro / Ecosistema
-
--  [Thomas Saueressig wechselt von SAP an die Ionos-Spitze](https://e3mag.com/de/thomas-saueressig-wechselt-von-sap-an-die-ionos-spitze) - _E-3 Magazine (EN)_ (rilevanza 32) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Thomas+Saueressig+wechselt+von+SAP+die+Ionos-Spitze&sortBy=%22date_posted%22)
 
