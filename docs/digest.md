@@ -1,7 +1,7 @@
 # Radar SAP - 24/11/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 45 notizie (16 da leggere) da 20/21 fonti attive.
+Ultime 24h: 40 notizie (17 da leggere) da 20/21 fonti attive.
 
 ## AI, Dati & Analytics
 
@@ -20,17 +20,21 @@ Ultime 24h: 45 notizie (16 da leggere) da 20/21 fonti attive.
 
 ## BTP & Integrazione
 
+- **[Da leggere]** [Setting up OpenCode in Business Application Studio with SAP AI Core](https://community.sap.com/t5/technology-blog-posts-by-sap/setting-up-opencode-in-business-application-studio-with-sap-ai-core/ba-p/14529067) - _SAP Community - Technology blogs_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Setting+OpenCode+Business+Application+Studio+with+SAP+Core&sortBy=%22date_posted%22)
 - **[Da leggere]** [Enabling External Browser Authentication in SAP Service & Asset Manager for Windows](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/enabling-external-browser-authentication-in-sap-service-amp-asset-manager/ba-p/14512351) - _SAP Community - ERP blogs_ (rilevanza 78) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Enabling+External+Browser+Authentication+SAP+Service+Asset+Manager+for&sortBy=%22date_posted%22)
 - **[Da leggere]** [San Francisco 49ers Run Travel, Expenses, and Invoices Through SAP Concur](https://sapinsider.org/blogs/san-francisco-49ers-run-travel-expenses-and-invoices-through-sap-concur) - _SAPinsider_ (rilevanza 76) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=San+Francisco+49ers+Run+Travel+Expenses+and+Invoices+Through&sortBy=%22date_posted%22)
 - [Da monitorare] [Exposing SAP Cloud Integration iFlows as OData V2 Services using the OData Sender Adapter](https://community.sap.com/t5/technology-blog-posts-by-members/exposing-sap-cloud-integration-iflows-as-odata-v2-services-using-the-odata/ba-p/14525510) - _SAP Community - blog dei membri_ (rilevanza 66) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Exposing+SAP+Cloud+Integration+iFlows+OData+Services+using+the&sortBy=%22date_posted%22)
-- [Da monitorare] [Agentic AI on BTP: Analytical Queries as a Source for Your Agents](https://community.sap.com/t5/technology-blog-posts-by-members/agentic-ai-on-btp-analytical-queries-as-a-source-for-your-agents/ba-p/14528300) - _SAP Community - blog dei membri_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Agentic+BTP+Analytical+Queries+Source+for+Your+Agents&sortBy=%22date_posted%22)
 
 ## Finance & Compliance
 
-- [Da monitorare] [IBT-003 in Oman PINT: Why the First Two Bits of the Invoice Type Code Always Matter](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/ibt-003-in-oman-pint-why-the-first-two-bits-of-the-invoice-type-code-always/ba-p/14528236) - _SAP Community - ERP blogs_ (rilevanza 66) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=IBT-003+Oman+PINT+Why+the+First+Two+Bits+the&sortBy=%22date_posted%22)
 - [Da monitorare] [inPuncto erweitert E-Rechnungsverarbeitung in SAP](https://e3mag.com/de/inpuncto-erweitert-e-rechnungsverarbeitung-in-sap) - _E-3 Magazine (EN)_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=inPuncto+erweitert+E-Rechnungsverarbeitung+SAP&sortBy=%22date_posted%22)
 - [Da monitorare] [Still struggling with manual monthly invoicing, deductions, and declarations?](https://community.sap.com/t5/technology-blog-posts-by-sap/still-struggling-with-manual-monthly-invoicing-deductions-and-declarations/ba-p/14528574) - _SAP Community - Technology blogs_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Still+struggling+with+manual+monthly+invoicing+deductions+and+declarations&sortBy=%22date_posted%22)
 - [Da monitorare] [Introducing the Receivables and Payables Clearing Agent](https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-receivables-and-payables-clearing-agent/ba-p/14528712) - _SAP Community - Technology blogs_ (rilevanza 48) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Introducing+the+Receivables+and+Payables+Clearing+Agent&sortBy=%22date_posted%22)
+
+## Basis, HANA & Operations
+
+- [Da monitorare] [SAP Fiori Development Newsletter issue #44 (December 2026)](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-fiori-development-newsletter-issue-44-december-2026/ba-p/14526542) - _SAP Community - Technology blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Fiori+Development+Newsletter+issue+December+2026&sortBy=%22date_posted%22)
+- [Da monitorare] [Introducing Multi-Dimensional Analysis (MDA): The Next Generation of Flexible Data Analysis](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/introducing-multi-dimensional-analysis-mda-the-next-generation-of-flexible/ba-p/14511420) - _SAP Community - ERP blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Introducing+Multi-Dimensional+Analysis+MDA+The+Next+Generation+Flexible+Data&sortBy=%22date_posted%22)
 
 ## Supply Chain & Logistica
 
@@ -39,8 +43,4 @@ Ultime 24h: 45 notizie (16 da leggere) da 20/21 fonti attive.
 ## HR, Procurement & Travel
 
 - [Da monitorare] [End-User Principal Propagation to SAP SuccessFactors via API Management and Microsoft Entra ID](https://community.sap.com/t5/technology-blog-posts-by-members/end-user-principal-propagation-to-sap-successfactors-via-api-management-and/ba-p/14523538) - _SAP Community - blog dei membri_ (rilevanza 50) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=End-User+Principal+Propagation+SAP+SuccessFactors+via+API+Management+and&sortBy=%22date_posted%22)
-
-## Basis, HANA & Operations
-
-- [Da monitorare] [SAP Fiori Development Newsletter issue #44 (December 2026)](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-fiori-development-newsletter-issue-44-december-2026/ba-p/14526542) - _SAP Community - Technology blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Fiori+Development+Newsletter+issue+December+2026&sortBy=%22date_posted%22)
 
