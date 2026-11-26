@@ -1,18 +1,7 @@
 # Radar SAP - 26/11/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 29 notizie (23 da leggere) da 20/21 fonti attive.
-
-## AI, Dati & Analytics
-
-- **[Da leggere]** [Promoting Agents Across Joule Studio’s Three-Tier Environments Through Git Workflows](https://community.sap.com/t5/technology-blog-posts-by-sap/promoting-agents-across-joule-studio-s-three-tier-environments-through-git/ba-p/14528131) - _SAP Community - Technology blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Promoting+Agents+Across+Joule+Studio+Three-Tier+Environments+Through+Git&sortBy=%22date_posted%22)
-- [Da monitorare] [Building AI Use Cases on SAP: Joule Studio vs. Partner AI Tools](https://community.sap.com/t5/technology-blog-posts-by-members/building-ai-use-cases-on-sap-joule-studio-vs-partner-ai-tools/ba-p/14529112) - _SAP Community - blog dei membri_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Building+Use+Cases+SAP+Joule+Studio+vs.+Partner+Tools&sortBy=%22date_posted%22)
-- [Da monitorare] [Enterprise Solution Development with SAP Joule Studio](https://community.sap.com/t5/technology-blog-posts-by-sap/enterprise-solution-development-with-sap-joule-studio/ba-p/14529576) - _SAP Community - Technology blogs_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Enterprise+Solution+Development+with+SAP+Joule+Studio&sortBy=%22date_posted%22)
-- [Da monitorare] [Where Agentic AI Gets Real: Introducing the Agentic Studio in SAP Labs Munich](https://community.sap.com/t5/technology-blog-posts-by-sap/where-agentic-ai-gets-real-introducing-the-agentic-studio-in-sap-labs/ba-p/14529574) - _SAP Community - Technology blogs_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Where+Agentic+Gets+Real+Introducing+the+Agentic+Studio+SAP&sortBy=%22date_posted%22)
-- [Da monitorare] [SAP Joule Inherits Customers’ ERP Security Model](https://sapinsider.org/blogs/sap-joule-inherits-customers-erp-security-model) - _SAPinsider_ (rilevanza 60) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Joule+Inherits+Customers+ERP+Security+Model&sortBy=%22date_posted%22)
-- [Da monitorare] [Governing Data Products in SAP Business Data Cloud](https://community.sap.com/t5/technology-blog-posts-by-sap/governing-data-products-in-sap-business-data-cloud/ba-p/14529131) - _SAP Community - Technology blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Governing+Data+Products+SAP+Business+Data+Cloud&sortBy=%22date_posted%22)
-- [Da monitorare] [TOGAF meets SAP LeanIX: Mapping the ADM to the LeanIX Meta Model, and Where AI Fits](https://community.sap.com/t5/technology-blog-posts-by-sap/togaf-meets-sap-leanix-mapping-the-adm-to-the-leanix-meta-model-and-where/ba-p/14529816) - _SAP Community - Technology blogs_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=TOGAF+meets+SAP+LeanIX+Mapping+the+ADM+the+LeanIX&sortBy=%22date_posted%22)
-- [Da monitorare] [Eclipse Foundation gründet Sovereign AI Foundation](https://e3mag.com/de/eclipse-foundation-gruendet-sovereign-ai-foundation) - _E-3 Magazine (EN)_ (rilevanza 40) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Eclipse+Foundation+gr%C3%BCndet+Sovereign+Foundation&sortBy=%22date_posted%22)
+Ultime 24h: 28 notizie (21 da leggere) da 20/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
@@ -23,11 +12,24 @@ Ultime 24h: 29 notizie (23 da leggere) da 20/21 fonti attive.
 - **[Da leggere]** [Overview: S/4HANA Cloud, Public Edition Integration with SAP Document AI](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/overview-s-4hana-cloud-public-edition-integration-with-sap-document-ai/ba-p/14528615) - _SAP Community - ERP blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Overview+S%2F4HANA+Cloud+Public+Edition+Integration+with+SAP+Document&sortBy=%22date_posted%22)
 - [Da monitorare] [SAP BusinessObjects BI 2027 Partner Test Q1 27](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-businessobjects-bi-2027-partner-test-q1-27/ba-p/14529681) - _SAP Community - Technology blogs_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+BusinessObjects+2027+Partner+Test&sortBy=%22date_posted%22)
 
+## AI, Dati & Analytics
+
+- **[Da leggere]** [Promoting Agents Across Joule Studio’s Three-Tier Environments Through Git Workflows](https://community.sap.com/t5/technology-blog-posts-by-sap/promoting-agents-across-joule-studio-s-three-tier-environments-through-git/ba-p/14528131) - _SAP Community - Technology blogs_ (rilevanza 70) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Promoting+Agents+Across+Joule+Studio+Three-Tier+Environments+Through+Git&sortBy=%22date_posted%22)
+- [Da monitorare] [Building AI Use Cases on SAP: Joule Studio vs. Partner AI Tools](https://community.sap.com/t5/technology-blog-posts-by-members/building-ai-use-cases-on-sap-joule-studio-vs-partner-ai-tools/ba-p/14529112) - _SAP Community - blog dei membri_ (rilevanza 64) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Building+Use+Cases+SAP+Joule+Studio+vs.+Partner+Tools&sortBy=%22date_posted%22)
+- [Da monitorare] [Enterprise Solution Development with SAP Joule Studio](https://community.sap.com/t5/technology-blog-posts-by-sap/enterprise-solution-development-with-sap-joule-studio/ba-p/14529576) - _SAP Community - Technology blogs_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Enterprise+Solution+Development+with+SAP+Joule+Studio&sortBy=%22date_posted%22)
+- [Da monitorare] [TOGAF meets SAP LeanIX: Mapping the ADM to the LeanIX Meta Model, and Where AI Fits](https://community.sap.com/t5/technology-blog-posts-by-sap/togaf-meets-sap-leanix-mapping-the-adm-to-the-leanix-meta-model-and-where/ba-p/14529816) - _SAP Community - Technology blogs_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=TOGAF+meets+SAP+LeanIX+Mapping+the+ADM+the+LeanIX&sortBy=%22date_posted%22)
+- [Da monitorare] [Eclipse Foundation gründet Sovereign AI Foundation](https://e3mag.com/de/eclipse-foundation-gruendet-sovereign-ai-foundation) - _E-3 Magazine (EN)_ (rilevanza 40) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Eclipse+Foundation+gr%C3%BCndet+Sovereign+Foundation&sortBy=%22date_posted%22)
+
 ## Security & GRC
 
 - [Da monitorare] [Testing AUTHORITY-CHECK in SAP RAP with ABAP Unit](https://community.sap.com/t5/technology-blog-posts-by-members/testing-authority-check-in-sap-rap-with-abap-unit/ba-p/14524014) - _SAP Community - blog dei membri_ (rilevanza 56) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Testing+AUTHORITY-CHECK+SAP+RAP+with+ABAP+Unit&sortBy=%22date_posted%22)
 - [Da monitorare] [Web Security Musings #2: Yes, You Can Copy Your Session Cookie](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/web-security-musings-2-yes-you-can-copy-your-session-cookie/ba-p/14528067) - _SAP Community - ERP blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Web+Security+Musings+Yes+You+Can+Copy+Your+Session&sortBy=%22date_posted%22)
 - [Da monitorare] [Conflicting Users in Identity Provisioning: It's About Matching, Not Fighting](https://community.sap.com/t5/technology-blog-posts-by-sap/conflicting-users-in-identity-provisioning-it-s-about-matching-not-fighting/ba-p/14529755) - _SAP Community - Technology blogs_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Conflicting+Users+Identity+Provisioning+About+Matching+Not+Fighting&sortBy=%22date_posted%22)
+
+## Basis, HANA & Operations
+
+-  [SAP und planqc treiben Quantencomputing voran](https://e3mag.com/de/sap-und-planqc-treiben-quantencomputing-voran) - _E-3 Magazine (EN)_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+und+planqc+treiben+Quantencomputing+voran&sortBy=%22date_posted%22)
+-  [SAP Runs the Platform. You Run the Business.](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-runs-the-platform-you-run-the-business/ba-p/14529265) - _SAP Community - Technology blogs_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Runs+the+Platform.+You+Run+the+Business.&sortBy=%22date_posted%22)
 
 ## BTP & Integrazione
 
@@ -40,4 +42,8 @@ Ultime 24h: 29 notizie (23 da leggere) da 20/21 fonti attive.
 ## Altro / Ecosistema
 
 -  [Simplificação do Ciclo Contributivo (SCC) – Portugal - a Solução](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/simplifica%C3%A7%C3%A3o-do-ciclo-contributivo-scc-portugal-a-solu%C3%A7%C3%A3o/ba-p/14529713) - _SAP Community - ERP blogs_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Simplifica%C3%A7%C3%A3o+Ciclo+Contributivo+SCC+Portugal+Solu%C3%A7%C3%A3o&sortBy=%22date_posted%22)
+
+## Supply Chain & Logistica
+
+-  [Creating Sales Orders in SAP Through EDI – Understanding the Process](https://community.sap.com/t5/technology-blog-posts-by-members/creating-sales-orders-in-sap-through-edi-understanding-the-process/ba-p/14527872) - _SAP Community - blog dei membri_ (rilevanza 34) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Creating+Sales+Orders+SAP+Through+EDI+Understanding+the+Process&sortBy=%22date_posted%22)
 
