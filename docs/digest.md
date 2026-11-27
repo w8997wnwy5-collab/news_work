@@ -1,7 +1,7 @@
 # Radar SAP - 27/11/2026
 
 Profilo: S/4HANA Private Cloud / On-premise + SAP BTP & Integration Suite
-Ultime 24h: 25 notizie (24 da leggere) da 20/21 fonti attive.
+Ultime 24h: 22 notizie (24 da leggere) da 20/21 fonti attive.
 
 ## S/4HANA & Clean Core
 
@@ -18,29 +18,29 @@ Ultime 24h: 25 notizie (24 da leggere) da 20/21 fonti attive.
 
 -  [Il trasporto italiano accelera. La gestione operativa deve fare lo stesso](https://news.sap.com/italy/2026/11/il-trasporto-italiano-accelera-la-gestione-operativa-deve-fare-lo-stesso) - _SAP News Italia_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=trasporto+italiano+accelera.+gestione+operativa+deve+fare+stesso&sortBy=%22date_posted%22)
 -  [Building Your First Agentic Use Case: New Whitepaper Offers a Road Map for Enterprise AI](https://news.sap.com/2026/11/build-first-agentic-use-case-new-whitepaper-road-map-enterprise-ai) - _SAP News Center_ (rilevanza 30) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Building+Your+First+Agentic+Use+Case+New+Whitepaper+Offers&sortBy=%22date_posted%22)
+-  [New E-Learning Course: Deploying the Unified SAP Signavio Process Intelligence for Administrators](https://community.sap.com/t5/technology-blog-posts-by-sap/new-e-learning-course-deploying-the-unified-sap-signavio-process/ba-p/14530878) - _SAP Community - Technology blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=New+E-Learning+Course+Deploying+the+Unified+SAP+Signavio+Process&sortBy=%22date_posted%22)
 -  [Recording and slide deck of SAP on IBM i November webcast available for download](https://community.sap.com/t5/technology-blog-posts-by-sap/recording-and-slide-deck-of-sap-on-ibm-i-november-webcast-available-for/ba-p/14530819) - _SAP Community - Technology blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Recording+and+slide+deck+SAP+IBM+November+webcast+available&sortBy=%22date_posted%22)
 -  [What's New in 2026: From Migration Tooling to Modernization and Content Migration Agent](https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-2026-from-migration-tooling-to-modernization-and-content/ba-p/14530248) - _SAP Community - Technology blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=What+New+2026+From+Migration+Tooling+Modernization+and+Content&sortBy=%22date_posted%22)
+-  [SAP trial environments current availability](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-trial-environments-current-availability/ba-p/14530369) - _SAP Community - Technology blogs_ (rilevanza 26) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+trial+environments+current+availability&sortBy=%22date_posted%22)
+-  [SAP Project Granite Incident: What We Know So Far](https://securitybridge.com/blog/sap-project-granite-incident) - _SecurityBridge Blog_ (rilevanza 22) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+Project+Granite+Incident+What+Know+Far&sortBy=%22date_posted%22)
 
 ## AI, Dati & Analytics
 
 - **[Da leggere]** [How We Orchestrated Four AI Agents to Automate Billing in S/4HANA](https://community.sap.com/t5/technology-blog-posts-by-sap/how-we-orchestrated-four-ai-agents-to-automate-billing-in-s-4hana/ba-p/14522549) - _SAP Community - Technology blogs_ (rilevanza 96) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=How+Orchestrated+Four+Agents+Automate+Billing+S%2F4HANA&sortBy=%22date_posted%22)
-- [Da monitorare] [Enterprise Solution Development with SAP Joule Studio](https://community.sap.com/t5/technology-blog-posts-by-sap/enterprise-solution-development-with-sap-joule-studio/ba-p/14529576) - _SAP Community - Technology blogs_ (rilevanza 62) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Enterprise+Solution+Development+with+SAP+Joule+Studio&sortBy=%22date_posted%22)
-
-## Security & GRC
-
-- [Da monitorare] [Web Security Musings #2: Yes, You Can Copy Your Session Cookie](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/web-security-musings-2-yes-you-can-copy-your-session-cookie/ba-p/14528067) - _SAP Community - ERP blogs_ (rilevanza 46) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Web+Security+Musings+Yes+You+Can+Copy+Your+Session&sortBy=%22date_posted%22)
-- [Da monitorare] [Supplier Intelligence in Life Sciences - The Supplier Quality Platform That Thinks Ahead](https://community.sap.com/t5/technology-blog-posts-by-sap/supplier-intelligence-in-life-sciences-the-supplier-quality-platform-that/ba-p/14529908) - _SAP Community - Technology blogs_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Supplier+Intelligence+Life+Sciences+The+Supplier+Quality+Platform+That&sortBy=%22date_posted%22)
-
-## Basis, HANA & Operations
-
--  [SNP beschleunigt SAP-Transformationen mit Kyano Lorna](https://e3mag.com/de/snp-beschleunigt-sap-transformationen-mit-kyano-lorna) - _E-3 Magazine (EN)_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SNP+beschleunigt+SAP-Transformationen+mit+Kyano+Lorna&sortBy=%22date_posted%22)
--  [SAP und planqc treiben Quantencomputing voran](https://e3mag.com/de/sap-und-planqc-treiben-quantencomputing-voran) - _E-3 Magazine (EN)_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SAP+und+planqc+treiben+Quantencomputing+voran&sortBy=%22date_posted%22)
 
 ## BTP & Integrazione
 
 - [Da monitorare] [Migrating Classic SAP API Management to API-Centric Integration: Automated, Assessment-Led Approach](https://community.sap.com/t5/technology-blog-posts-by-members/migrating-classic-sap-api-management-to-api-centric-integration-automated/ba-p/14530479) - _SAP Community - blog dei membri_ (rilevanza 66) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Migrating+Classic+SAP+API+Management+API-Centric+Integration+Automated+Assessment-Led&sortBy=%22date_posted%22)
 
+## Security & GRC
+
+- [Da monitorare] [Supplier Intelligence in Life Sciences - The Supplier Quality Platform That Thinks Ahead](https://community.sap.com/t5/technology-blog-posts-by-sap/supplier-intelligence-in-life-sciences-the-supplier-quality-platform-that/ba-p/14529908) - _SAP Community - Technology blogs_ (rilevanza 44) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=Supplier+Intelligence+Life+Sciences+The+Supplier+Quality+Platform+That&sortBy=%22date_posted%22)
+
 ## HR, Procurement & Travel
 
 - [Da monitorare] [How Solis Mammography takes a tight grip on the regulatory burden with SAP Concur](https://diginomica.com/how-solis-mammography-takes-tight-grip-regulatory-burden-sap-concur) - _diginomica_ (rilevanza 42) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=How+Solis+Mammography+takes+tight+grip+the+regulatory+burden&sortBy=%22date_posted%22)
+
+## Basis, HANA & Operations
+
+-  [SNP beschleunigt SAP-Transformationen mit Kyano Lorna](https://e3mag.com/de/snp-beschleunigt-sap-transformationen-mit-kyano-lorna) - _E-3 Magazine (EN)_ (rilevanza 38) - [post LinkedIn](https://www.linkedin.com/search/results/content/?keywords=SNP+beschleunigt+SAP-Transformationen+mit+Kyano+Lorna&sortBy=%22date_posted%22)
 
